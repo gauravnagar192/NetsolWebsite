@@ -1,30 +1,163 @@
-body {
-  margin: 0px;
-  padding: 0px;
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+@media screen and (max-width: 426px) {
+  .home {
+    background: #0097E6;
+  }
+  .heading1 {
+    font-family: 'Poppins' , sans-serif;
+    padding: 20px 0px 0px 7px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 4.5vh;
+  }
+  .Shead1{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    padding: 0px 0px 5px 7px;
+    color: #FFFFFF;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+  :local(.btn) {
+    font-family: 'Poppins' , sans-serif;
+    margin: 0px 8px 10px 8px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 50px;
+    background: #FF6D00;
+    border: none;
+    color: #FFFFFF !important;
+  }
+  .Toggle {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: right;
+    background: #0097E6;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    display: block;
+  }
+  .Nav-item {
+    display: none;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .Navbar {
+    margin: 0;
+    padding: 0;
+  }
+  .Nav-link {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .Nav {
+    background: #0097E6;
+  }
+  .Nav-item:hover {
+    background: #FF6D00;
+  }
+  .Nav-link:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .Active {
+    display: block;
+  }
 }
-.Toggle {
-  display: none;
+@media screen and (min-width: 426px) {
+  .heading2 {
+    color: #0097E6;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3vw;
+    margin-left: 75px;
+    margin-top: 2vw;
+
+  }
+  .check {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  .check-text {
+    color: #0097E6;
+    width: 25vw;
+    border: 2px solid #0097E6;
+  }
+  .check-text::placeholder {
+    color: #0097E6;
+    opacity: 0.5;
+  }
+  .check-btn {
+    width: 10vw;
+    background: #0097E6;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .home {
+    background: #0097E6;
+    margin-top: -20px;
+    clear: both;
+  }
+  .heading1 {
+    font-family: 'Poppins' , sans-serif;
+    padding: 50px 0px 0px 75px;
+    color: #FFFFFF;
+    font-size: 4vw;
+  }
+  .Shead1{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 0px 0px 50px 75px;
+    color: #FFFFFF;
+  }
+  :local(.btn) {
+    font-family: 'Poppins' , sans-serif;
+    margin: -100px 50px 0px 0px;
+    padding: 10px 5vw;
+    background: #FF6D00;
+    border: none;
+    float: right;
+    color: #FFFFFF !important;
+    text-decoration: none;
+  }
+  .Toggle {
+    display: none;
+  }
+  .Nav {
+    padding-left: 40px;
+    background: #0097E6;
+    text-align: left;
+  }
+  .Nav-item {
+    display: inline-block;
+    padding: 10px 15px 5px 15px;
+    margin-bottom: 10px;
+  }
+  .Nav-item:hover {
+    background: #FF6D00;
+  }
+  .Nav-link:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .Nav-link {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
 }
-.Nav {
-  margin-top: 0px;
-  background: #F4C724;
-  text-align: right;
-}
-.Nav-item {
-  display: inline-block;
-  padding: 20px;
-  font-family: sans-serif;
-}
-.Nav-link:hover {
-  color: #FFF222;
-}
-.Nav-link {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-.Navbar {
-  margin-right: 6vw;
-}
+/*
 .Issue {
   margin: 10px;
   padding: 14px 70px;
@@ -64,28 +197,4 @@ body {
   text-decoration: none;
   color: #0ABDE3;
   background: #FFFFFF;
-}
-@media screen and (max-width: 425px) {
-  .Toggle {
-    font-size: 35px;
-    text-align: right;
-    background: #F4C724;
-    color: #FFFFFF;
-    padding: 0px 4px;
-    display: block;
-  }
-  .Nav {
-    margin-top: 0px;
-  }
-  .Nav-item {
-    display: none;
-    text-align: center;
-  }
-  .Navbar {
-    margin: 0;
-    padding: 0;
-  }
-  .Active {
-    display: block;
-  }
-}
+}*/

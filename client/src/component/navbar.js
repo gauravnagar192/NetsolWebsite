@@ -1,4 +1,5 @@
 import React , { Component } from 'react';
+import { Link , withRouter} from "react-router-dom";
 
 class Navbar extends Component{
   render(){
@@ -9,16 +10,19 @@ class Navbar extends Component{
         </div>
         <ul className="Navbar">
           <li className="Nav-item">
-            <a href="/" className="Nav-link">HOME</a>
+            <Link to="/" className="Nav-link">Home</Link>
           </li>
           <li className="Nav-item">
-            <a href="/" className="Nav-link">ABOUT</a>
+            <Link to="/about" className="Nav-link">About</Link>
           </li>
           <li className="Nav-item">
-            <a href="/" className="Nav-link">CONTACT</a>
+            <Link to="/contact" className="Nav-link">Contact</Link>
           </li>
           <li className="Nav-item">
-            <a href="/" className="Nav-link">PLANS</a>
+            <Link to="/plans" className="Nav-link">Our Plans</Link>
+          </li>
+          <li className="Nav-item">
+            <Link to="/issue" className="Nav-link">Query</Link>
           </li>
         </ul>
       </div>
@@ -26,4 +30,4 @@ class Navbar extends Component{
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);
