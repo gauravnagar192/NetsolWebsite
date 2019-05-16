@@ -7,6 +7,7 @@ import Home from'./component/home';
 import Plans from'./component/plans';
 import Contact from'./component/contact';
 import About from'./component/about';
+import Footer from'./component/footer';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
           <Route path="/issue" component={Issue} />
          </Switch>
+         <Footer />
       </div>
     </Router>
     );

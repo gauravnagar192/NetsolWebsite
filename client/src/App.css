@@ -1,8 +1,124 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200');
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 
 @media screen and (max-width: 426px) {
+  footer {
+    display: block;
+    text-align: center;
+    background: #0097E6;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 5px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vh;
+  }
+  #quote{
+    color: #0097E6;
+    font-family: 'Righteous', cursive;
+    font-size: 3vh;
+    margin: 2vh 0vh;
+  }
+  #send-dt {
+    background: #FF6D00;
+    text-decoration: none;
+    text-align: center;
+    font-size: 11px;
+    color: #FFFFFF;
+    padding: 2vh 2vw;
+    margin-top: 5vh;
+    display: block;
+  }
+  #cr {
+    padding: 10px 10px;
+    background: #0097E6;
+    color: #FFFFFF;
+    font-size: 3vh;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #cr-h {
+    letter-spacing: 1px;
+    margin: 2vh 0vh;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4vh;
+  }
+  #get-now {
+    background: #FF6D00;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 2vh 2vw;
+    margin-top: 5vh;
+    display: block;
+  }
+  #ex-of {
+    margin-top: 5vw;
+    padding: 10px 10px;
+    background: #F44336;
+    color: #FFFFFF;
+    font-size: 3vh;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #ex-of-h {
+    letter-spacing: 1px;
+    margin: 2vh 0vh;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4vh;
+  }
+  .check {
+    margin: 10px 0px;
+  }
+  .check-text {
+    display: block;
+    margin: auto;
+    color: #0097E6;
+    border: 1px solid #0097E6;
+    padding: 0px 10px;
+  }
+  .check-text::placeholder {
+    color: #0097E6;
+    opacity: 0.5;
+  }
+  .check-btn {
+    display: block;
+    width: 40%;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #0097E6;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+  }
+  .heading2 {
+    color: #0097E6;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+    margin: 15vh 0px 2vh 5px;
+  }
+  .grid-container {
+    padding-left: 5px;
+  }
+  .grid-container > div {
+    display: block;
+  }
+  .item1 {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 3vh;
+    font-weight: 800;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+  }
+  #antenna {
+    display: none;
+  }
   .home {
     background: #0097E6;
   }
@@ -11,7 +127,7 @@
     padding: 20px 0px 0px 7px;
     color: #FFFFFF;
     display: inline-block;
-    font-size: 4.5vh;
+    font-size: 6vh;
   }
   .Shead1{
     font-family: 'Poppins' , sans-serif;
@@ -33,6 +149,9 @@
     background: #FF6D00;
     border: none;
     color: #FFFFFF !important;
+  }
+  :local(.btn):hover {
+    text-decoration: none;
   }
   .Toggle {
     font-size: 20px;
@@ -71,13 +190,103 @@
   }
 }
 @media screen and (min-width: 426px) {
+  footer {
+    display: block;
+    text-align: center;
+    background: #0097E6;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+  }
+  #quote{
+    color: #0097E6;
+    font-family: 'Righteous', cursive;
+    font-size: 3vw;
+    margin: 2vw 0vw;
+  }
+  #get-now {
+    width: 20vw;
+    background: #FF6D00;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2vh 2vw;
+    margin-top: 5vh;
+    display: block;
+  }
+  #send-dt {
+    width: 30vw;
+    background: #FF6D00;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2vh 2vw;
+    margin-top: 5vh;
+    display: block;
+  }
+  #cr {
+    padding: 40px 70px;
+    background: #0097E6;
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    font-family: 'Poppins', sans-serif;
+  }
+  #cr-h {
+    margin: 2vw 0vh;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  #ex-of {
+    margin-top: 5vw;
+    padding: 40px 70px;
+    background: #F44336;
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #ex-of-h {
+    margin: 2vw 0vh;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  .grid-container {
+    display: grid;
+    margin: 0px 70px;
+    padding: 0px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0px 0px 20px 5px;
+  }
+  .item1 {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 1.5vw;
+    font-weight: 800;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+  }
+  .item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #antenna {
+    padding: 0px 10px;
+    width: 10vw;
+    height: 12vw;
+  }
   .heading2 {
     color: #0097E6;
     font-family: 'Varela Round', sans-serif;
     font-size: 3vw;
     margin-left: 75px;
     margin-top: 2vw;
-
   }
   .check {
     display: flex;
@@ -88,6 +297,7 @@
     color: #0097E6;
     width: 25vw;
     border: 2px solid #0097E6;
+    padding: 0px 5px;
   }
   .check-text::placeholder {
     color: #0097E6;
@@ -124,12 +334,15 @@
   }
   :local(.btn) {
     font-family: 'Poppins' , sans-serif;
-    margin: -100px 50px 0px 0px;
+    margin: -100px 6vw 0px 0px;
     padding: 10px 5vw;
     background: #FF6D00;
     border: none;
     float: right;
     color: #FFFFFF !important;
+    text-decoration: none;
+  }
+  :local(.btn):hover {
     text-decoration: none;
   }
   .Toggle {
@@ -198,3 +411,109 @@
   color: #0ABDE3;
   background: #FFFFFF;
 }*/
+@media screen and (max-width: 426px) {
+  #icon-grid {
+    margin: 50px 10px;
+  }
+  .IconCard {
+    border: 2px solid #0097E6;
+    height: 50vh;
+    margin-bottom: 2vh;
+  }
+  .Icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    width: 18vh;
+    height: 18vh;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+    margin: 1vh 0vh ;
+  }
+  .content {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 4.5vh;
+    margin: 0vh 3vh;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  #icon-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px 70px;
+    grid-gap: 20px;
+  }
+  .IconCard {
+    border: 2px solid #0097E6;
+    height: 45vh;
+  }
+  .Icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    width: 15vh;
+    height: 15vh;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+    margin: 1vh 0vh ;
+  }
+  .content {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 3vh;
+    margin: 0vh 1vw;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #icon-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px 70px;
+    grid-gap: 20px;
+  }
+  .IconCard {
+    border: 5px solid #0097E6;
+    height: 50vh;
+  }
+  .Icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    width: 20vh;
+    height: 20vh;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+    margin: 1vh 0vh ;
+  }
+  .content {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 3.8vh;
+    margin: 0vh 2vw;
+    font-weight: bold;
+    text-align: center;
+  }
+
+}
