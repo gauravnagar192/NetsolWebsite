@@ -74,6 +74,21 @@ class Home extends Component {
          hope to get interview call from us . we wish you a very good luck from our side</div>
         <a href="/" id="send-dt">Send Details</a>
        </div>
+       <div id="rw-h">
+       Reviews from users
+       </div>
+       <div id="rw-grid">
+        <div id="rw-item1">
+        Netsol broadband speed is very fast . i really loved their service
+        <span className="user"> - Rohan sharma</span>
+        </div>
+        <div className="rw-item2">
+        </div>
+        <div id="rw-item3">
+        I feel amazing by using netsol broadband it’s one of my favourite network now
+        <span className="user"> - Riya sharma</span>
+        </div>
+       </div>
       </div>
     );
   }
