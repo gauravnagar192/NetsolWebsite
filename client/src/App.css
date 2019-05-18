@@ -4,6 +4,91 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 @media screen and (max-width: 426px) {
+  #fn , #fe , #fm {
+    display: block;
+    font-size: 2.5vh;
+  }
+  #f-name , #f-email , #f-msg {
+    width: 100%;
+    display: block;
+    border: 1px solid #0097E6;
+    margin-bottom: 1vw;
+    background: rgba(0,151,230,.2);
+    color: #0097E6;
+  }
+  #f-msg {
+    resize: none;
+    height: 14vh;
+  }
+  #f-submit {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FF6D00;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    border: none;
+    padding: 1vh 3vh;
+    display: block;
+    margin-top: 2vh;
+    color: #FFFFFF;
+    width: 100%;
+  }
+  .sticky + #cont {
+    padding-top: 4vw;
+  }
+  #cont {
+    background: #EAF0F1;
+    padding: 2vw 2vw;
+  }
+  #contact {
+  }
+  #ct-h , #fdbk-h {
+    padding: 5px 0px;
+    text-align: center;
+    font-family: 'Varela Round' , sans-serif;
+    font-size: 3vh;
+  }
+  .ct-info {
+    padding: 2px 10px;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+  }
+  #ct-sl {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 5px 0px;
+    background: #FF6D00;
+    color: #FFFFFF;
+    margin: 2vh 0vh;
+    font-size: 3vh;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bolder;
+  }
+  #contact-us {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: block;
+    background: #0097E6;
+    color: #FFFFFF;
+  }
+  #fdbk {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 10px 10px 10px;
+    display: block;
+    background: #FFFFFF;
+    color: #0097E6;
+  }
   #rw-grid {
     padding: 20px 10px;
     background: #F44336;
@@ -217,19 +302,23 @@
 @media screen and (min-width: 426px) {
   #fn , #fe , #fm {
     display: block;
-    font-size: 2vw;
-    margin-left: 1.5vw;
-    margin-bottom: 2vw;
+    font-size: 17px;
   }
   #f-name , #f-email , #f-msg {
-
+    width: 100%;
     display: block;
     border: 1px solid #0097E6;
-    margin: 0vw 0vw 0vw 1.5vw;
+    margin-bottom: 1vw;
     background: rgba(0,151,230,.2);
     color: #0097E6;
   }
+  #f-msg {
+    resize: none;
+    height: 14vh;
+  }
   #f-submit {
+    letter-spacing: 4px;
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
     background: #FF6D00;
@@ -240,17 +329,19 @@
     display: block;
     margin-top: 2vh;
     color: #FFFFFF;
-    font-weight: bold;
+    width: 100%;
+  }
+  .sticky + #cont {
+    padding-top: 4vw;
   }
   #cont {
     background: #EAF0F1;
-    padding: 5vw 2vw;
+    padding: 2vw 2vw;
   }
   #contact {
     display: grid;
-    grid-template-columns: 100vh 0vh;
-    margin: 5vw 2vw;
-    height: 40vw;
+    grid-template-columns: auto 0px auto;
+    margin: 2vw 2vw;
   }
   #ct-h , #fdbk-h {
     margin: 3vw;
@@ -258,39 +349,37 @@
     font-size: 3vw;
   }
   .ct-info {
-    margin-left: 5vw;
+    margin-left: 3vw;
     font-family: 'Poppins' , sans-serif;
-    font-size: 1.5vw;
+    font-size: 17px;
+    font-weight: bold;
     margin-top: 1vh;
-    margin-right: 5vw;
   }
   #ct-sl {
     text-align: center;
     background: #FFFFFF;
     color: #0097E6;
     margin: 5vw 0vh;
-    padding: 2vh;
-    font-size: 2vw;
+    font-size: 15px;
     font-family: 'Poppins' , sans-serif;
     font-weight: bolder;
   }
   #contact-us {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     background: #0097E6;
     color: #FFFFFF;
     grid-column-start: 1;
     grid-column-end: 2;
-    width: auto;
   }
   #fdbk {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 0px 20px 20px 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     background: #FFFFFF;
     color: #0097E6;
     grid-column-start: 3;
     grid-column-end: 4;
-    width: auto;
   }
   .sticky {
     position: fixed;
