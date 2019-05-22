@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200');
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
 @media screen and (max-width: 426px) {
   #fn , #fe , #fm {
@@ -300,6 +301,100 @@
   }
 }
 @media screen and (min-width: 426px) {
+  #Info6 {
+    background: #F44336;
+    font-family: 'Poppins' , sans-serif;
+    color: #FFFFFF;
+    padding: 4vh 2vw;
+    margin-top: 5vw;
+    font-weight: bold;
+  }
+  #Info6 > h5 {
+    margin-bottom: 3vw;
+  }
+  #Info5 {
+    text-align: center;
+    color: #0097E6;
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  #Info4 {
+    margin: 4vw 0vw;
+  }
+  #Info4 > p {
+    color: #F44336;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+  }
+  .SubHead2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  #l > p , #R > p {
+    text-align: center;
+    word-spacing: 4px;
+    margin-bottom: 1px;
+  }
+  #Info3 {
+    margin: 2vh 0vh;
+  }
+  #card {
+    color: #F44336;
+    padding:2vh 2vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10vw;
+  }
+  #card > #l {
+    border: 2px solid #F44336;
+    padding: 20px;
+  }
+  #card > #R {
+    border: 2px solid #F44336;
+    padding: 20px;
+  }
+  #Info2 {
+    text-align: center;
+    border: 2px solid #0097E6;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #0097E6;
+    padding: 2vh 0vh;
+    letter-spacing: 1px;
+  }
+  #Info1 > p {
+    font-family: 'Poppins' , sans-serif;
+    margin: 10px 0px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+  }
+  #AbInfo {
+    padding: 0vw;
+    margin-top: 2vh;
+  }
+  #Info1 {
+    color: #FFFFFF;
+    background: #0097E6;
+    padding: 2vw;
+  }
+  .AbSub {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 4vw;
+  }
+  #AbHead {
+    text-align: center;
+    color: #0097E6;
+    font-family: 'Varela Round' , sans-serif;
+    font-size: 3vw;
+    margin: 10px auto;
+  }
   #fn , #fe , #fm {
     display: block;
     font-size: 17px;
