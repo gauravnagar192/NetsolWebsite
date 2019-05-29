@@ -3,8 +3,72 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
 @media screen and (max-width: 426px) {
+  #sl > div {
+    border: 2px solid #FFFFFF;
+    background: #FF6D00;
+    color: #FFFFFF;
+    padding: 1vh 2vh;
+    display: block;
+    text-align: center;
+  }
+  #sl {
+    margin-top: 5vh;
+  }
+  #dt1 > div , #dt2 > div , #dt3 > div {
+    display: block;
+    padding: 1vh 0vh;
+  }
+  #dt {
+    background: #0097E6;
+    color: #FFFFFF;
+    margin: 0vh 2vh 4vh 2vh;
+    padding: 4vh 2vh;
+  }
+  #rs {
+    background: #F44336;
+    height: 20vh;
+    line-height: 20vh;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 5vh;
+    margin: 0vh 2vh;
+  }
+  .Ofinfo {
+    margin: 2vh;
+    text-align: center;
+    color: #F44336;
+    font-weight: bold;
+  }
+  #p {
+    display: none;
+  }
+  #6p , #12p {
+    display: inline;
+  }
+  .Ofbtn {
+    display: block;
+    margin: 2vh;
+    text-align: center;
+    border: 2px solid #F44336;
+    color: #F44336;
+    padding: 2.5vh;
+  }
+  #plans > p {
+    text-align: center;
+    color : #F44336;
+    margin: 2vh;
+    font-weight: bold;
+    font-size: 3vh;
+  }
+  header {
+    background: #0097E6;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2vh;
+  }
   #AbHead {
     text-align: center;
     color: #0097E6;
@@ -372,6 +436,75 @@
   }
 }
 @media screen and (min-width: 426px) {
+  .Issue {
+    margin: 2vw;
+    padding: 2vw 3vw;
+    font-family: sans-serif;
+    background: #FFFFFF;
+  }
+  .question {
+    font-size: 1.5vw;
+    margin-bottom: 4vh;
+    color: #0097E6;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bolder;
+  }
+  .ans-it {
+    border: 1px solid #FF6D00;
+    border-radius: 4px;
+    background: #FF6D00;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bolder;
+    padding: 1vh 4vh;
+    font-size: 1.2vw;
+    margin: 0px 10px;
+    color: #FFFFFF;
+  }
+  .ans-it:hover {
+  }
+  .view-ans {
+    font-size: 1.2vw;
+    color: #FF6D00;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bolder;
+    padding: 8px;
+    margin: 0px 10px;
+  }
+  .view-ans:hover {
+    text-decoration: none;
+    color: #0ABDE3;
+    background: #FFFFFF;
+  }
+  #query {
+    background: #F6F8F8;
+  }
+  hr {
+    margin: 1vh 2vw;
+    height: 2px;
+    background: #0097E6;
+  }
+  #query > h3 {
+    margin: 2vw;
+    color: #0097E6;
+  }
+  #q {
+    margin: 2vw;
+    font-size: 3vw;
+    color: #0097E6;
+    font-family: 'Noto Serif', serif;
+  }
+  #qbtn {
+    border-radius: 5px;
+    padding: .5vh 2vh 1vh 2vh;
+    background-color: #0097E6;
+    color: #FFF;
+    font-size: 2vw;
+    margin-top: 3vw;
+    margin-left: 60vw;
+  }
+  #p6 , #p12 {
+    display: none;
+  }
   #Off {
     display: grid;
     margin: 2vw 8vw;
@@ -810,7 +943,7 @@
     display: none;
   }
   .Nav {
-    padding-left: 40px;
+    padding-left: 20px;
     background: #0097E6;
     text-align: left;
   }
@@ -833,47 +966,6 @@
     margin-bottom: 0px;
   }
 }
-/*
-.Issue {
-  margin: 10px;
-  padding: 14px 70px;
-  font-family: sans-serif;
-  border: 1px solid #000000;
-}
-.Issue:hover {
-  background: #DAE0E2;
-}
-.question {
-  font-size: 20px;
-  margin-bottom: 4vh;
-}
-.ans-it {
-  border: 1px solid #0ABDE3;
-  border-radius: 16px;
-  padding: 8px;
-  font-size: 14px;
-  margin: 0px 10px;
-  color: #0ABDE3;
-}
-.ans-it:hover {
-  text-decoration: none;
-  background: #0ABDE3;
-  color: #FFFFFF;
-}
-.view-ans {
-  border: 1px solid #0ABDE3;
-  border-radius: 16px;
-  font-size: 14px;
-  background: #0ABDE3;
-  color: #FFFFFF;
-  padding: 8px;
-  margin: 0px 10px;
-}
-.view-ans:hover {
-  text-decoration: none;
-  color: #0ABDE3;
-  background: #FFFFFF;
-}*/
 @media screen and (max-width: 426px) {
   #icon-grid {
     margin: 50px 10px;

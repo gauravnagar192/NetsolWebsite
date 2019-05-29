@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 const schema = mongoose.Schema;
 
 const issueSchema = new schema({
-  question:{
+  query:{
     type: String,
     required: true
   },
-  answer:{
+  answers:{
     type: []
   },
   Date:{

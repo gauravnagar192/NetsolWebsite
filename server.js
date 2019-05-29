@@ -24,7 +24,7 @@ app.use(bodyParser.json())
 
 app.post('/', (req, res) => {
   const Issue = {
-    question: req.body.question
+    query: req.body.query
   }
 
   new issue(Issue)

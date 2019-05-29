@@ -17,9 +17,15 @@ class Plans extends Component {
         <div href="" className="Ofbtn">12 Months</div>
        </div>
        <div id="Ofinfg">
-        <div className="Ofinfo">None</div>
-        <div className="Ofinfo">15% Off</div>
-        <div className="Ofinfo">20% Off</div>
+        <div className="Ofinfo">
+        <span id="p">None</span>
+        </div>
+        <div className="Ofinfo">
+        <span id="p6">6Months Plan : </span>
+        15% Off</div>
+        <div className="Ofinfo">
+        <span id="p12">12Months Plan : </span>
+        20% Off</div>
        </div>
        <Offer RS="799" LS="Unlimited Local & STD calls" IS="up to 40 Mbps" BD="105 GB"
        BoD="500 GB" DRO=" " Subs=" "/>

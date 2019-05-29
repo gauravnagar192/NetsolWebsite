@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './component/navbar';
-import Issue from './component/issue';
+import Queries from './component/queries';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from'./component/home';
 import Plans from'./component/plans';
@@ -21,7 +21,7 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/plans" component={Plans} />
           <Route path="/contact" component={Contact} />
-          <Route path="/issue" component={Issue} />
+          <Route path="/queries" component={Queries} />
          </Switch>
          <Footer />
       </div>
