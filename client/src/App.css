@@ -6,6 +6,55 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
 @media screen and (max-width: 426px) {
+  #cbtn {
+    display: block;
+    padding: 2vh 0vh;
+    margin: 1vh .3vh 1vh .2vh;
+    background: #FF6D00;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    border-radius: 2px;
+  }
+  .c-input {
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    margin: 1vh .3vh 1vh .2vh;
+    padding: 2px;
+    background: rgba(0,151,230,.3);
+    border: 2px solid #0097E6;
+    color: #0097E6;
+    resize: none;
+  }
+  .c-input::placeholder {
+    color: #0097E6;
+  }
+  #cname , #cimg , #ctitle , #cexp , #cmsg {
+    border-radius: 2px;
+    display: block;
+    color: #0097E6;
+    font-size: 2.5vh;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    margin: 1vh .3vh 1vh .2vh;
+  }
+  .city {
+    margin: 1vh;
+    text-align: center;
+    color: #0097E6;
+    font-size: 2vh;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  .city:hover {
+    color: #FF6D00;
+  }
   #button-grp {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -538,6 +587,54 @@
   }
 }
 @media screen and (min-width: 426px) {
+  #cbtn {
+    display: block;
+    padding: 1vh 0vh;
+    margin: 1vw .3vw 1vw .2vw;
+    background: #FF6D00;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    border-radius: 2px;
+  }
+  .c-input {
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    margin: 1vw .3vw 1vw .2vw;
+    padding: 2px;
+    background: rgba(0,151,230,.3);
+    border: 2px solid #0097E6;
+    color: #0097E6;
+    resize: none;
+  }
+  .c-input::placeholder {
+    color: #0097E6;
+  }
+  #cname , #cimg , #ctitle , #cexp , #cmsg {
+    border-radius: 2px;
+    display: block;
+    color: #0097E6;
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    margin: 1vw .3vw 1vw .2vw;
+  }
+  .city {
+    margin: 1vw;
+    text-align: center;
+    color: #0097E6;
+    font-size: 2vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  .city:hover {
+    color: #FF6D00;
+  }
   #button-grp {
     display: grid;
     grid-template-columns: auto auto auto;

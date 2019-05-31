@@ -8,9 +8,62 @@ import social from '../img/social.png';
 import song from '../img/song.png';
 import video from '../img/video.png';
 import IconCard from './IconCard';
+import { Modal, ModalHeader, ModalBody, Label, Form, FormGroup } from 'reactstrap';
 
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      Modal1: false,
+      Modal2: false
+    };
+
+    this.toggle1 = this.toggle1.bind(this);
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  onChange(e) {
+    this.setState({
+      [e.target.name]:e.target.value
+    })
+  }
+
+  onSubmit(e) {
+    // e.preventDefault();
+    //
+    // const query =  this.state.query;
+    // console.log("query : "+query);
+    //
+    // axios.post('/',{ query })
+    //  .then(res => {
+    //    console.log(res);
+    //  })
+    //
+    // axios.get('/issue')
+    //  .then(res => {
+    //    const queries = res.data;
+    //    console.log(this.state);
+    //    this.setState({ queries : queries });
+    //  })
+
+    this.toggle1()
+    this.render()
+  }
+
+  toggle1() {
+    this.setState({
+      Modal1: !this.state.Modal1
+    });
+  }
+
+  toggle2() {
+    this.setState({
+      Modal2: !this.state.Modal2
+    });
+  }
+
   render(){
     var sty = {
       color : '#0097E6',
@@ -72,7 +125,7 @@ class Home extends Component {
         </h2>
         <div>Netsol is finding right person for the right job . Send us your details right now and
          hope to get interview call from us . we wish you a very good luck from our side</div>
-        <a href="/" id="send-dt">Send Details</a>
+        <a onClick={this.toggle1} id="send-dt">Send Details</a>
        </div>
        <div id="rw-h">
        Reviews from users
@@ -89,6 +142,29 @@ class Home extends Component {
         <span className="user"> - Riya sharma</span>
         </div>
        </div>
+       <Modal isOpen={this.state.Modal1} toggle={this.toggle1} className={this.props.className}>
+         <ModalHeader toggle={this.toggle1} className="text-white rounded-0 bg-primary">
+         Candidate Details
+         </ModalHeader>
+         <ModalBody>
+         <Form onSubmit= {this.onSubmit}>
+           <FormGroup>
+            <Label for="name" id="cname">Name</Label>
+            <input name="name" className="c-input" type="text" placeholder="your name" />
+            <Label for="image" id="cimg">Image</Label>
+            <input name="image" className="c-input" type="file" placeholder="your image" />
+            <Label for="title" id="ctitle">Job title</Label>
+            <input name="title" className="c-input" type="text" placeholder="your title" />
+            <Label for="experience" id="cexp">Experience</Label>
+            <input name="experience" className="c-input" type="text" placeholder="your experience" />
+            <Label for="msg" id="cmsg">Any Message (Optional)</Label>
+            <textarea name="msg" className="c-input" placeholder="your message" onChange= {this.onChange}>
+            </textarea>
+           </FormGroup>
+           <button type="submit" id="cbtn">Submit</button>
+          </Form>
+         </ModalBody>
+       </Modal>
       </div>
     );
   }

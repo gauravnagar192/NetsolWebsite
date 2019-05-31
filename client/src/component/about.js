@@ -1,8 +1,27 @@
 import React , { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 class About extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false,
+      query: ' ',
+      queries: []
+    };
+
+   this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
   render(){
     var black = {
       color : '#000000'
@@ -39,11 +58,11 @@ class About extends Component {
          <p>Link Road, Andheri West,</p>
          <p>Mumbai - 400053 (Map)</p>
         </div>
-        <div id="R">
+        <div onClick={this.toggle} id="R">
          <div className="SubHead2">Branch Offices </div>
-         <p>20+ cities</p>
-         <p>of</p>
-         <p>india</p>
+          <p>20+ cities</p>
+          <p>of</p>
+          <p>india</p>
         </div>
        </div>
       </div>
@@ -63,6 +82,21 @@ class About extends Component {
       <p>contact on 9315621432</p>
       </div>
       </div>
+      <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-danger">
+        Cities
+        </ModalHeader>
+        <ModalBody>
+        <p className="city">Delhi</p>
+        <p className="city">Chandigarh</p>
+        <p className="city">Jodhpur</p>
+        <p className="city">Mumbai</p>
+        <p className="city">Jaipur</p>
+        <p className="city">Kota</p>
+        <p className="city">Agra</p>
+        <p className="city">Hyderabad</p>
+        </ModalBody>
+      </Modal>
       </div>
     );
   }
