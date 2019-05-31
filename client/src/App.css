@@ -6,6 +6,108 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
 @media screen and (max-width: 426px) {
+  #button-grp {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #btn1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #btn2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #btn1 , #btn2 {
+    text-align: center;
+    background: #FF6D00;
+    border: none;
+    padding: 1vw 1vh;
+  }
+  #ask-label {
+    color: #0097E6;
+    display: block;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 4vh;
+  }
+  #ask-text {
+    display: block;
+    width: 100%;
+    resize: none;
+    height: 14vh;
+    background: rgba(0,151,230,.5);
+    border: 2px solid #0097E6;
+    color: #0097E6;
+  }
+  #ask-text::placeholder {
+    color: #0097E6;
+  }
+  .Issue {
+    margin: 2vh;
+    padding: 2vh;
+    font-family: 'Poppins' , sans-serif;
+    background: #FFFFFF;
+  }
+  .question {
+    font-size: 2.5vh;
+    margin-bottom: 2vh;
+    color: #0097E6;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bolder;
+  }
+  .ans-it {
+    border: 1px solid #FF6D00;
+    border-radius: 4px;
+    background: #FF6D00;
+    font-family: 'Poppins' , sans-serif;
+    padding: 1vh 2vh;
+    font-size: 2vh;
+    margin: 0px 10px;
+    color: #FFFFFF;
+  }
+  .view-ans {
+    font-size: 2vh;
+    color: #FF6D00;
+    font-family: 'Poppins' , sans-serif;
+    padding: 8px;
+    margin: 0px 10px;
+  }
+  #query > #heading {
+    margin: 2vh;
+    color: #0097E6;
+    font-size: 2.5vh;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+  }
+  #qbtn {
+    display: block;
+    margin: 2vh;
+    background: #FF6D00;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: #FFFFFF;
+    padding: 1vh 2vh;
+    text-align: center;
+  }
+  #q {
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: #0097E6;
+    padding: 2vh;
+  }
+  #query {
+    background: #F6F8F8;
+  }
+  hr {
+    margin: 1vh 2vw;
+    height: 2px;
+    background: #0097E6;
+  }
   #sl > div {
     border: 2px solid #FFFFFF;
     background: #FF6D00;
@@ -436,6 +538,43 @@
   }
 }
 @media screen and (min-width: 426px) {
+  #button-grp {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #btn1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #btn2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #btn1 , #btn2 {
+    text-align: center;
+    background: #FF6D00;
+    border: none;
+    padding: 1vh 1vw;
+  }
+  #ask-label {
+    color: #0097E6;
+    display: block;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+  #ask-text {
+    display: block;
+    width: 100%;
+    resize: none;
+    height: 8vw;
+    background: rgba(0,151,230,.5);
+    border: 2px solid #0097E6;
+    color: #0097E6;
+  }
+  #ask-text::placeholder {
+    color: #0097E6;
+  }
   .Issue {
     margin: 2vw;
     padding: 2vw 3vw;
@@ -454,26 +593,17 @@
     border-radius: 4px;
     background: #FF6D00;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bolder;
     padding: 1vh 4vh;
     font-size: 1.2vw;
     margin: 0px 10px;
     color: #FFFFFF;
   }
-  .ans-it:hover {
-  }
   .view-ans {
     font-size: 1.2vw;
     color: #FF6D00;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bolder;
     padding: 8px;
     margin: 0px 10px;
-  }
-  .view-ans:hover {
-    text-decoration: none;
-    color: #0ABDE3;
-    background: #FFFFFF;
   }
   #query {
     background: #F6F8F8;
@@ -483,24 +613,35 @@
     height: 2px;
     background: #0097E6;
   }
-  #query > h3 {
+  #query > #heading {
     margin: 2vw;
     color: #0097E6;
+    font-size: 2vw;
+  }
+  #QGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2vw;
   }
   #q {
-    margin: 2vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
     font-size: 3vw;
     color: #0097E6;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
   #qbtn {
+    grid-column-start: 3;
+    grid-column-end: 4;
     border-radius: 5px;
-    padding: .5vh 2vh 1vh 2vh;
-    background-color: #0097E6;
+    background-color: #FF6D00;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
     color: #FFF;
     font-size: 2vw;
-    margin-top: 3vw;
-    margin-left: 60vw;
   }
   #p6 , #p12 {
     display: none;

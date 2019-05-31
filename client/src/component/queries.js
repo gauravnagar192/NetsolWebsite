@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, Form, FormGroup, Label } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
@@ -80,27 +80,26 @@ class Queries extends Component {
     )
     return (
       <div id="query">
-        <div className="d-flex">
-         <div className="justify-content-start" id="q">
-          Ask Your Query
-         </div>
-         <div className="justify-content-center"></div>
-         <div className="justify-content-end">
-          <div onClick={this.toggle} id="qbtn">Add query</div>
-         </div>
+        <div id="QGrid">
+         <div id="q">Ask Your Query</div>
+         <div onClick={this.toggle} id="qbtn">Add Query</div>
         </div>
-        <h3>User Queries :</h3>
+        <div id="heading">User Queries :</div>
         <hr/>
         {queryList}
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle} className="text-white bg-primary">Add Query</ModalHeader>
+          <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-primary">Add Query</ModalHeader>
           <ModalBody>
           <Form onSubmit= {this.onSubmit}>
             <FormGroup>
-              <Label for="ques">Question</Label>
-              <Input type="text" name="query" id="" placeholder="" onChange= {this.onChange} />
+              <Label for="ques" id="ask-label">Query</Label>
+              <textarea name="query" id="ask-text" placeholder="Type your query here" onChange= {this.onChange}>
+              </textarea>
             </FormGroup>
-            <Button type="submit" className="text-white">Submit</Button>
+            <div id="button-grp">
+             <button type="submit" className="text-white orange" id="btn1">Ask</button>
+             <button type="submit" className="text-white orange" id="btn2">Clear</button>
+            </div>
           </Form>
           </ModalBody>
         </Modal>
