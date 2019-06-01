@@ -8,7 +8,6 @@ import social from '../img/social.png';
 import song from '../img/song.png';
 import video from '../img/video.png';
 import IconCard from './IconCard';
-import Offer from './offer';
 import ExOffer from './exoffer';
 import { Modal, ModalHeader, ModalBody, Label, Form, FormGroup } from 'reactstrap';
 
@@ -166,8 +165,8 @@ class Home extends Component {
            <FormGroup>
             <Label for="name" id="cname">Name</Label>
             <input name="name" className="c-input" type="text" placeholder="your name" />
-            <Label for="image" id="cimg">Image</Label>
-            <input name="image" className="c-input" type="file" placeholder="your image" />
+            <Label for="image" id="cimg">Upload Your Image
+            <input name="image" id="image" type="file" placeholder="your image" /></Label>
             <Label for="title" id="ctitle">Job title</Label>
             <input name="title" className="c-input" type="text" placeholder="your title" />
             <Label for="experience" id="cexp">Experience</Label>

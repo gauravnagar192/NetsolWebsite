@@ -6,6 +6,58 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
 @media screen and (max-width: 426px) {
+  #answer {
+    font-weight: bold;
+    font-family: 'Poppins' , sans-serif;
+  }
+  .Container {
+    padding: 0vw 2vh;
+  }
+  #ans-btn {
+    background: #FF6D00;
+    text-align: center;
+    padding: 2vh 0vh;
+    font-size: 2.5vh;
+    color: #FFFFFF;
+    margin: 4vh 0vw;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+  }
+  #ans {
+    color: #0097E6;
+    font-size: 2.5vh;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    background: rgba(0,151,230,0.5);
+    border: 2px solid #0097E6;
+    border-radius: 4px;
+    width: 100%;
+    height: 50vh;
+    resize: none;
+  }
+  #date {
+    color: #F44336;
+    font-size: 2vh;
+    margin: 4vh 0vw;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  #ques {
+    color: #0097E6;
+    font-size: 2.5vh;
+    margin: 4vh 0vw;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  #AnsHead {
+    background: #ECF0F1;
+    text-align: center;
+    padding: 1vh;
+    color: #F44336;
+    border-bottom: 2px solid #0097E6;
+    font-size: 2.5vh;
+  }
   #exdt {
     display: none;
   }
@@ -74,7 +126,20 @@
   .c-input::placeholder {
     color: #0097E6;
   }
-  #cname , #cimg , #ctitle , #cexp , #cmsg {
+  #cimg {
+    padding: 1vh 2vh;
+    margin: 1vh .3vh 1vh .2vh;
+    border-radius: 2px;
+    background: #0097E6;
+    color: #FFFFFF;
+    font-size: 2vh;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #image {
+    display: none;
+  }
+  #cname , #ctitle , #cexp , #cmsg {
     border-radius: 2px;
     display: block;
     color: #0097E6;
@@ -151,6 +216,7 @@
     font-family: 'Poppins' , sans-serif;
     padding: 1vh 2vh;
     font-size: 2vh;
+    display: inline;
     margin: 0px 10px;
     color: #FFFFFF;
   }
@@ -159,6 +225,7 @@
     color: #FF6D00;
     font-family: 'Poppins' , sans-serif;
     padding: 8px;
+    display: inline;
     margin: 0px 10px;
   }
   #query > #heading {
@@ -635,6 +702,58 @@
   }
 }
 @media screen and (min-width: 426px) {
+  #answer {
+    font-weight: bold;
+    font-family: 'Poppins' , sans-serif;
+  }
+  .Container {
+    padding: 0vw 2vw;
+  }
+  #ans-btn {
+    background: #FF6D00;
+    text-align: center;
+    padding: 2vh 0vh;
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+  }
+  #ans {
+    color: #0097E6;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    background: rgba(0,151,230,0.5);
+    border: 2px solid #0097E6;
+    border-radius: 4px;
+    width: 100%;
+    height: 20vw;
+    resize: none;
+  }
+  #date {
+    color: #F44336;
+    font-size: 1.5vw;
+    margin: 4vw 0vw;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  #ques {
+    color: #0097E6;
+    font-size: 2vw;
+    margin: 4vw 0vw;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  #AnsHead {
+    background: #ECF0F1;
+    text-align: center;
+    padding: 1vh;
+    color: #F44336;
+    border-bottom: 2px solid #0097E6;
+    font-size: 2vw;
+  }
   #close {
     text-align: right;
     float: right;
@@ -765,7 +884,7 @@
     border-radius: 2px;
     width: 100%;
     margin: 1vw .3vw 1vw .2vw;
-    padding: 2px;
+    padding: 5px;
     background: rgba(0,151,230,.3);
     border: 2px solid #0097E6;
     color: #0097E6;
@@ -774,7 +893,20 @@
   .c-input::placeholder {
     color: #0097E6;
   }
-  #cname , #cimg , #ctitle , #cexp , #cmsg {
+  #cimg {
+    padding: 1vw 2vw;
+    margin: 1vw .3vw 1vw .2vw;
+    border-radius: 2px;
+    background: #0097E6;
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #image {
+    display: none;
+  }
+  #cname , #ctitle , #cexp , #cmsg {
     border-radius: 2px;
     display: block;
     color: #0097E6;
@@ -850,15 +982,21 @@
     font-family: 'Poppins' , sans-serif;
     padding: 1vh 4vh;
     font-size: 1.2vw;
+    display: inline;
     margin: 0px 10px;
     color: #FFFFFF;
   }
+  .ans-it:hover , .ans-it:focus {
+    text-decoration: none;
+  }
+
   .view-ans {
     font-size: 1.2vw;
     color: #FF6D00;
     font-family: 'Poppins' , sans-serif;
     padding: 8px;
     margin: 0px 10px;
+    display: inline;
   }
   #query {
     background: #F6F8F8;

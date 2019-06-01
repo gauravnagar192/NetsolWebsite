@@ -2,6 +2,7 @@ import React , { Component } from 'react';
 import { Modal, ModalHeader, ModalBody, Form, FormGroup, Label } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import { Link , withRouter} from "react-router-dom";
 
 class Queries extends Component {
   constructor(props) {
@@ -68,8 +69,8 @@ class Queries extends Component {
         return (
           <div className="Issue" key= {Query._id}>
             <div className="question"> Q. {Query.query}</div>
-            <a href="/" className="ans-it">Answer It </a>
-            <a href="/" className="view-ans">View Answer ({Query.answers.length})</a>
+            <Link to={'/'+Query._id}><div className="ans-it">Answer It </div></Link>
+            <div className="view-ans">View Answer ({Query.answers.length})</div>
           </div>
         )
       })
@@ -108,4 +109,4 @@ class Queries extends Component {
   }
 }
 
-export default Queries;
+export default withRouter(Queries);

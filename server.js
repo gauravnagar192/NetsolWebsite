@@ -39,6 +39,16 @@ app.get('/issue', (req, res) => {
    })
 })
 
+app.get('/query/:issue', (req, res) => {
+  issue.find({ _id : req.params.issue})
+   .then(issue => {
+     res.json(issue)
+   })
+   .catch(()=> {
+     console.log("SERVER ERROR");
+   })
+})
+
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 })
