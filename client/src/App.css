@@ -6,6 +6,45 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
 @media screen and (max-width: 426px) {
+  #exdt {
+    display: none;
+  }
+  #close {
+    text-align: right;
+    float: right;
+    color: #FFFFFF;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-right: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #modal {
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 50%;
+    background: rgba(0,0,0,0.4);
+  }
+  #modal-header {
+    display: block;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    background: #F44336;
+    font-size: 2vh;
+    padding: 2vh;
+    font-weight: bold;
+    font-family: 'Poppins' , sans-serif;
+  }
+  #modal-content {
+    background: #FFFFFF;
+    width: 100%;
+    margin: 0vh 2vh;
+  }
   #cbtn {
     display: block;
     padding: 2vh 0vh;
@@ -178,7 +217,7 @@
     margin: 0vh 2vh 4vh 2vh;
     padding: 4vh 2vh;
   }
-  #rs {
+  #rs , #exrs {
     background: #F44336;
     height: 20vh;
     line-height: 20vh;
@@ -186,6 +225,12 @@
     color: #FFFFFF;
     font-size: 5vh;
     margin: 0vh 2vh;
+  }
+  #exrs {
+    margin: 2vh;
+  }
+  .ExOfinfo {
+    display: none;
   }
   .Ofinfo {
     margin: 2vh;
@@ -196,8 +241,11 @@
   #p {
     display: none;
   }
-  #6p , #12p {
+  #p6 , #p12 {
     display: inline;
+  }
+  .ExOfbtn {
+    display: none;
   }
   .Ofbtn {
     display: block;
@@ -587,6 +635,116 @@
   }
 }
 @media screen and (min-width: 426px) {
+  #close {
+    text-align: right;
+    float: right;
+    color: #FFFFFF;
+    font-size: 2vw;
+    padding: 1vh 2vh;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #xp6 , #xp12 {
+    display: none;
+  }
+  .ExOfinfo {
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #F44336;
+    padding: 0vh;
+  }
+  #ExOfbtng , #ExOfinfg{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2vh 2vw 0vh 2vw;
+    grid-gap: 2vw;
+    width: 80vw;
+  }
+  .ExOfbtn {
+    border: 2px solid #F44336;
+    width: 100%;
+    text-align: center;
+    color: #F44336;
+    padding: 2vh 0vh;
+  }
+  #ExOff {
+    display: grid;
+    margin: 2vw;
+    width: 80vw;
+  }
+  #exrs {
+    background: #F44336;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 11vw;
+    line-height: 11vw;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2vw;
+  }
+  #exdt {
+    background: #0097E6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 11vw;
+    color: #FFFFFF;
+  }
+  #ExOff > #sl {
+    display: flex;
+    justify-content: center;
+  }
+  #ExOff > #sl > div {
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    background: #FF6D00;
+    padding: 1vh 5vw;
+    font-size: 1.2vw;
+  }
+  #modal {
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 50%;
+    background: rgba(0,0,0,0.4);
+  }
+  #modal-header {
+    display: block;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    background: #F44336;
+    font-size: 2vw;
+    padding: 2vh;
+    font-weight: bold;
+    font-family: 'Poppins' , sans-serif;
+  }
+  #modal-content {
+    background: #FeF1F1;
+  }
+  .Ofinfo {
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #F44336;
+    padding: 2vh 0vh;
+  }
+  #Ofbtng , #Ofinfg{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2vh 8vw;
+    grid-gap: 2vw;
+  }
+  .Ofbtn {
+    border: 2px solid #F44336;
+    width: 100%;
+    text-align: center;
+    color: #F44336;
+    padding: 2vh 0vh;
+  }
   #cbtn {
     display: block;
     padding: 1vh 0vh;
@@ -764,7 +922,7 @@
     height: 16vw;
     color: #FFFFFF;
   }
-  #dt1 , #dt2 , #dt3 {
+  #dt1 , #dt2 , #dt3 , #edt1 , #edt2 , #edt3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin: 2vh;
@@ -1231,7 +1389,7 @@
   }
   .content {
     font-family: 'Poppins' , sans-serif;
-    font-size: 4.5vh;
+    font-size: 3.6vh;
     margin: 0vh 3vh;
     font-weight: bold;
     text-align: center;
@@ -1303,7 +1461,7 @@
   }
   .content {
     font-family: 'Poppins' , sans-serif;
-    font-size: 3.8vh;
+    font-size: 3.5vh;
     margin: 0vh 2vw;
     font-weight: bold;
     text-align: center;

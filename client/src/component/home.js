@@ -8,6 +8,8 @@ import social from '../img/social.png';
 import song from '../img/song.png';
 import video from '../img/video.png';
 import IconCard from './IconCard';
+import Offer from './offer';
+import ExOffer from './exoffer';
 import { Modal, ModalHeader, ModalBody, Label, Form, FormGroup } from 'reactstrap';
 
 
@@ -20,6 +22,7 @@ class Home extends Component {
     };
 
     this.toggle1 = this.toggle1.bind(this);
+    this.toggle2 = this.toggle2.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
@@ -72,6 +75,18 @@ class Home extends Component {
       fontWeight : 'bold',
       marginTop : '4vh'
     };
+    window.onload = () => {
+      var modal = document.getElementById('modal');
+      var btn = document.getElementById('get-now');
+      var close = document.getElementById('close');
+      btn.onclick = () => {
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+      }
+      close.onclick = () => {
+        modal.style.display = 'none';
+      }
+    }
     return(
       <div className="Home">
       <div className="home">
@@ -116,7 +131,7 @@ class Home extends Component {
         </h2>
         <div>bring netsol broadband in 30% off</div>
         <div>installation cost at your home</div>
-        <a href="/" id="get-now">Get Now</a>
+        <a id="get-now">Get Now</a>
        </div>
        <center id="quote">One of the most trusted broadband network</center>
        <div id="cr">
@@ -147,7 +162,7 @@ class Home extends Component {
          Candidate Details
          </ModalHeader>
          <ModalBody>
-         <Form onSubmit= {this.onSubmit}>
+         <Form onSubmit={this.onSubmit}>
            <FormGroup>
             <Label for="name" id="cname">Name</Label>
             <input name="name" className="c-input" type="text" placeholder="your name" />
@@ -165,6 +180,32 @@ class Home extends Component {
           </Form>
          </ModalBody>
        </Modal>
+       <div id="modal">
+        <div id="modal-content">
+         <div id="close">&times;</div>
+         <div id="modal-header">Exclusive Offer</div>
+         <div id="ExOfbtng">
+         <div href="" className="ExOfbtn">1 Month</div>
+         <div href="" className="ExOfbtn">6 Months</div>
+         <div href="" className="ExOfbtn">12 Months</div>
+         </div>
+         <div id="ExOfinfg">
+          <div className="ExOfinfo">
+           <span id="xp">None</span>
+          </div>
+          <div className="ExOfinfo">
+           <span id="xp6">6Months Plan : </span>15% Off
+          </div>
+          <div className="ExOfinfo">
+           <span id="xp12">12Months Plan : </span>20% Off
+          </div>
+         </div>
+         <ExOffer RS="1199" LS="Unlimited Local & STD calls" IS="up to 100 Mbps" BD="525 GB" BoD="1000 GB"
+         DRO="Data Roll Over" Subs="Amazon Prime Subscription"/>
+         <ExOffer RS="1999" LS="Unlimited Local & STD calls" IS="up to 100 Mbps" BD="Unlimited GB" BoD="1000 GB"
+         DRO="Data Roll Over" Subs="Amazon Prime Subscription"/>
+        </div>
+       </div>
       </div>
     );
   }
