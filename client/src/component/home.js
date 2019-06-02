@@ -130,7 +130,7 @@ class Home extends Component {
         </h2>
         <div>bring netsol broadband in 30% off</div>
         <div>installation cost at your home</div>
-        <a id="get-now">Get Now</a>
+        <div id="get-now">Get Now</div>
        </div>
        <center id="quote">One of the most trusted broadband network</center>
        <div id="cr">
@@ -139,7 +139,7 @@ class Home extends Component {
         </h2>
         <div>Netsol is finding right person for the right job . Send us your details right now and
          hope to get interview call from us . we wish you a very good luck from our side</div>
-        <a onClick={this.toggle1} id="send-dt">Send Details</a>
+        <div onClick={this.toggle1} id="send-dt">Send Details</div>
        </div>
        <div id="rw-h">
        Reviews from users

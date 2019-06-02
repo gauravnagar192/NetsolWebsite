@@ -1,4 +1,5 @@
 require('./modal/issue');
+require('./modal/offer');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -6,6 +7,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const port = process.env.PORT || 5000;
 const issue = mongoose.model('issue');
+const offer = mongoose.model('offer');
 const app = express();
 
 //Map global promises
@@ -43,6 +45,16 @@ app.get('/query/:issue', (req, res) => {
   issue.find({ _id : req.params.issue})
    .then(issue => {
      res.json(issue)
+   })
+   .catch(()=> {
+     console.log("SERVER ERROR");
+   })
+})
+
+app.get('/booking/:rupee', (req, res) => {
+  offer.find({ RS : req.params.rupee })
+   .then(offer => {
+     res.json(offer)
    })
    .catch(()=> {
      console.log("SERVER ERROR");

@@ -700,8 +700,193 @@
   .Active {
     display: block;
   }
+  #Booking {
+    margin: 2vh;
+  }
+  #Booking > h2 {
+    color: #0097E6;
+    font-size: 5vh;
+  }
+  #name , #phone , #city , #state {
+    font-size: 2vh;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    background: #ECF0F1;
+    padding: 10px;
+    color: #0097E6;
+    display: block;
+    width: 100%;
+    margin: 2vh 0vh;
+  }
+  #name:focus , #phone:focus , #city:focus , #state:focus {
+    border-bottom: 2px solid rgba(0,151,230,0.5);
+    outline: none;
+  }
+  #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
+  #address::placeholder {
+    font-size: 2vh;
+    color: rgba(0,151,230,0.5);
+  }
+  #address {
+    resize: none;
+    margin: 2vh 0vw;
+    height: 20vh;
+    width: 100%;
+    font-size: 2vh;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    background: #ECF0F1;
+    padding: 10px;
+    color: #0097E6;
+  }
+  #Offer-sel {
+    width: 100%;
+    padding: 2vh;
+    background: #F44336;
+    color: #FFFFFF;
+    margin: 2vh 0vw;
+  }
+  #Shead {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 4vh;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+  }
+  #Sdt1  > div , #Sdt2 > div ,  #Sdt3 > div {
+    display: block;
+    margin: 1vh 0vw;
+    font-size: 3vh;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+  }
+  #price {
+    display: block;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 5vh;
+    padding: 1vh 0vw;
+    background: #0097E6;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #book ,#clear {
+    display: block;
+    background: #FF6D00;
+    padding: 1vh;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    color: #FFFFFF;
+    margin: 2vh 0vw;
+  }
 }
 @media screen and (min-width: 426px) {
+  #Booking {
+    margin: 4vw;
+  }
+  #Booking > h2 {
+    color: #0097E6;
+    font-size: 3vw;
+  }
+  #sbtn {
+    display: grid;
+  }
+  #book {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: #FF6D00;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+  }
+  #clear {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: #FF6D00;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+  }
+  #Shead {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 4vw;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+  }
+  #price {
+    display: block;
+    font-size: 2vw;
+    text-align: center;
+    padding: 1vw 0vw;
+    background: #0097E6;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #Offer-sel {
+    width: 100%;
+    padding: 2vw;
+    background: #F44336;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    text-align: left;
+  }
+  #Sdt1 , #Sdt2 ,  #Sdt3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 1vw 0vw;
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  #address {
+    resize: none;
+    margin: 2vw 0vw;
+    height: 10vw;
+    width: 100%;
+    font-size: 1.5vw;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    background: #ECF0F1;
+    padding: 10px;
+    color: #0097E6;
+  }
+  #personal , #location {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4vw;
+    margin-top: 2vw;
+  }
+  #name , #phone , #city , #state {
+    font-size: 1.5vw;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    background: #ECF0F1;
+    padding: 10px;
+    color: #0097E6;
+  }
+  #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
+    border-bottom: 2px solid rgba(0,151,230,0.5);
+    outline: none;
+  }
+  #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
+  #address::placeholder {
+    font-size: 1.5vw;
+    color: rgba(0,151,230,0.5);
+  }
   #answer {
     font-weight: bold;
     font-family: 'Poppins' , sans-serif;

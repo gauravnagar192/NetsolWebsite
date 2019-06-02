@@ -9,6 +9,7 @@ import Contact from'./component/contact';
 import About from'./component/about';
 import Footer from'./component/footer';
 import Answer from'./component/answer';
+import Booking from'./component/booking';
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route path="/plans" component={Plans} />
           <Route path="/contact" component={Contact} />
           <Route path="/queries" component={Queries} />
+          <Route path="/booking/:id" component={Booking} />
           <Route path="/:id" component={Answer} />
          </Switch>
          <Footer />

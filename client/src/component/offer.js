@@ -1,4 +1,5 @@
 import React , { Component } from 'react';
+import { Link , withRouter} from "react-router-dom";
 
 class Offer extends Component {
   constructor(props) {
@@ -40,7 +41,11 @@ class Offer extends Component {
           <div>. {this.state.Subs}</div>
          </div>
          <div id="sl">
-          <div>SELECT</div>
+          <div>
+           <Link to={'/booking/'+this.state.RS}>
+            SELECT
+           </Link>
+          </div>
          </div>
         </div>
        </div>
@@ -49,4 +54,4 @@ class Offer extends Component {
   }
 }
 
-export default Offer;
+export default withRouter(Offer);
