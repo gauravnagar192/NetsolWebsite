@@ -1,6 +1,7 @@
 require('./modal/issue');
 require('./modal/offer');
 require('./modal/order');
+require('./modal/feedback');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -10,6 +11,7 @@ const port = process.env.PORT || 5000;
 const issue = mongoose.model('issue');
 const offer = mongoose.model('offer');
 const order = mongoose.model('order');
+const feedback = mongoose.model('feedback');
 const app = express();
 
 //Map global promises
@@ -47,6 +49,18 @@ app.post('/order', (req, res) => {
   }
 
   new order(Order)
+   .save()
+   .then(() => res.json({'success': 'true'}))
+})
+
+app.post('/feedback', (req, res) => {
+  const Feedback = {
+    name : req.body.name,
+    email : req.body.email,
+    message : req.body.message
+  }
+
+  new feedback(Feedback)
    .save()
    .then(() => res.json({'success': 'true'}))
 })

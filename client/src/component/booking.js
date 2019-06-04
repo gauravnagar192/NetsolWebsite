@@ -105,7 +105,7 @@ class Booking extends Component {
            </div>
            <div id="sbtn">
             <button type='submit' id="book">BOOK</button>
-            <button id="clear">CLEAR</button>
+            <button type='reset' id="clear">CLEAR</button>
            </div>
           </form>
         </div>
