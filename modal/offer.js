@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-const offerSchema = new schema({
+const offerSchema = new Schema({
   RS:{
     type: Number
   },
@@ -28,7 +28,7 @@ const offerSchema = new schema({
 
 // When no collection argument is passed,
 // Mongoose produces a collection name by passing the model name to the utils.toCollectionName method.
-// This method pluralizes the name.
+// This method pluralizes the name. for example it offer to offers
 // If you don't like this behavior, either pass a collection name or set your schemas collection name option.
    offerSchema.set('collection','offer');
 

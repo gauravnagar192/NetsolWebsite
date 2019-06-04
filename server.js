@@ -1,5 +1,6 @@
 require('./modal/issue');
 require('./modal/offer');
+require('./modal/order');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -8,6 +9,7 @@ const path = require('path');
 const port = process.env.PORT || 5000;
 const issue = mongoose.model('issue');
 const offer = mongoose.model('offer');
+const order = mongoose.model('order');
 const app = express();
 
 //Map global promises
@@ -30,6 +32,21 @@ app.post('/', (req, res) => {
   }
 
   new issue(Issue)
+   .save()
+   .then(() => res.json({'success': 'true'}))
+})
+
+app.post('/order', (req, res) => {
+  const Order = {
+    price:req.body.price,
+    name : req.body.name,
+    phone : req.body.phone,
+    city : req.body.city,
+    state : req.body.state,
+    address : req.body.address
+  }
+
+  new order(Order)
    .save()
    .then(() => res.json({'success': 'true'}))
 })

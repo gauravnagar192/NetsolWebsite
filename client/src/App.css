@@ -775,6 +775,7 @@
   #book ,#clear {
     display: block;
     background: #FF6D00;
+    outline: none;
     padding: 1vh;
     text-align: center;
     font-family: 'Poppins' , sans-serif;
