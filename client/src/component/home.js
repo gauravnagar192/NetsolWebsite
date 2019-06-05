@@ -10,7 +10,7 @@ import video from '../img/video.png';
 import IconCard from './IconCard';
 import ExOffer from './exoffer';
 import { Modal, ModalHeader, ModalBody, Label, Form, FormGroup } from 'reactstrap';
-
+import axios from 'axios';
 
 class Home extends Component {
   constructor(props) {
@@ -33,25 +33,32 @@ class Home extends Component {
   }
 
   onSubmit(e) {
-    // e.preventDefault();
-    //
-    // const query =  this.state.query;
-    // console.log("query : "+query);
-    //
-    // axios.post('/',{ query })
-    //  .then(res => {
-    //    console.log(res);
-    //  })
-    //
-    // axios.get('/issue')
-    //  .then(res => {
-    //    const queries = res.data;
-    //    console.log(this.state);
-    //    this.setState({ queries : queries });
-    //  })
+    e.preventDefault();
 
-    this.toggle1()
-    this.render()
+    var image = document.getElementById('image').files[0];
+    var name = this.state.name;
+    var experience = this.state.experience;
+    var title = this.state.title;
+    var msg = this.state.msg;
+
+    //To make key value pair of form input data 
+    const formData = new FormData();
+    formData.append('name',name);
+    formData.append('image',image);
+    formData.append('experience',experience);
+    formData.append('title',title);
+    formData.append('msg',msg);
+    const config = {
+       headers: {
+           'content-type': 'multipart/form-data'
+       }
+    }
+
+    axios.post('/upload',formData,config)
+     .then((res) => {
+       console.log(res.data);
+     })
+     .catch(err => console.log('DETAILS NOT SENT'))
   }
 
   toggle1() {
@@ -161,16 +168,16 @@ class Home extends Component {
          Candidate Details
          </ModalHeader>
          <ModalBody>
-         <Form onSubmit={this.onSubmit}>
+         <Form onSubmit={this.onSubmit} encType="multipart/form-data">
            <FormGroup>
             <Label for="name" id="cname">Name</Label>
-            <input name="name" className="c-input" type="text" placeholder="your name" />
+            <input name="name" className="c-input" type="text" placeholder="your name" onChange={this.onChange} />
             <Label for="image" id="cimg">Upload Your Image
-            <input name="image" id="image" type="file" placeholder="your image" /></Label>
+            <input name="image" id="image" type="file" placeholder="your image" onChange={this.onChange} /></Label>
             <Label for="title" id="ctitle">Job title</Label>
-            <input name="title" className="c-input" type="text" placeholder="your title" />
+            <input name="title" className="c-input" type="text" placeholder="your title" onChange={this.onChange} />
             <Label for="experience" id="cexp">Experience</Label>
-            <input name="experience" className="c-input" type="text" placeholder="your experience" />
+            <input name="experience" className="c-input" type="text" placeholder="your experience" onChange={this.onChange} />
             <Label for="msg" id="cmsg">Any Message (Optional)</Label>
             <textarea name="msg" className="c-input" placeholder="your message" onChange= {this.onChange}>
             </textarea>
