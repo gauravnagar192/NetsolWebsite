@@ -1,6 +1,6 @@
-1) read feedbacks on home page from feedback     collection
-2) make a container class for all pages and make page     consistent
+1) read feedbacks on home page from feedback collection
+2) make a container class for all pages and make page consistent
 3) add style to element which is not styled yet
 4) optimize css through class
 5) validate the all form input using express validator
-6) handle image using node js and save them
+6) add your own code for giving name to file in multer
