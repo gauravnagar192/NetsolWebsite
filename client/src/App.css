@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
+.blue {
+  background: #0097E6;
+}
 @media screen and (max-width: 426px) {
   #answer {
     font-weight: bold;
@@ -130,7 +133,6 @@
     padding: 1vh 2vh;
     margin: 1vh .3vh 1vh .2vh;
     border-radius: 2px;
-    background: #0097E6;
     color: #FFFFFF;
     font-size: 2vh;
     font-family: 'Poppins' , sans-serif;
@@ -261,7 +263,6 @@
   hr {
     margin: 1vh 2vw;
     height: 2px;
-    background: #0097E6;
   }
   #sl > div {
     border: 2px solid #FFFFFF;
@@ -279,7 +280,6 @@
     padding: 1vh 0vh;
   }
   #dt {
-    background: #0097E6;
     color: #FFFFFF;
     margin: 0vh 2vh 4vh 2vh;
     padding: 4vh 2vh;
@@ -330,7 +330,6 @@
     font-size: 3vh;
   }
   header {
-    background: #0097E6;
     text-align: center;
     color: #FFFFFF;
     padding: 2vh;
@@ -346,7 +345,6 @@
   #Info1 {
     text-align: center;
     padding: 10px 20px;
-    background: #0097E6;
     color: #FFFFFF;
     margin: 0px;
   }
@@ -478,7 +476,6 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     display: block;
-    background: #0097E6;
     color: #FFFFFF;
   }
   #fdbk {
@@ -520,7 +517,6 @@
   footer {
     display: block;
     text-align: center;
-    background: #0097E6;
     color: #FFFFFF;
     padding: 5px 0px;
     font-family: 'Poppins', sans-serif;
@@ -544,7 +540,6 @@
   }
   #cr {
     padding: 10px 10px;
-    background: #0097E6;
     color: #FFFFFF;
     font-size: 3vh;
     letter-spacing: 1.5px;
@@ -603,7 +598,6 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background: #0097E6;
     color: #FFFFFF;
     text-align: center;
     border: 1px solid #0097E6;
@@ -632,7 +626,6 @@
     display: none;
   }
   .home {
-    background: #0097E6;
   }
   .heading1 {
     font-family: 'Poppins' , sans-serif;
@@ -669,7 +662,6 @@
     font-size: 20px;
     font-weight: lighter;
     text-align: right;
-    background: #0097E6;
     color: #FFFFFF;
     padding: 5px 10px;
     display: block;
@@ -679,7 +671,7 @@
     text-align: center;
     padding: 10px 0px;
   }
-  .Navbar {
+  #Navbar {
     margin: 0;
     padding: 0;
   }
@@ -687,7 +679,7 @@
     text-decoration: none;
     color: #FFFFFF;
   }
-  .Nav {
+  #Nav {
     background: #F44336;
   }
   .Nav-item:hover {
@@ -768,7 +760,6 @@
     text-align: center;
     margin-top: 5vh;
     padding: 1vh 0vw;
-    background: #0097E6;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
   }
@@ -864,7 +855,6 @@
     font-size: 2vw;
     text-align: center;
     padding: 1vw 0vw;
-    background: #0097E6;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
   }
@@ -1019,7 +1009,6 @@
     font-size: 2vw;
   }
   #exdt {
-    background: #0097E6;
     grid-column-start: 2;
     grid-column-end: 4;
     height: 11vw;
@@ -1113,7 +1102,6 @@
     padding: 1vw 2vw;
     margin: 1vw .3vw 1vw .2vw;
     border-radius: 2px;
-    background: #0097E6;
     color: #FFFFFF;
     font-size: 1.5vw;
     font-family: 'Poppins' , sans-serif;
@@ -1220,7 +1208,6 @@
   hr {
     margin: 1vh 2vw;
     height: 2px;
-    background: #0097E6;
   }
   #query > #heading {
     margin: 2vw;
@@ -1270,7 +1257,6 @@
     font-size: 2vw;
   }
   #dt {
-    background: #0097E6;
     grid-column-start: 2;
     grid-column-end: 4;
     height: 16vw;
@@ -1322,7 +1308,6 @@
     font-size: 3vw;
   }
   header {
-    background: #0097E6;
     color: #FFFFFF;
     padding: 3vw;
     text-align: center;
@@ -1407,7 +1392,6 @@
   }
   #Info1 {
     color: #FFFFFF;
-    background: #0097E6;
     padding: .1vw 6vw 6vw 6vw;
   }
   .AbSub {
@@ -1490,7 +1474,6 @@
   #contact-us {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: #0097E6;
     color: #FFFFFF;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -1538,7 +1521,7 @@
   footer {
     display: block;
     text-align: center;
-    background: #0097E6;
+
     color: #FFFFFF;
     padding: 10px 0px;
     font-family: 'Poppins', sans-serif;
@@ -1572,7 +1555,6 @@
   }
   #cr {
     padding: 40px 70px;
-    background: #0097E6;
     color: #FFFFFF;
     font-size: 2.5vw;
     font-family: 'Poppins', sans-serif;
@@ -1649,7 +1631,6 @@
   }
   .check-btn {
     width: 10vw;
-    background: #0097E6;
     color: #FFFFFF;
     text-align: center;
     border: none;
@@ -1659,7 +1640,6 @@
     padding: 0px;
   }
   .home {
-    background: #0097E6;
     margin-top: -20px;
     clear: both;
   }
@@ -1692,9 +1672,8 @@
   .Toggle {
     display: none;
   }
-  .Nav {
+  #Nav {
     padding-left: 20px;
-    background: #0097E6;
     text-align: left;
   }
   .Nav-item {
@@ -1712,7 +1691,7 @@
     text-decoration: none;
     color: #FFFFFF;
   }
-  .Navbar {
+  #Navbar {
     margin-bottom: 0px;
   }
 }

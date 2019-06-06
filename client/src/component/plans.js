@@ -6,7 +6,7 @@ class Plans extends Component {
   render(){
     return(
       <div id="plans">
-       <header>
+       <header className="blue">
         <p>Netsol Broadband</p>
         <p>We Provide The Speed That You Want</p>
        </header>

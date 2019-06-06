@@ -1,6 +1,7 @@
 1) read feedbacks on home page from feedback collection
-2) make a container class for all pages and make page consistent
-3) add style to element which is not styled yet
-4) optimize css through class
-5) validate the all form input using express validator
-6) add your own code for giving name to file in multer
+// Do it Now
+2) add style to element which is not styled yet
+3) validate the all form input in frontend
+4) make check city functionality in home page by frontend javascript
+5) add your own code for giving name to file in multer
+6) check if same query is already asked in query page

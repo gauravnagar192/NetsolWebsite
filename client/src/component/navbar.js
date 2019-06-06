@@ -4,11 +4,11 @@ import { Link , withRouter} from "react-router-dom";
 class Navbar extends Component{
   render(){
     return (
-      <div className="Nav">
-        <div className="Toggle">
+      <div id="Nav" className="blue">
+        <div className="Toggle blue">
           <i className="fa fa-bars menu" aria-hidden="true"></i>
         </div>
-        <ul className="Navbar">
+        <ul id="Navbar">
           <li className="Nav-item">
             <Link to="/" className="Nav-link">Home</Link>
           </li>

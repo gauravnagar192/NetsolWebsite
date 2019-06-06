@@ -30,7 +30,7 @@ class About extends Component {
       <div id="About">
       <div id="AbHead">About Us</div>
       <div id="AbInfo">
-      <div id="Info1">
+      <div id="Info1" className="blue">
        <div className="AbSub">What is Netsol</div>
        <p>Netsol is the internet service providing company . Started in year
        2000 with the goal to provide fast and better internet to the people

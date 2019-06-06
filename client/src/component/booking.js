@@ -101,7 +101,7 @@ class Booking extends Component {
              <div>{this.state.DRO}</div>
              <div>{this.state.Subs}</div>
             </div>
-            <div id="price">Rs. {this.state.RS}</div>
+            <div id="price" className="blue">Rs. {this.state.RS}</div>
            </div>
            <div id="sbtn">
             <button type='submit' id="book">BOOK</button>

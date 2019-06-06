@@ -41,7 +41,7 @@ class Home extends Component {
     var title = this.state.title;
     var msg = this.state.msg;
 
-    //To make key value pair of form input data 
+    //To make key value pair of form input data
     const formData = new FormData();
     formData.append('name',name);
     formData.append('image',image);
@@ -94,8 +94,8 @@ class Home extends Component {
       }
     }
     return(
-      <div className="Home">
-      <div className="home">
+      <div id="Home" className="Padding">
+      <div className="home blue">
       <h1 className="heading1">Subscribe to Netsol <br/>
       Broadband for Faster Speed</h1>
       <h6 className="Shead1">T&C Apply</h6>
@@ -107,7 +107,7 @@ class Home extends Component {
       <form action="">
        <div className="check">
        <input type="text" placeholder="Your city name" className="check-text"/>
-       <input type="submit" value="Check" className="check-btn"/>
+       <input type="submit" value="Check" className="blue check-btn"/>
        </div>
       </form>
       <div className="heading2">Most Reliable Network</div>
@@ -140,7 +140,7 @@ class Home extends Component {
         <div id="get-now">Get Now</div>
        </div>
        <center id="quote">One of the most trusted broadband network</center>
-       <div id="cr">
+       <div id="cr" className="blue">
         <h2 id="cr-h">
          Career with Netsol
         </h2>
@@ -172,7 +172,7 @@ class Home extends Component {
            <FormGroup>
             <Label for="name" id="cname">Name</Label>
             <input name="name" className="c-input" type="text" placeholder="your name" onChange={this.onChange} />
-            <Label for="image" id="cimg">Upload Your Image
+            <Label for="image" className="blue" id="cimg">Upload Your Image
             <input name="image" id="image" type="file" placeholder="your image" onChange={this.onChange} /></Label>
             <Label for="title" id="ctitle">Job title</Label>
             <input name="title" className="c-input" type="text" placeholder="your title" onChange={this.onChange} />

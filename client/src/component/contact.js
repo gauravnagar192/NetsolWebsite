@@ -50,7 +50,7 @@ class Contact extends Component {
     return(
       <div id="cont">
         <div id="contact">
-         <div id="contact-us">
+         <div id="contact-us" className="blue">
           <div id="ct-h">CONTACT US</div>
           <div className="ct-info"> Phone :
           856-956-8569</div>

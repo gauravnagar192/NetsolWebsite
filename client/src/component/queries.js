@@ -88,7 +88,7 @@ class Queries extends Component {
          <div onClick={this.toggle} id="qbtn">Add Query</div>
         </div>
         <div id="heading">User Queries :</div>
-        <hr/>
+        <hr className="blue"/>
         {queryList}
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-primary">Add Query</ModalHeader>

@@ -26,7 +26,7 @@ class ExOffer extends Component {
       <div id="ExOffer">
        <div id="ExOff">
         <div id="exrs">Rs. {this.state.RS}</div>
-        <div id="exdt">
+        <div id="exdt" className="blue">
          <div id="edt1">
           <div>. {this.state.LS}</div>
           <div>. Internet  Speed {this.state.IS}</div>

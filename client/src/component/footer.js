@@ -3,7 +3,7 @@ import React , { Component } from 'react';
 class Footer extends Component {
   render(){
     return(
-      <footer>Copyright Netsol 2018</footer>
+      <footer className="blue">Copyright Netsol 2018</footer>
     );
   }
 }
