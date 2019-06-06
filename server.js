@@ -12,7 +12,7 @@ const fs = require('fs');
 const multer = require('multer');
 const crypto = require('crypto');
 const morgan = require('morgan');
-const { check, validationResult } = require('express-validator/check')
+const { check, validationResult } = require('express-validator/check');
 const port = process.env.PORT || 5000;
 const issue = mongoose.model('issue');
 const offer = mongoose.model('offer');
@@ -56,30 +56,31 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
 app.use(bodyParser.json())
+app.use(express.json());
 
 
-
-app.post('/upload', [
-   check('name').isEmpty(),
-   check('title').isEmpty(),
-   check('experience').isEmpty()
-  ], upload.single('image'), (req, res) => {
+app.post('/upload',upload.single('image'),[
+  check('name').not().isEmpty(),
+  check('title').not().isEmpty(),
+  check('experience').not().isEmpty()
+], (req, res) => {
   if (!req.file) {
-    // Finds the validation errors in this request and wraps them in an object with handy functions
     const errors = validationResult(req);
-    if (errors.isEmpty()) {
-      return res.json({ errors: 'Field are required' });
+    console.log(errors.array());
+    if (!errors.isEmpty()) {
+      return res.json({ errors: errors.array() });
     }
+
     console.log("No file received");
     return res.send({
       success: false
     });
 
   } else {
-    // Finds the validation errors in this request and wraps them in an object with handy functions
     const errors = validationResult(req);
-    if (errors.isEmpty()) {
-      return res.json({ errors: 'Field are required' });
+    console.log(errors.array());
+    if (!errors.isEmpty()) {
+      return res.json({ errors: errors.array() });
     }
 
     console.log('file received');
