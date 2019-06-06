@@ -6,6 +6,11 @@ import axios from 'axios';
 class Contact extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      name : '',
+      email : '',
+      message : ''
+    }
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);

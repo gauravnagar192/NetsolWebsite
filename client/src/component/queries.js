@@ -9,7 +9,7 @@ class Queries extends Component {
     super(props);
     this.state = {
       modal: false,
-      query: ' ',
+      query: '',
       queries: []
     };
 
@@ -45,7 +45,9 @@ class Queries extends Component {
     const query =  this.state.query;
     console.log("query : "+query);
 
-    axios.post('/',{ query })
+    axios.post('/',{
+       "query" : query
+     })
      .then(res => {
        console.log(res);
      })

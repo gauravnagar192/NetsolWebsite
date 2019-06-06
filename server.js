@@ -66,7 +66,6 @@ app.post('/upload',upload.single('image'),[
 ], (req, res) => {
   if (!req.file) {
     const errors = validationResult(req);
-    console.log(errors.array());
     if (!errors.isEmpty()) {
       return res.json({ errors: errors.array() });
     }
@@ -78,7 +77,6 @@ app.post('/upload',upload.single('image'),[
 
   } else {
     const errors = validationResult(req);
-    console.log(errors.array());
     if (!errors.isEmpty()) {
       return res.json({ errors: errors.array() });
     }
@@ -99,7 +97,13 @@ app.post('/upload',upload.single('image'),[
   }
 });
 
-app.post('/', (req, res) => {
+app.post('/',[
+  check('query').not().isEmpty()
+], (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.json({ errors: errors.array() });
+  }
   const Issue = {
     query: req.body.query
   }
@@ -109,7 +113,18 @@ app.post('/', (req, res) => {
    .then(() => res.json({'success': 'true'}))
 })
 
-app.post('/order', (req, res) => {
+app.post('/order',[
+  check('price').not().isEmpty(),
+  check('name').not().isEmpty(),
+  check('phone').not().isEmpty().isInt(),
+  check('city').not().isEmpty(),
+  check('state').not().isEmpty(),
+  check('address').not().isEmpty(),
+], (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.json({ errors: errors.array() });
+  }
   const Order = {
     price:req.body.price,
     name : req.body.name,
@@ -124,7 +139,15 @@ app.post('/order', (req, res) => {
    .then(() => res.json({'success': 'true'}))
 })
 
-app.post('/feedback', (req, res) => {
+app.post('/feedback',[
+  check('name').not().isEmpty(),
+  check('email').not().isEmpty(),
+  check('message').not().isEmpty()
+], (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.json({ errors: errors.array() });
+  }
   const Feedback = {
     name : req.body.name,
     email : req.body.email,
