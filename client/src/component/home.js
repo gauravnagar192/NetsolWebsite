@@ -57,6 +57,24 @@ class Home extends Component {
     axios.post('/upload',formData,config)
      .then((res) => {
        console.log(res.data.errors);
+       console.log(res.data.success);
+       if(res.data.success) {
+         
+       }
+       if (res.data.errors) {
+         var err = res.data.errors;
+         for(var i=0;i<err.length;i++){
+           // create a new div element
+           var newDiv = document.createElement("div");
+           // and give it some content
+           newDiv.classList.add('errorMsg');
+           var newContent = document.createTextNode('* '+err[i].msg);
+           // add the text node to the newly created div
+           newDiv.appendChild(newContent);
+           var errMsg = document.getElementsByClassName('errors')[0];
+           errMsg.appendChild(newDiv);
+         }
+       }
      })
      .catch(err => console.log('DETAILS NOT SENT'))
   }
@@ -170,7 +188,7 @@ class Home extends Component {
          <ModalBody>
          <Form onSubmit={this.onSubmit} encType="multipart/form-data">
            <FormGroup>
-           <div className="errorMsg"></div>
+           <div className="errors"></div>
             <Label for="name" id="cname">Name</Label>
             <input name="name" className="c-input" type="text" placeholder="your name" onChange={this.onChange} />
             <Label for="image" className="blue" id="cimg">Upload Your Image

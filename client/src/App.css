@@ -799,6 +799,13 @@
   }
 }
 @media screen and (min-width: 426px) {
+  .errorMsg {
+    display: block;
+    color: rgb(231,76,60);
+    font-weight: bold;
+    font-family: 'Poppins' , sans-serif;
+    margin: 5px 0px;
+  }
   .err {
     font-size: 3.5vw;
     font-family: 'Poppins' , sans-serif;
