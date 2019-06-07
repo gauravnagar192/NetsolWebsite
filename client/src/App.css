@@ -16,6 +16,12 @@
   color: #FFFFFF;
 }
 @media screen and (max-width: 426px) {
+  .rw-item1 , .rw-item3 {
+    width: 100%;
+		height: auto;
+    border-radius: 0;
+		background-color: white;
+  }
   #answer {
     font-weight: bold;
     font-family: 'Poppins' , sans-serif;
@@ -799,6 +805,17 @@
   }
 }
 @media screen and (min-width: 426px) {
+  .rw-item1 , .rw-item3 {
+    width: 100%;
+		height: auto;
+    border-radius: 0;
+		background-color: white;
+  }
+  #reply {
+    text-align: center;
+    font-size: 2vw;
+    color: #FF6D00;
+  }
   .errorMsg {
     display: block;
     color: rgb(231,76,60);

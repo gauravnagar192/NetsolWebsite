@@ -79,14 +79,14 @@ class Booking extends Component {
         <h2>Booking</h2>
           <form onSubmit={this.onSubmit}>
            <div id="personal">
-            <input type="text" placeholder="your name" id="name" name="name" onChange= {this.onChange}/>
-            <input type="tel" placeholder="your phone" id="phone" name="phone" onChange= {this.onChange}/>
+            <input type="text" placeholder="your name" id="name" name="name" onChange= {this.onChange} required/>
+            <input type="tel" placeholder="your phone" id="phone" name="phone" onChange= {this.onChange} required/>
            </div>
            <div id="location">
-            <input type="text" placeholder="your city" id="city" name="city" onChange= {this.onChange}/>
-            <input type="text" placeholder="your state" id="state" name="state" onChange= {this.onChange}/>
+            <input type="text" placeholder="your city" id="city" name="city" onChange= {this.onChange} required/>
+            <input type="text" placeholder="your state" id="state" name="state" onChange= {this.onChange} required/>
            </div>
-           <textarea placeholder="your address" id="address" name="address" onChange= {this.onChange}></textarea>
+           <textarea placeholder="your address" id="address" name="address" onChange= {this.onChange} required></textarea>
            <div id="Offer-sel">
             <div id="Shead">Selected Plan</div>
             <div id="Sdt1">

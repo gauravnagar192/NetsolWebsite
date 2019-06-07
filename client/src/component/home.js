@@ -26,6 +26,20 @@ class Home extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  componentDidMount(){
+    console.log('hi');
+    axios.get('/review')
+     .then(res => {
+       console.log(res.data);
+       var ft = document.getElementsByClassName('rw-item1')[0];
+       var sn = document.getElementsByClassName('rw-item3')[0];
+       var review1 = document.createTextNode(res.data.first[0].message);
+       var review2 = document.createTextNode(res.data.second[0].message);
+       ft.appendChild(review1);
+       sn.appendChild(review2);
+     })
+  }
+
   onChange(e) {
     this.setState({
       [e.target.name]:e.target.value
@@ -56,25 +70,38 @@ class Home extends Component {
 
     axios.post('/upload',formData,config)
      .then((res) => {
-       console.log(res.data.errors);
-       console.log(res.data.success);
-       if(res.data.success) {
-         
-       }
-       if (res.data.errors) {
-         var err = res.data.errors;
-         for(var i=0;i<err.length;i++){
-           // create a new div element
-           var newDiv = document.createElement("div");
-           // and give it some content
-           newDiv.classList.add('errorMsg');
-           var newContent = document.createTextNode('* '+err[i].msg);
-           // add the text node to the newly created div
-           newDiv.appendChild(newContent);
-           var errMsg = document.getElementsByClassName('errors')[0];
-           errMsg.appendChild(newDiv);
-         }
-       }
+       // console.log(res.data.errors);
+       // console.log(res.data.success);
+       // if(res.data.noerr) {
+       //   console.log('hi');
+       //   let msg = document.getElementsByClassName('errorMsg');
+       //   let errMsg = document.getElementsByClassName('errors')[0];
+       //   let len = msg.length;
+       //   for(let i=0;i<len;i++){
+       //     if(errMsg.contains(msg[i])){
+       //       errMsg.removeChild(msg[i]);
+       //       i--;
+       //     }
+       //   }
+       // }
+       // if (res.data.errors) {
+       //   var err = res.data.errors;
+       //   let msg = document.getElementsByClassName('errorMsg');
+       //   let errMsg = document.getElementsByClassName('errors')[0];
+       //   if(!errMsg.contains(msg[0])){
+       //     for(let i=0;i<err.length;i++){
+       //       // create a new div element
+       //       var newDiv = document.createElement("div");
+       //       // and give it some content
+       //       newDiv.classList.add('errorMsg');
+       //       var newContent = document.createTextNode('* '+err[i].msg);
+       //       // add the text node to the newly created div
+       //       newDiv.appendChild(newContent);
+       //       let errMsg = document.getElementsByClassName('errors')[0];
+       //       errMsg.appendChild(newDiv);
+       //     }
+       //   }
+       // }
      })
      .catch(err => console.log('DETAILS NOT SENT'))
   }
@@ -103,6 +130,31 @@ class Home extends Component {
       var modal = document.getElementById('modal');
       var btn = document.getElementById('get-now');
       var close = document.getElementById('close');
+      var cbtn = document.getElementById('check-btn');
+      var ctxt = document.getElementById('check-text');
+      cbtn.onclick = () => {
+        var city = ['jaipur','hyderabad','jodhpur','delhi',
+                   'chandigarh','mumbai','kota','agra'];
+        var toggle = true;
+        for(var i=0;i<city.length;i++){
+          if(ctxt.value === city[i]){
+             let c = document.getElementById('reply');
+             let r = document.createElement('div');
+             let txt = document.createTextNode('Yes Netsol avaliable');
+             r.appendChild(txt);
+             c.appendChild(r);
+             toggle = false;
+             break;
+          }
+        }
+        if(toggle){
+          let c = document.getElementById('reply');
+          let r = document.createElement('div');
+          let txt = document.createTextNode('Netsol is not avaliable');
+          r.appendChild(txt);
+          c.appendChild(r);
+        }
+      }
       btn.onclick = () => {
         modal.style.display = 'flex';
         modal.style.justifyContent = 'center';
@@ -122,12 +174,11 @@ class Home extends Component {
       </div>
       </div>
       <center style={sty}>check netsol availability in your city</center>
-      <form action="">
        <div className="check">
-       <input type="text" placeholder="Your city name" className="check-text"/>
-       <input type="submit" value="Check" className="blue check-btn"/>
+       <input type="text" id="check-text" placeholder="Your city name" className="check-text"/>
+       <input type="submit" id="check-btn" value="Check" className="blue check-btn"/>
        </div>
-      </form>
+      <div id="reply"></div>
       <div className="heading2">Most Reliable Network</div>
        <div className="grid-container">
         <div className="item1">Welcome to our website. Netsol is the one of the most reliable broadband
@@ -170,14 +221,12 @@ class Home extends Component {
        Reviews from users
        </div>
        <div id="rw-grid">
-        <div id="rw-item1">
-        Netsol broadband speed is very fast . i really loved their service
+        <div className="rw-item1">
         <span className="user"> - Rohan sharma</span>
         </div>
         <div className="rw-item2">
         </div>
-        <div id="rw-item3">
-        I feel amazing by using netsol broadband it’s one of my favourite network now
+        <div className="rw-item3">
         <span className="user"> - Riya sharma</span>
         </div>
        </div>
@@ -190,13 +239,13 @@ class Home extends Component {
            <FormGroup>
            <div className="errors"></div>
             <Label for="name" id="cname">Name</Label>
-            <input name="name" className="c-input" type="text" placeholder="your name" onChange={this.onChange} />
+            <input name="name" className="c-input" type="text" placeholder="your name" onChange={this.onChange} required/>
             <Label for="image" className="blue" id="cimg">Upload Your Image
             <input name="image" id="image" type="file" placeholder="your image" onChange={this.onChange} /></Label>
             <Label for="title" id="ctitle">Job title</Label>
-            <input name="title" className="c-input" type="text" placeholder="your title" onChange={this.onChange} />
+            <input name="title" className="c-input" type="text" placeholder="your title" onChange={this.onChange} required/>
             <Label for="experience" id="cexp">Experience</Label>
-            <input name="experience" className="c-input" type="text" placeholder="your experience" onChange={this.onChange} />
+            <input name="experience" className="c-input" type="text" placeholder="your experience" onChange={this.onChange} required/>
             <Label for="msg" id="cmsg">Any Message (Optional)</Label>
             <textarea name="msg" className="c-input" placeholder="your message" onChange= {this.onChange}>
             </textarea>

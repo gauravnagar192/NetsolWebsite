@@ -49,7 +49,8 @@ class Queries extends Component {
        "query" : query
      })
      .then(res => {
-       console.log(res);
+       if(res.data.res)
+         alert(res.data.res);
      })
 
     axios.get('/issue')
@@ -96,7 +97,7 @@ class Queries extends Component {
           <Form onSubmit= {this.onSubmit}>
             <FormGroup>
               <Label for="ques" id="ask-label">Query</Label>
-              <textarea name="query" id="ask-text" placeholder="Type your query here" onChange= {this.onChange}>
+              <textarea name="query" id="ask-text" placeholder="Type your query here" onChange= {this.onChange} required>
               </textarea>
             </FormGroup>
             <div id="button-grp">

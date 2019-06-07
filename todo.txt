@@ -1,6 +1,6 @@
 1) read feedbacks on home page from feedback collection
 // Do it Now
-3) validate the all form input in frontend
-4) make check city functionality in home page by frontend javascript
-5) add your own code for giving name to file in multer
-6) check if same query is already asked in query page
+2) show answers in modal
+3) Add custom alert for successfully completed form req
+// For Later
+4) add your own code for giving name to file in multer

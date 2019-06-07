@@ -72,7 +72,9 @@ app.post('/upload',upload.single('image'),[
 
     console.log("No file received");
     return res.send({
-      success: false
+      upload: false,
+      success: true,
+      noerr: true
     });
 
   } else {
@@ -93,7 +95,11 @@ app.post('/upload',upload.single('image'),[
 
     new candidate(Candidate)
      .save()
-     .then(() => res.send({ success:true }) )
+     .then(() => res.send({
+        upload:true,
+        success:true,
+        noerr: true
+       }) )
   }
 });
 
@@ -104,13 +110,23 @@ app.post('/',[
   if (!errors.isEmpty()) {
     return res.json({ errors: errors.array() });
   }
-  const Issue = {
-    query: req.body.query
-  }
-
-  new issue(Issue)
-   .save()
-   .then(() => res.json({'success': 'true'}))
+  issue.find({ query : req.body.query })
+   .then((query) => {
+     console.log(query.length);
+     if(query.length === 0){
+        const Issue = {
+          query: req.body.query
+        }
+        new issue(Issue)
+         .save()
+         .then(() => res.json({'success': 'true'}))
+      }
+      else
+        return res.json({ res: 'Query already has been asked'})
+     })
+   .catch((err) => {
+     console.log(err);
+   })
 })
 
 app.post('/order',[
@@ -157,6 +173,26 @@ app.post('/feedback',[
   new feedback(Feedback)
    .save()
    .then(() => res.json({'success': 'true'}))
+})
+
+app.get('/review', (req, res) => {
+  var first = [] ;
+  var  second = [];
+  feedback.find({})
+  .then(feedback =>{
+    for (var i = 0,j = 0; i < feedback.length; i++) {
+      if (i%2 === 0) {
+        first.push(feedback[j]);
+      }else {
+        second.push(feedback[j]);
+      }
+      j++;
+    }
+    res.json({
+      first: first,
+      second: second
+    })
+  })
 })
 
 app.get('/issue', (req, res) => {
