@@ -78,7 +78,7 @@ class Queries extends Component {
       })
     ) : (
         <div className="err">
-          No Issue Found
+          No Query Found
         </div>
     )
     return (

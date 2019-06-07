@@ -60,9 +60,9 @@ app.use(express.json());
 
 
 app.post('/upload',upload.single('image'),[
-  check('name').not().isEmpty(),
-  check('title').not().isEmpty(),
-  check('experience').not().isEmpty()
+  check('name','Name is required').not().isEmpty().not().isIn(['undefined']),
+  check('title','Title is required').not().isEmpty().not().isIn(['undefined']),
+  check('experience','Experience is required').not().isEmpty().not().isIn(['undefined'])
 ], (req, res) => {
   if (!req.file) {
     const errors = validationResult(req);
@@ -98,7 +98,7 @@ app.post('/upload',upload.single('image'),[
 });
 
 app.post('/',[
-  check('query').not().isEmpty()
+  check('query','Query is required').not().isEmpty().not().isIn(['undefined'])
 ], (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -114,12 +114,12 @@ app.post('/',[
 })
 
 app.post('/order',[
-  check('price').not().isEmpty(),
-  check('name').not().isEmpty(),
-  check('phone').not().isEmpty().isInt(),
-  check('city').not().isEmpty(),
-  check('state').not().isEmpty(),
-  check('address').not().isEmpty(),
+  check('price').not().isEmpty().not().isIn(['undefined']),
+  check('name','Name is required').not().isEmpty().not().isIn(['undefined']),
+  check('phone','Phone is required').not().isEmpty().isInt().not().isIn(['undefined']),
+  check('city','City is required').not().isEmpty().not().isIn(['undefined']),
+  check('state','State is required').not().isEmpty().not().isIn(['undefined']),
+  check('address','Address is required').not().isEmpty().not().isIn(['undefined'])
 ], (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -140,9 +140,9 @@ app.post('/order',[
 })
 
 app.post('/feedback',[
-  check('name').not().isEmpty(),
-  check('email').not().isEmpty(),
-  check('message').not().isEmpty()
+  check('name','Name is required').not().isEmpty().not().isIn(['undefined']),
+  check('email','Email is required').not().isEmpty().not().isIn(['undefined']),
+  check('message','Message is required').not().isEmpty().not().isIn(['undefined'])
 ], (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {

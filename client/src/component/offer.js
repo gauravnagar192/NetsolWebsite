@@ -42,7 +42,7 @@ class Offer extends Component {
          </div>
          <div id="sl">
           <div>
-           <Link to={'/booking/'+this.state.RS}>
+           <Link to={'/booking/'+this.state.RS} className="link">
             SELECT
            </Link>
           </div>

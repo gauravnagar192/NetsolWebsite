@@ -1,6 +1,5 @@
 1) read feedbacks on home page from feedback collection
 // Do it Now
-2) add style to element which is not styled yet
 3) validate the all form input in frontend
 4) make check city functionality in home page by frontend javascript
 5) add your own code for giving name to file in multer

@@ -56,7 +56,7 @@ class Home extends Component {
 
     axios.post('/upload',formData,config)
      .then((res) => {
-       console.log(res.data);
+       console.log(res.data.errors);
      })
      .catch(err => console.log('DETAILS NOT SENT'))
   }
@@ -170,6 +170,7 @@ class Home extends Component {
          <ModalBody>
          <Form onSubmit={this.onSubmit} encType="multipart/form-data">
            <FormGroup>
+           <div className="errorMsg"></div>
             <Label for="name" id="cname">Name</Label>
             <input name="name" className="c-input" type="text" placeholder="your name" onChange={this.onChange} />
             <Label for="image" className="blue" id="cimg">Upload Your Image
