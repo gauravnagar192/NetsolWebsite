@@ -20,7 +20,6 @@
     width: 100%;
 		height: auto;
     border-radius: 0;
-		background-color: white;
   }
   #answer {
     font-weight: bold;
@@ -516,7 +515,7 @@
     margin: 4vh 6vh;
     text-align: center;
   }
-  .user {
+  .user1 , .user2 {
     display: block;
     color: #FF6D00;
     font-size: 3vh;
@@ -805,11 +804,17 @@
   }
 }
 @media screen and (min-width: 426px) {
-  .rw-item1 , .rw-item3 {
+  .rw-item1 {
+    width: 100%;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+    .rw-item3 {
     width: 100%;
 		height: auto;
-    border-radius: 0;
-		background-color: white;
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
   #reply {
     text-align: center;
@@ -1550,7 +1555,7 @@
   #rw-grid > div {
     width: 25vw;
   }
-  .user {
+  .user1 , .user2 {
     display: block;
     color: #FF6D00;
   }

@@ -24,21 +24,86 @@ class Home extends Component {
     this.toggle2 = this.toggle2.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.slider = this.slider.bind(this);
   }
 
   componentDidMount(){
-    console.log('hi');
     axios.get('/review')
      .then(res => {
-       console.log(res.data);
-       var ft = document.getElementsByClassName('rw-item1')[0];
-       var sn = document.getElementsByClassName('rw-item3')[0];
-       var review1 = document.createTextNode(res.data.first[0].message);
-       var review2 = document.createTextNode(res.data.second[0].message);
-       ft.appendChild(review1);
-       sn.appendChild(review2);
+       var first = res.data.first;
+       var second = res.data.second;
+       var rwgrid = document.getElementById('rw-grid');
+       for(let i=0;i<first.length;i++){
+         var ft = document.createElement('div');
+         ft.classList.add('rw-item1');
+         var ur1 = document.createElement('div');
+         ur1.classList.add('user1');
+         var review1 = document.createTextNode(first[i].message);
+         var user1 = document.createTextNode(first[i].name);
+         ur1.appendChild(user1);
+         ft.appendChild(review1);
+         ft.appendChild(ur1);
+         rwgrid.appendChild(ft);
+       }
+       var md = document.createElement('div');
+       md.classList.add('rw-item2');
+       rwgrid.appendChild(md);
+       for(let i=0;i<second.length;i++){
+         var sn = document.createElement('div');
+         sn.classList.add('rw-item3');
+         var ur2 = document.createElement('div');
+         ur2.classList.add('user2');
+         var review2 = document.createTextNode(second[i].message);
+         var user2 = document.createTextNode(second[i].name);
+         ur2.appendChild(user2);
+         sn.appendChild(review2);
+         sn.appendChild(ur2);
+         rwgrid.appendChild(sn);
+       }
+
+       //Animate feedback
+         let a = 0;
+         let b = 0;
+         var fd1 = document.getElementsByClassName("rw-item1");
+         var fd2 = document.getElementsByClassName("rw-item3");
+         fd1[a].style.display = "block";
+         fd2[b].style.display = "block";
+         a++;
+         b++;
+         console.log('hi');
+         for (a; a < fd1.length; a++) {
+           fd1[a].style.display = "none";
+         }
+         for (b; b < fd2.length; b++) {
+           fd2[b].style.display = "none";
+         }
+         a = 0;
+         b = 0;
+         //This executing 1 time only
+         setInterval(this.slider(),2000)
      })
   }
+
+  slider(){
+   let a = 0;
+   let b = 0;
+   var fd1 = document.getElementsByClassName("rw-item1");
+   var fd2 = document.getElementsByClassName("rw-item3");
+   console.log(fd1);
+   fd1[a].style.display = "none";
+   fd2[b].style.display = "none";
+   a++;
+   b++;
+   if (a === fd1.length) {
+     a = 0;
+   }
+   if (b === fd2.length) {
+     b = 0;
+   }
+   fd1[a].style.display = "block";
+   fd2[b].style.display = "block";
+  }
+
 
   onChange(e) {
     this.setState({
@@ -221,14 +286,6 @@ class Home extends Component {
        Reviews from users
        </div>
        <div id="rw-grid">
-        <div className="rw-item1">
-        <span className="user"> - Rohan sharma</span>
-        </div>
-        <div className="rw-item2">
-        </div>
-        <div className="rw-item3">
-        <span className="user"> - Riya sharma</span>
-        </div>
        </div>
        <Modal isOpen={this.state.Modal1} toggle={this.toggle1} className={this.props.className}>
          <ModalHeader toggle={this.toggle1} className="text-white rounded-0 bg-primary">

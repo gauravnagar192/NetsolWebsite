@@ -40,48 +40,6 @@
     <script  src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity=
     "sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous">
     </script>
-    <script type="text/javascript">
-    window.onload = () => {
-      var a = 0;
-      var b = 0;
-      var ft = document.getElementsByClassName("rw-item1");
-      var sn = document.getElementsByClassName("rw-item3");
-      console.log(ft[0]);
-      ft[a].style.display = "block";
-      sn[b].style.display = "block";
-      a++;
-      b++;
-      for (a; a < ft.length; a++) {
-        ft[a].style.display = "none";
-      }
-      for (b; b < sn.length; b++) {
-        sn[b].style.display = "none";
-      }
-      a = 0;
-      b = 0;
-      function slider(){
-       a = 0;
-       b = 0;
-       var ft = document.getElementsByClassName("rw-item1");
-       var sn = document.getElementsByClassName("rw-item3");
-       ft[a].style.display = "none";
-       sn[b].style.display = "none";
-       a++;
-       b++;
-       if (a === ft.length) {
-         a = 0;
-       }
-       if (b === sn.length) {
-         b = 0;
-       }
-       ft[a].style.display = "block";
-       sn[b].style.display = "block";
-
-         setTimeout("slider()",2000);
-      }
-      slider();
-    }
-    </script>
    <script type="text/javascript">
      var i = 0;
      $(document).ready(() => {
