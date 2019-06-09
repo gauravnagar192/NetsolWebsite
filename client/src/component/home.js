@@ -73,7 +73,6 @@ class Home extends Component {
          fd2[b].style.display = "block";
          a++;
          b++;
-         console.log('hi');
          for (a; a < fd1.length; a++) {
            fd1[a].style.display = "none";
          }
@@ -87,24 +86,28 @@ class Home extends Component {
          this.slider = () => {
           // Making display none of currently showing element
           // Making display block of next element
-          var fd1 = document.getElementsByClassName("rw-item1");
-          var fd2 = document.getElementsByClassName("rw-item3");
-          fd1[a].style.display = "none";
-          fd2[b].style.display = "none";
-          a++;
-          b++;
-          if (a === fd1.length) {
-            a = 0;
+            var fd1 = document.getElementsByClassName("rw-item1");
+            var fd2 = document.getElementsByClassName("rw-item3");
+            fd1[a].style.display = "none";
+            fd2[b].style.display = "none";
+            a++;
+            b++;
+            if (a === fd1.length) {
+              a = 0;
+            }
+            if (b === fd2.length) {
+              b = 0;
+            }
+            fd1[a].style.display = "block";
+            fd2[b].style.display = "block";
           }
-          if (b === fd2.length) {
-            b = 0;
-          }
-          fd1[a].style.display = "block";
-          fd2[b].style.display = "block";
-         }
 
-         this.interval = setInterval(() => this.slider(), 5000);
+         this.interval = setInterval(() => this.slider() , 5000);
      })
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.interval)
   }
 
   onChange(e) {

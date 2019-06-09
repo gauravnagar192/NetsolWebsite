@@ -68,7 +68,7 @@ class Contact extends Component {
           <label htmlFor="" id="fn">Name</label>
           <input type="text" name='name' id="f-name" onChange={this.onChange} required/>
           <label htmlFor="" id="fe">Email</label>
-          <input type="text" name='email' id="f-email" onChange={this.onChange} required/>
+          <input type="email" name='email' id="f-email" onChange={this.onChange} required/>
           <label htmlFor="" id="fm">Message</label>
           <textarea name='message' id="f-msg" onChange={this.onChange} required></textarea>
           <input type="submit" id="f-submit" value="SEND"/>
