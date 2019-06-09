@@ -19,7 +19,13 @@
   .rw-item1 , .rw-item3 {
     width: 100%;
 		height: auto;
+    text-align: center;
     border-radius: 0;
+  }
+  #reply {
+    text-align: center;
+    font-size: 2vh;
+    color: #FF6D00;
   }
   #answer {
     font-weight: bold;
@@ -512,7 +518,7 @@
   #rw-grid > div {
     letter-spacing: 1px;
     display: block;
-    margin: 4vh 6vh;
+    margin: 4vh 0vh;
     text-align: center;
   }
   .user1 , .user2 {
@@ -535,8 +541,9 @@
     font-size: 3vh;
   }
   #quote{
-    color: #0097E6;
-    font-family: 'Righteous', cursive;
+    color: #F44336;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     font-size: 3vh;
     margin: 2vh 0vh;
   }
@@ -544,7 +551,7 @@
     background: #FF6D00;
     text-decoration: none;
     text-align: center;
-    font-size: 11px;
+    font-size: 14px;
     color: #FFFFFF;
     padding: 2vh 2vw;
     margin-top: 5vh;
@@ -595,7 +602,9 @@
   }
   .check-text {
     display: block;
-    margin: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     color: #0097E6;
     border: 1px solid #0097E6;
     padding: 0px 10px;
@@ -606,12 +615,12 @@
   }
   .check-btn {
     display: block;
-    width: 40%;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
+    width: 80%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
     color: #FFFFFF;
     text-align: center;
     border: 1px solid #0097E6;
@@ -619,7 +628,7 @@
   .heading2 {
     color: #0097E6;
     font-family: 'Varela Round', sans-serif;
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: bold;
     margin: 15vh 0px 2vh 5px;
   }
@@ -646,7 +655,7 @@
     padding: 20px 0px 0px 7px;
     color: #FFFFFF;
     display: inline-block;
-    font-size: 6vh;
+    font-size: 5vh;
   }
   .Shead1{
     font-family: 'Poppins' , sans-serif;
@@ -1577,8 +1586,9 @@
     font-size: 2vw;
   }
   #quote{
-    color: #0097E6;
-    font-family: 'Righteous', cursive;
+    color: #F44336;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     margin: 2vw 0vw;
   }

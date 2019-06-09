@@ -1,4 +1,5 @@
 import React , { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../App.css';
 import antenna from '../img/antenna.png';
 import img from '../img/photo.png';
@@ -24,7 +25,6 @@ class Home extends Component {
     this.toggle2 = this.toggle2.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-    this.slider = this.slider.bind(this);
   }
 
   componentDidMount(){
@@ -33,6 +33,7 @@ class Home extends Component {
        var first = res.data.first;
        var second = res.data.second;
        var rwgrid = document.getElementById('rw-grid');
+       // Creating div with rw-item1 class and showing all message and name of array first
        for(let i=0;i<first.length;i++){
          var ft = document.createElement('div');
          ft.classList.add('rw-item1');
@@ -48,6 +49,7 @@ class Home extends Component {
        var md = document.createElement('div');
        md.classList.add('rw-item2');
        rwgrid.appendChild(md);
+       // Creating div with rw-item3 class and showing all message and name of array second
        for(let i=0;i<second.length;i++){
          var sn = document.createElement('div');
          sn.classList.add('rw-item3');
@@ -62,8 +64,9 @@ class Home extends Component {
        }
 
        //Animate feedback
-         let a = 0;
-         let b = 0;
+         // Showing only first(0) html element of rw-item1 class and making other element display none
+         var a = 0;
+         var b = 0;
          var fd1 = document.getElementsByClassName("rw-item1");
          var fd2 = document.getElementsByClassName("rw-item3");
          fd1[a].style.display = "block";
@@ -79,31 +82,30 @@ class Home extends Component {
          }
          a = 0;
          b = 0;
-         //This executing 1 time only
-         setInterval(this.slider(),2000)
+
+         // Declare function using function expression is working only
+         this.slider = () => {
+          // Making display none of currently showing element
+          // Making display block of next element
+          var fd1 = document.getElementsByClassName("rw-item1");
+          var fd2 = document.getElementsByClassName("rw-item3");
+          fd1[a].style.display = "none";
+          fd2[b].style.display = "none";
+          a++;
+          b++;
+          if (a === fd1.length) {
+            a = 0;
+          }
+          if (b === fd2.length) {
+            b = 0;
+          }
+          fd1[a].style.display = "block";
+          fd2[b].style.display = "block";
+         }
+
+         this.interval = setInterval(() => this.slider(), 5000);
      })
   }
-
-  slider(){
-   let a = 0;
-   let b = 0;
-   var fd1 = document.getElementsByClassName("rw-item1");
-   var fd2 = document.getElementsByClassName("rw-item3");
-   console.log(fd1);
-   fd1[a].style.display = "none";
-   fd2[b].style.display = "none";
-   a++;
-   b++;
-   if (a === fd1.length) {
-     a = 0;
-   }
-   if (b === fd2.length) {
-     b = 0;
-   }
-   fd1[a].style.display = "block";
-   fd2[b].style.display = "block";
-  }
-
 
   onChange(e) {
     this.setState({
@@ -241,7 +243,7 @@ class Home extends Component {
       <center style={sty}>check netsol availability in your city</center>
        <div className="check">
        <input type="text" id="check-text" placeholder="Your city name" className="check-text"/>
-       <input type="submit" id="check-btn" value="Check" className="blue check-btn"/>
+       <input type="button" id="check-btn" value="Check" className="blue check-btn"/>
        </div>
       <div id="reply"></div>
       <div className="heading2">Most Reliable Network</div>
