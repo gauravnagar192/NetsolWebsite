@@ -175,6 +175,26 @@ app.post('/feedback',[
    .then(() => res.json({'success': 'true'}))
 })
 
+app.put('/answer', (req, res) => {
+  issue.findOne({ "_id" : req.body.id })
+  .then(Issue => {
+    var len = Issue.answers.length;
+    Issue.answers[len] = req.body.answer;
+    // Because of this data is saved in mongodb
+    Issue.markModified('answers');
+    Issue
+    .save()
+    .then(() => res.json({"success" : "true" }))
+    .catch(() => res.json({"success" : "false" }))
+  })
+})
+
+app.get('/answers/:id', (req, res) => {
+  issue.findOne({ "_id" : req.params.id })
+  .then(Issue => res.json(Issue))
+  .catch(err => console.log("ISSUE NOT FOUND"))
+})
+
 app.get('/review', (req, res) => {
   var first = [] ;
   var  second = [];

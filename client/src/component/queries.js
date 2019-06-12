@@ -16,6 +16,7 @@ class Queries extends Component {
     this.toggle = this.toggle.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   componentDidMount() {
@@ -31,6 +32,27 @@ class Queries extends Component {
     this.setState({
       modal: !this.state.modal
     });
+  }
+
+  onClick(e){
+    console.log(e.target.getAttribute('data-id'));
+    var id = e.target.getAttribute('data-id');
+
+    axios.get('/answers/'+id)
+    .then(res => {
+      var answers = res.data.answers;
+      var a = document.getElementById('answers');
+      for (var i = 0; i < answers.length; i++) {
+        var ans = document.createElement('div');
+        ans.classList.add('answers')
+        var answer = document.createTextNode(answers[i]);
+        ans.appendChild(answer);
+        a.appendChild(ans);
+      }
+    })
+    .catch(err => {
+      console.log("ANSWER NOT FOUND");
+    })
   }
 
   onChange(e) {
@@ -73,7 +95,7 @@ class Queries extends Component {
           <div className="Issue" key= {Query._id}>
             <div className="question"> Q. {Query.query}</div>
             <Link to={'/'+Query._id}><div className="ans-it">Answer It </div></Link>
-            <div className="view-ans">View Answer ({Query.answers.length})</div>
+            <div data-id= {Query._id} onClick={this.onClick} className="view-ans">View Answer ({Query.answers.length})</div>
           </div>
         )
       })
@@ -91,6 +113,7 @@ class Queries extends Component {
         <div id="heading">User Queries :</div>
         <hr className="blue"/>
         {queryList}
+        <div id="answers"></div>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-primary">Add Query</ModalHeader>
           <ModalBody>
