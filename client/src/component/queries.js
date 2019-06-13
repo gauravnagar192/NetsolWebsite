@@ -113,7 +113,9 @@ class Queries extends Component {
         <div id="heading">User Queries :</div>
         <hr className="blue"/>
         {queryList}
-        <div id="answers"></div>
+        <div id="answers">
+        <div id="Ahead">Query Answers</div>
+        </div>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-primary">Add Query</ModalHeader>
           <ModalBody>
