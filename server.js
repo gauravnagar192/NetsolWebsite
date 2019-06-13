@@ -18,7 +18,6 @@ const offer = mongoose.model('offer');
 const order = mongoose.model('order');
 const feedback = mongoose.model('feedback');
 const candidate = mongoose.model('candidate');
-const route = require('./route/router');
 const app = express();
 
 //const morgan = require('morgan');
@@ -59,18 +58,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(express.json());
 
-app.use('/',route);
 
-// remove this in development
-//Serve static assets if in production
-if (process.env.NODE_ENV === 'production') {
-  //Set static folder
-  app.use(express.static('client/build'));
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client' , 'build' , 'index.html'));
-  });
-}
 
 app.post('/upload',upload.single('image'),[
   check('name','Name is required').not().isEmpty().not().isIn(['undefined']),
