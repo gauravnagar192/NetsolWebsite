@@ -5,6 +5,30 @@ const issue = require('../modal/issue');
 const offer = require('../modal/offer');
 const order = require('../modal/order');
 
+const bodyParser = require('body-parser');
+const multer = require('multer');
+const crypto = require('crypto');
+const { check, validationResult } = require('express-validator/check');
+
+const storage = multer.diskStorage({
+
+// Note: You are responsible for creating the directory when providing destination as a function.
+// When passing a string, multer will make sure that the directory is created for
+   destination: function (req, file, callback) {
+     //Specify already self created folder path to save image
+     callback(null, __dirname + '/image')
+   },
+   filename: function (req, file, callback) {
+     console.log("fieldname : "+file.fieldname);
+     callback(null, file.fieldname + Date.now())
+   }
+});
+
+
+
+var upload = multer({ storage: storage })
+
+
 router.post('/upload',upload.single('image'),[
   check('name','Name is required').not().isEmpty().not().isIn(['undefined']),
   check('title','Title is required').not().isEmpty().not().isIn(['undefined']),
