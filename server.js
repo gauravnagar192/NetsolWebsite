@@ -11,7 +11,6 @@ const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
 const crypto = require('crypto');
-const morgan = require('morgan');
 const { check, validationResult } = require('express-validator/check');
 const port = process.env.PORT || 5000;
 const issue = mongoose.model('issue');
@@ -21,7 +20,9 @@ const feedback = mongoose.model('feedback');
 const candidate = mongoose.model('candidate');
 const app = express();
 
-app.use(morgan('dev'));
+//const morgan = require('morgan');
+//for console log current requests
+//app.use(morgan('dev'));
 
 const storage = multer.diskStorage({
 
@@ -32,7 +33,6 @@ const storage = multer.diskStorage({
      callback(null, __dirname + '/image')
    },
    filename: function (req, file, callback) {
-     console.log("fieldname : "+file.fieldname);
      callback(null, file.fieldname + Date.now())
    }
 });
@@ -45,7 +45,7 @@ var upload = multer({ storage: storage })
 mongoose.Promise = global.Promise;
 
 //connecting to mongodb
-mongoose.connect('mongodb://localhost:27017/wifi', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://gaurav:M6cE0ISmBYQCstfK@netsol-degpc.mongodb.net/wifi?retryWrites=true&w=majority', { useNewUrlParser: true })
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err))
 
@@ -112,7 +112,6 @@ app.post('/',[
   }
   issue.find({ query : req.body.query })
    .then((query) => {
-     console.log(query.length);
      if(query.length === 0){
         const Issue = {
           query: req.body.query

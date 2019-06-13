@@ -16,16 +16,26 @@
   color: #FFFFFF;
 }
 @media screen and (max-width: 426px) {
+  .err {
+    font-size: 3.5vh;
+    font-family: 'Poppins' , sans-serif;
+    color: #0097E6;
+    text-align: center;
+    line-height: 20vh;
+    background: #FFFFFF;
+    margin: 2vh;
+    padding: 5vh 0vw;
+  }
   #Ahead {
     background: #0097E6;
     padding: 10px;
     color: #FFFFFF;
     width: 80%;
-    margin: 10% auto 0 auto;
+    margin: 40% auto 0 auto;
     font-family: 'Varela Round' , sans-serif;
   }
   #answers {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -36,10 +46,9 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  .answers:first-child{
-    margin-top: 10%;
-  }
   .answers {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
     background-color: #fefefe;
     margin: 0 auto; /* 15% from the top and centered */
     padding: 10px;
@@ -270,6 +279,9 @@
     display: inline;
     margin: 0px 10px;
     color: #FFFFFF;
+  }
+  .Issue > a:hover{
+    text-decoration: none;
   }
   .view-ans {
     font-size: 2vh;
@@ -853,7 +865,7 @@
     font-family: 'Varela Round' , sans-serif;
   }
   #answers {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -864,10 +876,9 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  .answers:first-child{
-    margin-top: 10%;
-  }
   .answers {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
     background-color: #fefefe;
     margin: 0 auto; /* 15% from the top and centered */
     padding: 10px;
@@ -880,8 +891,8 @@
     height: auto;
     grid-column-start: 1;
     grid-column-end: 2;
-    }
-    .rw-item3 {
+  }
+  .rw-item3 {
     width: 100%;
 		height: auto;
     grid-column-start: 3;
@@ -1309,10 +1320,9 @@
     margin: 0px 10px;
     color: #FFFFFF;
   }
-  .ans-it:hover , .ans-it:focus {
+  .Issue > a:hover{
     text-decoration: none;
   }
-
   .view-ans {
     font-size: 1.2vw;
     color: #FF6D00;

@@ -35,20 +35,23 @@ class Queries extends Component {
   }
 
   onClick(e){
-    console.log(e.target.getAttribute('data-id'));
     var id = e.target.getAttribute('data-id');
 
     axios.get('/answers/'+id)
     .then(res => {
       var answers = res.data.answers;
-      var a = document.getElementById('answers');
-      for (var i = 0; i < answers.length; i++) {
-        var ans = document.createElement('div');
-        ans.classList.add('answers')
-        var answer = document.createTextNode(answers[i]);
-        ans.appendChild(answer);
-        a.appendChild(ans);
+      let a = document.getElementById('answers');
+      let ans = document.getElementsByClassName('answers')[0];
+      if(!a.contains(ans)){
+        for (var i = 0; i < answers.length; i++) {
+          let ans = document.createElement('div');
+          ans.classList.add('answers')
+          var answer = document.createTextNode(answers[i]);
+          ans.appendChild(answer);
+          a.appendChild(ans);
+        }
       }
+      a.style.display = "block";
     })
     .catch(err => {
       console.log("ANSWER NOT FOUND");
@@ -88,6 +91,12 @@ class Queries extends Component {
   }
 
   render(){
+    window.onload = () => {
+      let a = document.getElementById('answers');
+      a.onclick = () => {
+        a.style.display = "none";
+      }
+    }
     const { queries } = this.state;
     const queryList = queries.length ? (
       queries.map(Query => {
