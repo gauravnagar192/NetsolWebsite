@@ -45,7 +45,7 @@ var upload = multer({ storage: storage })
 mongoose.Promise = global.Promise;
 
 //connecting to mongodb
-mongoose.connect('mongodb+srv://gaurav:M6cE0ISmBYQCstfK@netsol-degpc.mongodb.net/wifi?retryWrites=true&w=majority', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://gaurav:mongodbgaurav@netsol-degpc.mongodb.net/wifi?retryWrites=true&w=majority', { useNewUrlParser: true })
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err))
 
