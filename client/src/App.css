@@ -58,7 +58,7 @@
   }
   .rw-item1 , .rw-item3 {
     width: 100%;
-		height: auto;
+		height: 15vh;
     text-align: center;
     border-radius: 0;
   }
@@ -90,7 +90,6 @@
     font-size: 2.5vh;
     letter-spacing: 2px;
     word-spacing: 4px;
-    background: rgba(0,151,230,0.5);
     border: 2px solid #0097E6;
     border-radius: 4px;
     width: 100%;
@@ -112,11 +111,12 @@
     word-spacing: 4px;
   }
   #AnsHead {
-    background: #ECF0F1;
     text-align: center;
     padding: 1vh;
-    color: #F44336;
-    border-bottom: 2px solid #0097E6;
+    color: #FFFFFF;
+    background: #E71C23;
+    font-family: 'Varela Round' , sans-serif;
+    font-weight: lighter;
     font-size: 2.5vh;
   }
   #exdt {
@@ -469,23 +469,31 @@
     display: block;
     font-size: 2.5vh;
   }
+  #f-name:focus , #f-email:focus , #f-msg:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+  }
   #f-name , #f-email , #f-msg {
     width: 100%;
     display: block;
-    border: 1px solid #0097E6;
+    border: none;
+    font-family: 'Poppins' , sans-serif;
+    border-bottom: 2px solid #0097E6;
     margin-bottom: 1vw;
-    background: rgba(0,151,230,.2);
+    background: #EAF0F1;
     color: #0097E6;
+    font-weight: lighter;
   }
   #f-msg {
     resize: none;
     height: 14vh;
   }
   #f-submit {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     background: #FF6D00;
@@ -520,8 +528,8 @@
     margin-top: 1vh;
   }
   #ct-sl {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     text-align: center;
     padding: 5px 0px;
     background: #FF6D00;
@@ -532,18 +540,18 @@
     font-weight: bolder;
   }
   #contact-us {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: block;
     color: #FFFFFF;
   }
   #fdbk {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 0px 10px 10px 10px;
     display: block;
     background: #FFFFFF;
@@ -888,13 +896,13 @@
   }
   .rw-item1 {
     width: 100%;
-    height: auto;
+    height: 10vw;
     grid-column-start: 1;
     grid-column-end: 2;
   }
   .rw-item3 {
     width: 100%;
-		height: auto;
+		height: 10vw;
     grid-column-start: 3;
     grid-column-end: 4;
   }
@@ -1061,7 +1069,6 @@
     font-size: 2vw;
     letter-spacing: 2px;
     word-spacing: 4px;
-    background: rgba(0,151,230,0.5);
     border: 2px solid #0097E6;
     border-radius: 4px;
     width: 100%;
@@ -1083,12 +1090,13 @@
     word-spacing: 4px;
   }
   #AnsHead {
-    background: #ECF0F1;
     text-align: center;
     padding: 1vh;
-    color: #F44336;
-    border-bottom: 2px solid #0097E6;
+    color: #FFFFFF;
+    background: #E71C23;
+    font-family: 'Varela Round', sans-serif;
     font-size: 2vw;
+    font-weight: lighter;
   }
   #close {
     text-align: right;
@@ -1546,7 +1554,6 @@
     display: block;
     border: 1px solid #0097E6;
     margin-bottom: 1vw;
-    background: rgba(0,151,230,.2);
     color: #0097E6;
   }
   #f-msg {

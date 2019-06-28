@@ -63,7 +63,7 @@ class Answer extends Component {
     <div id="AnsHead">User Question</div>
     <div className="Container">
     <div id="ques">Q. {this.state.query}</div>
-    <div id="date">Posted on {this.state.Date}</div>
+    <div id="date">Posted on {this.state.Date.slice(0,10)}</div>
     <form onSubmit={this.onSubmit}>
     <textarea name="answer" id="ans" onChange={this.onChange}></textarea>
     <button type="submit" id="ans-btn">Answer</button>
