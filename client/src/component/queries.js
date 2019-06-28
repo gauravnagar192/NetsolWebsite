@@ -23,7 +23,6 @@ class Queries extends Component {
     axios.get('/issue')
       .then(res => {
         const queries = res.data;
-        console.log(res.data);
         this.setState({ queries : queries });
       })
   }
@@ -52,6 +51,9 @@ class Queries extends Component {
         }
       }
       a.style.display = "block";
+      a.onclick = () => {
+        a.style.display = "none";
+      }
     })
     .catch(err => {
       console.log("ANSWER NOT FOUND");
@@ -91,12 +93,6 @@ class Queries extends Component {
   }
 
   render(){
-    window.onload = () => {
-      let a = document.getElementById('answers');
-      a.onclick = () => {
-        a.style.display = "none";
-      }
-    }
     const { queries } = this.state;
     const queryList = queries.length ? (
       queries.map(Query => {
