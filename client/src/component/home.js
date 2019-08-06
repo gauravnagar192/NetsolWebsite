@@ -251,9 +251,9 @@ class Home extends Component {
         <img src={broadband} id="broadband"/>
        </div>
        </div>
-      <center style={sty}>check netsol availability in your city</center>
+      <center style={sty}>NETSOL AVAILABILITY</center>
        <div className="check">
-       <input type="text" id="check-text" placeholder="Your city name" className="check-text"/>
+       <input type="text" id="check-text" placeholder="City" className="check-text"/>
        <input type="button" id="check-btn" value="Check" className="blue check-btn"/>
        </div>
       <div id="reply"></div>
@@ -262,12 +262,11 @@ class Home extends Component {
         <div className="item1">Welcome to our website. Netsol is the one of the most reliable broadband
         connection network in India. We respect our user’s expectations and work
         hard for fulfilling their expectations from netsol broadband. Anytime if you
-        having any issue feel free to contact here or call us at 01789456123. We re-
-        -solve your issues as soon as possible from us. Don’t forget to give us your
+        having any issue feel free to contact here or call us at 01789456123. We resolve 
+        your issues as soon as possible from us. Don’t forget to give us your
         valuable feedback here. We are waiting for it so We can make our service
         better for you.</div>
         <div className="item2">
-         <img src={antenna} alt="Antenna" id="antenna"/>
         </div>
        </div>
        <div id="icon-grid">

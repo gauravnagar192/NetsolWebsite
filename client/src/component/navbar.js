@@ -5,9 +5,9 @@ class Navbar extends Component{
   render(){
     return (
       <div id="Nav">
-        <div className="Toggle blue">
-          <div>Netsol Broadband</div>
+        <div className="Toggle">
           <i className="fa fa-bars menu" aria-hidden="true"></i>
+          <div>Netsol</div>
         </div>
         <ul id="Navbar">
           <li className="Nav-item">
