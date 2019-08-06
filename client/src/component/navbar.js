@@ -4,8 +4,9 @@ import { Link , withRouter} from "react-router-dom";
 class Navbar extends Component{
   render(){
     return (
-      <div id="Nav" className="blue">
+      <div id="Nav">
         <div className="Toggle blue">
+          <div>Netsol Broadband</div>
           <i className="fa fa-bars menu" aria-hidden="true"></i>
         </div>
         <ul id="Navbar">
@@ -19,7 +20,7 @@ class Navbar extends Component{
             <Link to="/contact" className="Nav-link">Contact</Link>
           </li>
           <li className="Nav-item">
-            <Link to="/plans" className="Nav-link">Our Plans</Link>
+            <Link to="/plans" className="Nav-link">Plans</Link>
           </li>
           <li className="Nav-item">
             <Link to="/queries" className="Nav-link">Queries</Link>

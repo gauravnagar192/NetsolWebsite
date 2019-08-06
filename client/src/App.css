@@ -699,26 +699,6 @@
   #antenna {
     display: none;
   }
-  .home {
-  }
-  .heading1 {
-    font-family: 'Poppins' , sans-serif;
-    padding: 20px 0px 0px 7px;
-    color: #FFFFFF;
-    display: inline-block;
-    font-size: 5vh;
-  }
-  .Shead1{
-    font-family: 'Poppins' , sans-serif;
-    font-size: 10px;
-    font-weight: lighter;
-    padding: 0px 0px 5px 7px;
-    color: #FFFFFF;
-  }
-  .button {
-    display: flex;
-    justify-content: center;
-  }
   :local(.btn) {
     font-family: 'Poppins' , sans-serif;
     margin: 0px 8px 10px 8px;
@@ -747,21 +727,21 @@
   }
   #Navbar {
     margin: 0;
-    padding: 0;
+    padding: 0;    
   }
   .Nav-link {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #0097E6;
+    font-size: 5vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
   }
   #Nav {
-    background: #F44336;
-  }
-  .Nav-item:hover {
-    background: #FF6D00;
+    background: #FFFFFF;
   }
   .Nav-link:hover {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #E42C64;
   }
   .Active {
     display: block;
@@ -861,6 +841,50 @@
   background-color: #FF6D33;
   box-shadow: 0 5px #e67e22;
   transform: translateY(4px);
+  }
+  .home {
+    padding: 4vw;
+  }
+  .Toggle > div {
+    text-align: right;
+    display: inline;
+  }
+  #com {
+    font-size: 8vw;
+    color: #FFFFFF;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    display: none;
+  }
+  #intro {
+    font-size: 4vw;
+    color: #FFFFFF;
+    font-family: 'Poppins' , sans-serif;
+    line-height: 8vw;
+  }
+  #booknow {
+    background-color: #FFFFFF;
+    padding: 2vw;
+    font-family: 'Poppins' , sans-serif;
+    margin: 6vw 0vh;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #0097E6;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+  }
+  #booknow:hover {
+    text-decoration: none;
+  }
+  #booknow:active {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+  }
+  #broadband {
+    width: 40vw;
+    height: 25vw;
+    display: none;
   }
 }
 @media screen and (min-width: 426px) {
@@ -1779,23 +1803,6 @@
     margin: 0px;
     padding: 0px;
   }
-  .home {
-    margin-top: -20px;
-    clear: both;
-  }
-  .heading1 {
-    font-family: 'Poppins' , sans-serif;
-    padding: 50px 0px 0px 75px;
-    color: #FFFFFF;
-    font-size: 4vw;
-  }
-  .Shead1{
-    font-family: 'Poppins' , sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 0px 0px 50px 75px;
-    color: #FFFFFF;
-  }
   :local(.btn) {
     font-family: 'Poppins' , sans-serif;
     margin: -100px 6vw 0px 0px;
@@ -1813,26 +1820,82 @@
     display: none;
   }
   #Nav {
-    padding-left: 20px;
     text-align: left;
   }
   .Nav-item {
     display: inline-block;
-    padding: 10px 15px;
-  }
-  .Nav-item:hover {
-    background: #FF6D00;
+    padding: 2vw;
   }
   .Nav-link:hover {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #E42C64;
   }
   .Nav-link {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #0097E6;
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
   }
   #Navbar {
     margin-bottom: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    padding-left: 2vw;
+  }
+  .home {
+    display: grid;
+    padding: 4vw;
+    width: 100%;
+  }
+  #home1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #home2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 0;
+  }
+  #home3 {    
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #com {
+    font-size: 3vw;
+    color: #FFFFFF;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #intro {
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    font-family: 'Poppins' , sans-serif;
+    margin: 2vw 0vh;
+    line-height: 3vw;
+  }
+  #booknow {
+    background-color: #FFFFFF;
+    padding: 2vh 2vw;
+    font-family: 'Poppins' , sans-serif;
+    margin: 6vh 0vh;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #0097E6;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+  }
+  #booknow:hover {
+    text-decoration: none;
+  }
+  #booknow:active {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+  }
+  #broadband {
+    width: 40vw;
+    height: 25vw;
   }
 }
 @media screen and (max-width: 426px) {

@@ -8,6 +8,8 @@ import game from '../img/game.png';
 import social from '../img/social.png';
 import song from '../img/song.png';
 import video from '../img/video.png';
+import broadband from '../img/broadband.png';
+import employee from '../img/employee.png';
 import IconCard from './IconCard';
 import ExOffer from './exoffer';
 import { Modal, ModalHeader, ModalBody, Label, Form, FormGroup } from 'reactstrap';
@@ -236,13 +238,19 @@ class Home extends Component {
     return(
       <div id="Home" className="Padding">
       <div className="home blue">
-      <h1 className="heading1">Subscribe to Netsol <br/>
-      Broadband for Faster Speed</h1>
-      <h6 className="Shead1">T&C Apply</h6>
-      <div className="button">
-      <a className={styles.btn} href="/"> Book now </a>
-      </div>
-      </div>
+       <div id="home1">
+        <div id="com">Netsol Broandband</div>
+        <div id="intro">
+        Fastest Internet speed is here for your browsing , chatting , live streaming ,
+        gaming and many more  things . Dont wait . book it as soon as possible
+        </div>
+        <a id="booknow" href="/plans">Book now</a>
+       </div>
+       <div id="home2"></div>
+       <div id="home3">
+        <img src={broadband} id="broadband"/>
+       </div>
+       </div>
       <center style={sty}>check netsol availability in your city</center>
        <div className="check">
        <input type="text" id="check-text" placeholder="Your city name" className="check-text"/>
