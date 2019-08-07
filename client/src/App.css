@@ -65,7 +65,7 @@
   #reply {
     text-align: center;
     font-size: 2vh;
-    color: #FF6D00;
+    color: #E42C64;
   }
   #answer {
     font-weight: bold;
@@ -988,7 +988,7 @@
   #reply {
     text-align: center;
     font-size: 2vw;
-    color: #FF6D00;
+    color: #E42C64;
   }
   .errorMsg {
     display: block;
@@ -1863,7 +1863,7 @@
     color: #0097E6;
     font-family: 'Varela Round', sans-serif;
     font-size: 3vw;
-    margin: 10vw 0vw 0vw 4vw;
+    margin: 4vw 0vw 0vw 4vw;
   }
   .check {
     display: flex;

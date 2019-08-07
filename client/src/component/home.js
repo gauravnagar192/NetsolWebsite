@@ -194,7 +194,7 @@ class Home extends Component {
       fontSize : '3vh',
       fontFamily : '"Poppins" , sans-serif',
       fontWeight : 'bold',
-      marginTop : '4vh'
+      marginTop : '4vw'
     };
     window.onload = () => {
       var modal = document.getElementById('modal');
@@ -206,23 +206,28 @@ class Home extends Component {
         var city = ['jaipur','hyderabad','jodhpur','delhi',
                    'chandigarh','mumbai','kota','agra'];
         var toggle = true;
-        for(var i=0;i<city.length;i++){
-          if(ctxt.value === city[i]){
-             let c = document.getElementById('reply');
-             let r = document.createElement('div');
-             let txt = document.createTextNode('Yes Netsol avaliable');
-             r.appendChild(txt);
-             c.appendChild(r);
-             toggle = false;
-             break;
+        let c = document.getElementById('reply');
+        c = String(c.innerText);
+        if(c.length === 0 || c === "Yes Netsol avaliable" || c === "Netsol is not available"){
+          for(var i=0;i<city.length;i++){
+            if(ctxt.value === city[i]){
+               let c = document.getElementById('reply');
+               c.innerText = " ";
+               let txt = document.createTextNode('Yes Netsol avaliable');
+               c.appendChild(txt);
+               toggle = false;
+               break;
+            }
           }
+        }
+        else {
+          toggle = false;
         }
         if(toggle){
           let c = document.getElementById('reply');
-          let r = document.createElement('div');
-          let txt = document.createTextNode('Netsol is not avaliable');
-          r.appendChild(txt);
-          c.appendChild(r);
+          c.innerText = " ";
+          let txt = document.createTextNode('Netsol is not available');
+          c.appendChild(txt);
         }
       }
       btn.onclick = () => {
