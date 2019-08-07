@@ -305,24 +305,24 @@ class Home extends Component {
        <div id="rw-grid">
        </div>
        <Modal isOpen={this.state.Modal1} toggle={this.toggle1} className={this.props.className}>
-         <ModalHeader toggle={this.toggle1} className="text-white rounded-0 bg-primary">
+         <ModalHeader toggle={this.toggle1} id="cd" className="text-white rounded-0">
          Candidate Details
          </ModalHeader>
          <ModalBody>
          <Form onSubmit={this.onSubmit} encType="multipart/form-data">
            <FormGroup>
            <div className="errors"></div>
-            <Label for="name" id="cname">Name</Label>
+            <Label for="name" id="cname">NAME :</Label>
             <input name="name" className="c-input" type="text" placeholder="your name" onChange={this.onChange} required/>
-            <Label for="image" className="blue" id="cimg">Upload Your Image
-            <input name="image" id="image" type="file" placeholder="your image" onChange={this.onChange} /></Label>
-            <Label for="title" id="ctitle">Job title</Label>
+            <Label for="title" id="ctitle">JOB TITLE :</Label>
             <input name="title" className="c-input" type="text" placeholder="your title" onChange={this.onChange} required/>
-            <Label for="experience" id="cexp">Experience</Label>
+            <Label for="experience" id="cexp">EXPERIENCE :</Label>
             <input name="experience" className="c-input" type="text" placeholder="your experience" onChange={this.onChange} required/>
-            <Label for="msg" id="cmsg">Any Message (Optional)</Label>
+            <Label for="msg" id="cmsg">MESSAGE :</Label>
             <textarea name="msg" className="c-input" placeholder="your message" onChange= {this.onChange}>
-            </textarea>
+            </textarea>            
+            <Label for="image" id="cimg">PROFILE PICTURE 
+            <input name="image" id="image" type="file" placeholder="your image" onChange={this.onChange} /></Label>
            </FormGroup>
            <button type="submit" id="cbtn">Submit</button>
           </Form>
@@ -336,6 +336,7 @@ class Home extends Component {
          DRO="Data Roll Over" Subs="Amazon Prime Subscription"/>
          <ExOffer RS="1999" LS="Unlimited Local & STD calls" IS="up to 100 Mbps" BD="Unlimited GB" BoD="1000 GB"
          DRO="Data Roll Over" Subs="Amazon Prime Subscription"/>
+         <a href="/plans" id="gp">Go to plans</a>
         </div>
        </div>
       </div>
