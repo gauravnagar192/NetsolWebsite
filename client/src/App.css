@@ -15,6 +15,9 @@
   text-decoration: none;
   color: #FFFFFF;
 }
+.bg-blue {
+  background-color: #0097E6 !important;
+}
 @media screen and (max-width: 425px) {
   .err {
     font-size: 3.5vh;
@@ -72,10 +75,10 @@
     font-family: 'Poppins' , sans-serif;
   }
   .Container {
-    padding: 0vw 2vh;
+    padding: 0vw 4vw;
   }
   #ans-btn {
-    background: #FF6D00;
+    background: #E42C64;
     text-align: center;
     padding: 2vh 0vh;
     font-size: 2.5vh;
@@ -97,7 +100,7 @@
     resize: none;
   }
   #date {
-    color: #F44336;
+    color: #E42C64;
     font-size: 2vh;
     margin: 4vh 0vw;
     letter-spacing: 2px;
@@ -114,7 +117,7 @@
     text-align: center;
     padding: 1vh;
     color: #FFFFFF;
-    background: #E71C23;
+    background: #E42C64;
     font-family: 'Varela Round' , sans-serif;
     font-weight: lighter;
     font-size: 2.5vh;
@@ -256,19 +259,12 @@
     border: none;
     padding: 1vw 1vh;
   }
-  #ask-label {
-    color: #0097E6;
-    display: block;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-    font-size: 4vh;
-  }
   #ask-text {
     display: block;
     width: 100%;
     resize: none;
     height: 14vh;
-    background: rgba(0,151,230,.5);
+    background: #FFFFFF;
     border: 2px solid #0097E6;
     color: #0097E6;
   }
@@ -289,9 +285,9 @@
     font-weight: bolder;
   }
   .ans-it {
-    border: 1px solid #FF6D00;
+    border: 1px solid #E42C64;
     border-radius: 4px;
-    background: #FF6D00;
+    background: #E42C64;
     font-family: 'Poppins' , sans-serif;
     padding: 1vh 2vh;
     font-size: 2vh;
@@ -304,14 +300,15 @@
   }
   .view-ans {
     font-size: 2vh;
-    color: #FF6D00;
+    color: #E42C64;
     font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
     padding: 8px;
     display: inline;
     margin: 0px 10px;
   }
   #query > #heading {
-    margin: 2vh;
+    margin: 4vw;
     color: #0097E6;
     font-size: 2.5vh;
     font-family: 'Poppins' , sans-serif;
@@ -320,10 +317,12 @@
     word-spacing: 5px;
   }
   #qbtn {
-    display: block;
-    margin: 2vh;
-    background: #FF6D00;
+    display: block;    
+    margin: 4vw;
+    border-radius: 5px;
+    background: #E42C64;
     letter-spacing: 2px;
+    font-family: 'Poppins' , sans-serif;
     word-spacing: 5px;
     color: #FFFFFF;
     padding: 1vh 2vh;
@@ -332,6 +331,8 @@
   #q {
     display: block;
     text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
     letter-spacing: 2px;
     word-spacing: 5px;
     color: #0097E6;
@@ -341,12 +342,21 @@
     background: #F6F8F8;
   }
   hr {
-    margin: 1vh 2vw;
+    margin: 1vh 4vw;
     height: 2px;
   }
+  #nbp {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 5vw;
+    padding: 1vw 0vw;    
+    margin: 4vw;
+    border-bottom: 2px solid #3498DB;
+    font-weight: bold;
+    color: #3498DB;
+  }
   #sl > div {
-    border: 2px solid #FFFFFF;
-    background: #FF6D00;
+    border-radius: 20px;
+    background:#E42C64;
     color: #FFFFFF;
     padding: 1vh 2vh;
     display: block;
@@ -361,8 +371,9 @@
   }
   #dt {
     color: #FFFFFF;
-    margin: 0vh 2vh 4vh 2vh;
-    padding: 4vh 2vh;
+    margin: 0vh 4vw 4vh 4vw;
+    padding: 4vh 2vw;
+    background: #3498DB;
   }
   #rs , #exrs {
     background: #E42C64;
@@ -371,7 +382,7 @@
     text-align: center;
     color: #FFFFFF;
     font-size: 5vh;
-    margin: 0vh 2vh;
+    margin: 0vh 4vw;
   }
   #gp {
     background: #0097E6;
@@ -395,28 +406,11 @@
   .modal-title {
     font-size: 5vw;
   }
-  .ExOfinfo {
-    display: none;
-  }
-  .Ofinfo {
-    margin: 2vh;
-    text-align: center;
-    color: #F44336;
-    font-weight: bold;
-  }
   #p {
     display: none;
   }
   #p6 , #p12 {
     display: inline;
-  }
-  .Ofbtn {
-    display: block;
-    margin: 2vh;
-    text-align: center;
-    border: 2px solid #F44336;
-    color: #F44336;
-    padding: 2.5vh;
   }
   #plans > p {
     text-align: center;
@@ -768,8 +762,7 @@
     font-size: 2vh;
     border: none;
     border-bottom: 2px solid #0097E6;
-    background: #ECF0F1;
-    padding: 10px;
+    padding: 10px 0px;
     color: #0097E6;
     display: block;
     width: 100%;
@@ -792,8 +785,7 @@
     font-size: 2vh;
     border: none;
     border-bottom: 2px solid #0097E6;
-    background: #ECF0F1;
-    padding: 10px;
+    padding: 10px 0px;
     color: #0097E6;
   }
   #Offer-sel {
@@ -1002,7 +994,7 @@
     text-align: center;
     line-height: 20vw;
     background: #FFFFFF;
-    margin: 2vw;
+    margin: 4vw;
     padding: 5vw 0vw;
   }
   #Booking {
@@ -1096,8 +1088,7 @@
     font-size: 1.5vw;
     border: none;
     border-bottom: 2px solid #0097E6;
-    background: #ECF0F1;
-    padding: 10px;
+    padding: 10px 0px;
     color: #0097E6;
   }
   #personal , #location {
@@ -1110,8 +1101,7 @@
     font-size: 1.5vw;
     border: none;
     border-bottom: 2px solid #0097E6;
-    background: #ECF0F1;
-    padding: 10px;
+    padding: 10px 0px;
     color: #0097E6;
   }
   #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
@@ -1128,10 +1118,10 @@
     font-family: 'Poppins' , sans-serif;
   }
   .Container {
-    padding: 0vw 2vw;
+    padding: 0vw 4vw;
   }
   #ans-btn {
-    background: #FF6D00;
+    background: #E42C64;
     text-align: center;
     padding: 2vh 0vh;
     font-size: 2vw;
@@ -1153,7 +1143,7 @@
     resize: none;
   }
   #date {
-    color: #F44336;
+    color: #E42C64;
     font-size: 1.5vw;
     margin: 4vw 0vw;
     letter-spacing: 2px;
@@ -1170,7 +1160,7 @@
     text-align: center;
     padding: 1vh;
     color: #FFFFFF;
-    background: #E71C23;
+    background: #E42C64;
     font-family: 'Varela Round', sans-serif;
     font-size: 2vw;
     font-weight: lighter;
@@ -1265,26 +1255,6 @@
   #modal-content {
     background: #FeF1F1;
   }
-  .Ofinfo {
-    font-weight: bold;
-    font-size: 1.5vw;
-    text-align: center;
-    color: #F44336;
-    padding: 2vh 0vh;
-  }
-  #Ofbtng , #Ofinfg{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: 2vh 8vw;
-    grid-gap: 2vw;
-  }
-  .Ofbtn {
-    border: 2px solid #F44336;
-    width: 100%;
-    text-align: center;
-    color: #F44336;
-    padding: 2vh 0vh;
-  }
   #cbtn {
     display: block;
     padding: 1.5vw 0vh;
@@ -1377,31 +1347,32 @@
   }
   #btn1 , #btn2 {
     text-align: center;
-    background: #FF6D00;
+    background: #E42C64;
     border: none;
+    border-radius: 2px;
     padding: 1vh 1vw;
   }
-  #ask-label {
-    color: #0097E6;
-    display: block;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-    font-size: 2vw;
+  #btn1:focus , #btn2:focus {
+    outline: none;
   }
   #ask-text {
     display: block;
     width: 100%;
     resize: none;
     height: 8vw;
-    background: rgba(0,151,230,.5);
-    border: 2px solid #0097E6;
+    border: 1px solid #0097E6;
     color: #0097E6;
+    border-radius: 2px;
+  }
+  #ask-text:focus {
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   }
   #ask-text::placeholder {
     color: #0097E6;
   }
   .Issue {
-    margin: 2vw;
+    margin: 2vw 4vw;
     padding: 2vw 3vw;
     font-family: sans-serif;
     background: #FFFFFF;
@@ -1414,9 +1385,9 @@
     font-weight: bolder;
   }
   .ans-it {
-    border: 1px solid #FF6D00;
+    border: 1px solid #E42C64;
     border-radius: 4px;
-    background: #FF6D00;
+    background: #E42C64;
     font-family: 'Poppins' , sans-serif;
     padding: 1vh 4vh;
     font-size: 1.2vw;
@@ -1429,7 +1400,7 @@
   }
   .view-ans {
     font-size: 1.2vw;
-    color: #FF6D00;
+    color: #E42C64;
     font-family: 'Poppins' , sans-serif;
     padding: 8px;
     margin: 0px 10px;
@@ -1439,18 +1410,17 @@
     background: #F6F8F8;
   }
   hr {
-    margin: 1vh 2vw;
+    margin: 1vh 4vw;
     height: 2px;
   }
   #query > #heading {
-    margin: 2vw;
+    margin: 0vw 4vw;
     color: #0097E6;
     font-size: 2vw;
   }
   #QGrid {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 2vw;
   }
   #q {
     grid-column-start: 1;
@@ -1460,27 +1430,29 @@
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
+    margin: 4vw;
   }
   #qbtn {
     grid-column-start: 3;
     grid-column-end: 4;
     border-radius: 5px;
-    background-color: #FF6D00;
+    background-color: #E42C64;
     height: 8vh;
     line-height: 8vh;
     text-align: center;
     color: #FFF;
     font-size: 2vw;
+    margin: 4vw;
   }
   #p6 , #p12 {
     display: none;
   }
   #Off {
     display: grid;
-    margin: 2vw 8vw;
+    margin: 2vw 4vw;
   }
   #rs {
-    background: #F44336;
+    background: #E42C64;
     grid-column-start: 1;
     grid-column-end: 2;
     height: 16vw;
@@ -1494,6 +1466,7 @@
     grid-column-end: 4;
     height: 16vw;
     color: #FFFFFF;
+    background: #3498DB;
   }
   #dt1 , #dt2 , #dt3 , #edt1 , #edt2 , #edt3 {
     display: grid;
@@ -1503,36 +1476,25 @@
     word-spacing: 4px;
     letter-spacing: 1px;
   }
+  #nbp {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 2vw;
+    padding: 1vw 0vw;
+    margin: 4vw;
+    border-bottom: 2px solid #3498DB;
+    font-weight: bold;
+    color: #3498DB;
+  }
   #sl {
     display: flex;
     justify-content: center;
   }
   #sl > div {
     text-align: center;
-    border: 2px solid #FFFFFF;
-    background: #FF6D00;
+    background: #E42C64;
     padding: 1vh 5vw;
     font-size: 1.2vw;
-  }
-  .Ofinfo {
-    font-weight: bold;
-    font-size: 1.5vw;
-    text-align: center;
-    color: #F44336;
-    padding: 2vh 0vh;
-  }
-  #Ofbtng , #Ofinfg{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: 2vh 8vw;
-    grid-gap: 2vw;
-  }
-  .Ofbtn {
-    border: 2px solid #F44336;
-    width: 100%;
-    text-align: center;
-    color: #F44336;
-    padding: 2vh 0vh;
+    border-radius: 20px;
   }
   #plans > p {
     text-align: center;
@@ -2006,7 +1968,8 @@
     font-family: 'Varela Round', sans-serif;
     font-size: 4vh;
     font-weight: bold;
-    margin: 1vh 0vh ;
+    color: #0097E6;
+    margin: 1vh 0vh;
   }
   .content {
     font-family: 'Poppins' , sans-serif;
@@ -2014,6 +1977,7 @@
     margin: 2vw 1vw;
     font-weight: bold;
     text-align: center;
+    color: #0097E6;
   }
   #fn , #fe , #fm {
     display: block;

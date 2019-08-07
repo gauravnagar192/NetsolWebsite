@@ -27,7 +27,7 @@ class Offer extends Component {
       <div id="Offer">
        <div id="Off">
         <div id="rs">Rs. {this.state.RS}</div>
-        <div id="dt" className="blue">
+        <div id="dt">
          <div id="dt1">
           <div>. {this.state.LS}</div>
           <div>. Internet  Speed {this.state.IS}</div>

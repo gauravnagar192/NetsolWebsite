@@ -6,27 +6,7 @@ class Plans extends Component {
   render(){
     return(
       <div id="plans">
-       <header className="blue">
-        <p>Netsol Broadband</p>
-        <p>We Provide The Speed That You Want</p>
-       </header>
-       <p>Here Are The Plans</p>
-       <div id="Ofbtng">
-        <div href="" className="Ofbtn">1 Month</div>
-        <div href="" className="Ofbtn">6 Months</div>
-        <div href="" className="Ofbtn">12 Months</div>
-       </div>
-       <div id="Ofinfg">
-        <div className="Ofinfo">
-        <span id="p">None</span>
-        </div>
-        <div className="Ofinfo">
-        <span id="p6">6Months Plan : </span>
-        15% Off</div>
-        <div className="Ofinfo">
-        <span id="p12">12Months Plan : </span>
-        20% Off</div>
-       </div>
+       <div id="nbp">Netsol Broadband Plans</div>
        <Offer RS="799" LS="Unlimited Local & STD calls" IS="up to 40 Mbps" BD="105 GB"
        BoD="500 GB" DRO=" " Subs=" "/>
        <Offer RS="999" LS="Unlimited Local & STD calls" IS="up to 100 Mbps" BD="263 GB"

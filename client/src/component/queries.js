@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import { Modal, ModalHeader, ModalBody, Form, FormGroup, Label } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, Form, FormGroup } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Link , withRouter} from "react-router-dom";
@@ -122,17 +122,16 @@ class Queries extends Component {
         <div id="Ahead">Query Answers</div>
         </div>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-primary">Add Query</ModalHeader>
+          <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-blue">Add Query</ModalHeader>
           <ModalBody>
           <Form onSubmit= {this.onSubmit}>
             <FormGroup>
-              <Label for="ques" id="ask-label">Query</Label>
               <textarea name="query" id="ask-text" placeholder="Type your query here" onChange= {this.onChange} required>
               </textarea>
             </FormGroup>
             <div id="button-grp">
              <button type="submit" className="text-white orange" id="btn1">Ask</button>
-             <button type="submit" className="text-white orange" id="btn2">Clear</button>
+             <button type="reset" className="text-white orange" id="btn2">Clear</button>
             </div>
           </Form>
           </ModalBody>
