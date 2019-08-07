@@ -430,75 +430,31 @@
     color: #FFFFFF;
     padding: 2vh;
   }
-  #AbHead {
-    text-align: center;
-    color: #0097E6;
-    font-size: 20px;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-    margin: 20px 0px;
-  }
   #Info1 {
-    text-align: center;
-    padding: 10px 20px;
-    color: #FFFFFF;
+    padding: 4vw;
+    color: #0097E6;
     margin: 0px;
+    font-family: 'Poppins' , sans-serif;
   }
   .AbSub {
-    margin: 40px 0px 10px 0px;
     font-weight: bold;
     word-spacing: 2px;
     letter-spacing: .5px;
-    font-size: 20px;
+    font-size: 6vw;
+    margin-bottom: 2vw;
+  }
+  #mt {
+    font-size: 7vw;
+    font-family: 'Poppins' , sans-serif;
+    color: #0097E6;
+    font-weight: bold;
+    margin: 10vw;
   }
   #Info1 > p {
     word-spacing: 2px;
     letter-spacing: .5px;
-  }
-  #Info2 {
-    text-align: center;
-    color: #0097E6;
-    border: 2px solid #0097E6;
-    padding: 4px 0px;
-    font-weight: bold;
-  }
-  #card > #l , #card > #R {
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #F44336;
-    color: #F44336;
-    padding: 20px;
-    width: 250px;
-  }
-  .SubHead2 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  #l > p , #R  > p {
-    margin-bottom: 0px;
-    text-align: center;
-  }
-  #Info4 {
-    text-align: center;
-    font-weight: bolder;
-    font-family: 'Poppins' , sans-serif;
-    color: #F44336;
-  }
-  #Info5 {
-    margin: 10vh auto;
-    text-align: center;
-    font-weight: bolder;
-    color: #0097E6;
-  }
-  #Info6 {
-    background: #F44336;
-    font-weight: bold;
-    padding: 20px;
-    color: #FFFFFF;
-  }
-  #Info6 > h5 {
-    color: #FF6D00;
+    font-size: 4vw;
+    line-height: 8vw;
   }
   #fn , #fe , #fm {
     display: block;
@@ -1551,75 +1507,19 @@
     font-size: 5vw;
     font-weight: bolder;
   }
-  #Info6 {
-    background: #F44336;
-    color: #FFFFFF;
-    padding: 4vh 2vw;
-    margin-top: 5vw;
-    font-weight: bold;
-  }
-  #Info6 > h5 {
-    margin-bottom: 1vw;
-    color: #FF6D00;
-  }
-  #Info5 {
-    text-align: center;
-    color: #0097E6;
-    font-size: 4vh;
-    font-weight: bold;
-  }
-  #Info4 {
-    margin: 4vw 0vw;
-  }
-  #Info4 > p {
-    color: #F44336;
-    text-align: center;
-    font-size: 2.5vw;
-    font-weight: bold;
-    word-spacing: 5px;
-    letter-spacing: 1px;
-  }
-  .SubHead2 {
-    text-align: center;
-    font-weight: bold;
-  }
-  #l > p , #R > p {
-    text-align: center;
-    word-spacing: 4px;
-    margin-bottom: 1px;
-  }
-  #Info3 {
-    margin: 2vh 0vh;
-  }
-  #card {
-    color: #F44336;
-    padding:2vh 2vw;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10vw;
-  }
-  #card > #l {
-    border: 2px solid #F44336;
-    padding: 20px;
-  }
-  #card > #R {
-    border: 2px solid #F44336;
-    padding: 20px;
-  }
-  #Info2 {
-    text-align: center;
-    border: 2px solid #0097E6;
+  #mt {
+    font-size: 3vw;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-    font-size: 2vw;
     color: #0097E6;
-    padding: 2vh 0vh;
-    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 4vw;
   }
   #Info1 > p {
     font-family: 'Poppins' , sans-serif;
     margin: 10px 0px;
     word-spacing: 4px;
+    font-size: 2vw;
+    line-height: 4vw;
     letter-spacing: .5px;
   }
   #AbInfo {
@@ -1627,21 +1527,14 @@
     margin-top: 2vh;
   }
   #Info1 {
-    color: #FFFFFF;
-    padding: .1vw 6vw 6vw 6vw;
+    color: #0097E6;
+    padding: 0vw 4vw;
+    font-family: 'Poppins' , sans-serif;
   }
   .AbSub {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 4vw;
-  }
-  #AbHead {
-    text-align: center;
-    color: #0097E6;
-    font-family: 'Varela Round' , sans-serif;
     font-size: 3vw;
-    margin: 10px auto;
+    font-weight: bold;
+    margin-top: 4vw;
   }
   #fn , #fe , #fm {
     display: block;
@@ -1987,6 +1880,56 @@
   }
 }
 @media screen and (max-width: 426px) {
+
+  .TeamCard {
+    margin: 4vw;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+  .Cardhead {
+    display: block;
+    height: 20vw;
+    background: #3498DB;
+    padding: 15vw;
+  }
+  .Cardcontent {
+    border: 2px solid #3498DB;
+    padding: 2vw 4vw;
+    height: 70vw;
+  }
+  .Tprofile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20vw;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+  }
+  .member {
+    font-size: 5vw;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    color: #3498DB;
+    font-weight: bold;
+    margin: 2vw;
+  }
+  .AboutMember {
+    font-size: 4vw;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    color: #3498DB;
+    margin: 4vw 0vw;
+  }
+  .position {
+    display: block;
+    padding: 2vw 4vw;
+    text-align: center;
+    background: #3498DB;
+    color: #FFFFFF;
+    font-size: 5vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
   #icon-grid {
     margin: 14vw 8vw;
   }
@@ -2026,7 +1969,56 @@
 }
 
 @media screen and (min-width: 426px) {
-  #icon-grid {
+
+  .TeamCard {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+  .Cardhead {
+    display: block;
+    height: 10vw;
+    background: #3498DB;
+    padding: 5vw;
+  }
+  .Cardcontent {
+    border: 2px solid #3498DB;
+    padding: 2vw 1vw;
+    height: 35vw;
+  }
+  .Tprofile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 100%;
+  }
+  .member {
+    font-size: 2vw;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    color: #3498DB;
+    font-weight: bold;
+    margin: 2vw;
+  }
+  .AboutMember {
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    color: #3498DB;
+    margin: 2vw 0vw;
+  }
+  .position {
+    display: block;
+    padding: 1vw;
+    text-align: center;
+    background: #3498DB;
+    color: #FFFFFF;
+    font-size: 2vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #icon-grid , #team-grid{
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 10px 4vw;
@@ -2066,7 +2058,56 @@
 }
 
 @media screen and (min-width: 769px) {
-  #icon-grid {
+  
+  .TeamCard {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+  .Cardhead {
+    display: block;
+    height: 10vw;
+    background: #3498DB;
+    padding: 5vw;
+  }
+  .Cardcontent {
+    border: 2px solid #3498DB;
+    padding: 2vw 1vw;
+    height: 35vw;
+  }
+  .Tprofile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 100%;
+  }
+  .member {
+    font-size: 2vw;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    color: #3498DB;
+    font-weight: bold;
+    margin: 2vw;
+  }
+  .AboutMember {
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    color: #3498DB;
+    margin: 2vw 0vw;
+  }
+  .position {
+    display: block;
+    padding: 1vw;
+    text-align: center;
+    background: #3498DB;
+    color: #FFFFFF;
+    font-size: 2vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #icon-grid , #team-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 4vw;
