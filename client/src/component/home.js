@@ -1,7 +1,5 @@
 import React , { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../App.css';
-import antenna from '../img/antenna.png';
 import img from '../img/photo.png';
 import cloud from '../img/cloud.png';
 import game from '../img/game.png';
@@ -248,7 +246,7 @@ class Home extends Component {
        </div>
        <div id="home2"></div>
        <div id="home3">
-        <img src={broadband} id="broadband"/>
+        <img src={broadband} alt="Broadband" id="broadband"/>
        </div>
        </div>
       <center style={sty}>NETSOL AVAILABILITY</center>
@@ -285,14 +283,21 @@ class Home extends Component {
         <div>installation cost at your home</div>
         <div id="get-now">Get Now</div>
        </div>
-       <center id="quote">One of the most trusted broadband network</center>
-       <div id="cr" className="blue">
-        <h2 id="cr-h">
-         Career with Netsol
-        </h2>
-        <div>Netsol is finding right person for the right job . Send us your details right now and
-         hope to get interview call from us . we wish you a very good luck from our side</div>
-        <div onClick={this.toggle1} id="send-dt">Send Details</div>
+       <div id="cr" className="">
+         <div id="cr1">
+         <h2 id="cr-h">
+          Career with Netsol
+         </h2>
+         <div>
+          Netsol is finding right person for the right job . Send us your details right now and
+          hope to get interview call from us . we wish you a very good luck from our side
+         </div>
+         <div onClick={this.toggle1} id="send-dt">Send Details</div>
+        </div>
+        <div id="cr2"></div>
+        <div id="cr3">
+         <img src={employee} alt="Employee" id="employee"/>
+        </div>    
        </div>
        <div id="rw-h">
        Reviews from users
@@ -327,22 +332,6 @@ class Home extends Component {
         <div id="modal-content">
          <div id="close">&times;</div>
          <div id="modal-header">Exclusive Offer</div>
-         <div id="ExOfbtng">
-         <div href="" className="ExOfbtn">1 Month</div>
-         <div href="" className="ExOfbtn">6 Months</div>
-         <div href="" className="ExOfbtn">12 Months</div>
-         </div>
-         <div id="ExOfinfg">
-          <div className="ExOfinfo">
-           <span id="xp">None</span>
-          </div>
-          <div className="ExOfinfo">
-           <span id="xp6">6Months Plan : </span>15% Off
-          </div>
-          <div className="ExOfinfo">
-           <span id="xp12">12Months Plan : </span>20% Off
-          </div>
-         </div>
          <ExOffer RS="1199" LS="Unlimited Local & STD calls" IS="up to 100 Mbps" BD="525 GB" BoD="1000 GB"
          DRO="Data Roll Over" Subs="Amazon Prime Subscription"/>
          <ExOffer RS="1999" LS="Unlimited Local & STD calls" IS="up to 100 Mbps" BD="Unlimited GB" BoD="1000 GB"
