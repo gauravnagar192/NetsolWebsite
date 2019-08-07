@@ -46,7 +46,22 @@ class About extends Component {
       netsol . she perform lot of activity in netsol . she schedule meetings , appointments , maintain  files , send
       emails , answer calls and take care of guest in netsol" position="Secretary" />
       </div>
-      
+      <div id="Info2">
+       <div id="mo">
+        <div>Main Office</div>
+         <p>Gala No 6 & 7, Laxmi Plaza, Laxmi Industrial Estate,</p>
+         <p>Link Road, Andheri West,</p>
+         <p>Mumbai - 400053 (Map)</p>
+        </div>
+        <div id="e">
+         <div>Email</div>
+         <p>ennetsol@gmail.com</p>
+        </div>
+        <div id="c">
+         <div>Contact</div>
+         <p>+919315621432</p>      
+        </div>
+       </div>
       </div>
     );
   }

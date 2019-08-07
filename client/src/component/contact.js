@@ -65,12 +65,12 @@ class Contact extends Component {
          <div id="fdbk">
          <div id="fdbk-h">FEEDBACK</div>
          <form onSubmit={this.onSubmit}>
-          <label htmlFor="" id="fn">Name</label>
-          <input type="text" name='name' id="f-name" onChange={this.onChange} required/>
-          <label htmlFor="" id="fe">Email</label>
-          <input type="email" name='email' id="f-email" onChange={this.onChange} required/>
-          <label htmlFor="" id="fm">Message</label>
-          <textarea name='message' id="f-msg" onChange={this.onChange} required></textarea>
+          <label htmlFor="" id="fn">NAME :</label>
+          <input type="text" name='name' id="f-name" placeholder="your name" onChange={this.onChange} required/>
+          <label htmlFor="" id="fe">EMAIL :</label>
+          <input type="email" name='email' id="f-email" placeholder="your email" onChange={this.onChange} required/>
+          <label htmlFor="" id="fm">MESSAGE :</label>
+          <textarea name='message' id="f-msg" placeholder="your message" onChange={this.onChange} required></textarea>
           <input type="submit" id="f-submit" value="SEND"/>
          </form>
          </div>
