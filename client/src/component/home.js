@@ -139,7 +139,8 @@ class Home extends Component {
     }
 
     axios.post('/upload',formData,config)
-     .then((res) => {
+     .then((res) => {       
+      this.toggle1();
        // console.log(res.data.errors);
        // console.log(res.data.success);
        // if(res.data.noerr) {
@@ -173,7 +174,10 @@ class Home extends Component {
        //   }
        // }
      })
-     .catch(err => console.log('DETAILS NOT SENT'))
+     .catch(err => {
+      this.toggle1(); 
+      console.log('DETAILS NOT SENT')
+     })
   }
 
   toggle1() {

@@ -1,5 +1,4 @@
 import React , { Component } from 'react';
-import { Modal, ModalHeader, ModalBody, Form, FormGroup } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Link , withRouter} from "react-router-dom";
@@ -35,20 +34,32 @@ class Queries extends Component {
 
   onClick(e){
     var id = e.target.getAttribute('data-id');
+    console.log(id);    
 
     axios.get('/answers/'+id)
     .then(res => {
       var answers = res.data.answers;
-      let a = document.getElementById('answers');
+      //let a = document.getElementById('answers');
       let ans = document.getElementsByClassName('answers')[0];
+      let a = document.getElementsByClassName(id)[0];      
       if(!a.contains(ans)){
-        for (var i = 0; i < answers.length; i++) {
+        for (let i = 0; i < answers.length; i++) {
+          let a = document.getElementsByClassName(id);
           let ans = document.createElement('div');
           ans.classList.add('answers')
           var answer = document.createTextNode(answers[i]);
           ans.appendChild(answer);
-          a.appendChild(ans);
+          console.log(a);
+          a[i].appendChild(ans);
         }
+        
+        let a = document.getElementsByClassName(id);
+        for(let i = 0 ; i < a.length ; i++){
+          let a = document.getElementsByClassName(id);
+          a[i].classList.add('answer')
+          console.log(a);          
+        }
+        
       }
       a.style.display = "block";
       a.onclick = () => {
@@ -56,7 +67,7 @@ class Queries extends Component {
       }
     })
     .catch(err => {
-      console.log("ANSWER NOT FOUND");
+      console.log(err);
     })
   }
 
@@ -97,11 +108,12 @@ class Queries extends Component {
     const queryList = queries.length ? (
       queries.map(Query => {
         return (
-          <div className="Issue" key= {Query._id}>
-            <div className="question"> Q. {Query.query}</div>
-            <Link to={'/'+Query._id}><div className="ans-it">Answer It </div></Link>
-            <div data-id= {Query._id} onClick={this.onClick} className="view-ans">View Answer ({Query.answers.length})</div>
-          </div>
+            <div className="Issue" key= {Query._id}>
+             <div className="question"> Q. {Query.query}</div>
+             <Link to={'/'+Query._id}><div className="ans-it">Answer It </div></Link>
+             <div data-id= {Query._id} onClick={this.onClick} className="view-ans">View Answer ({Query.answers.length})</div>
+             <div className={Query._id}></div>
+            </div>
         )
       })
     ) : (
@@ -111,31 +123,10 @@ class Queries extends Component {
     )
     return (
       <div id="query">
-        <div id="QGrid">
-         <div id="q">Ask Your Query</div>
-         <div onClick={this.toggle} id="qbtn">Add Query</div>
-        </div>
+        <div onClick={this.toggle} id="qbtn">Add Query</div>
         <div id="heading">User Queries :</div>
         <hr className="blue"/>
-        {queryList}
-        <div id="answers">
-        <div id="Ahead">Query Answers</div>
-        </div>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle} className="text-white rounded-0 bg-blue">Add Query</ModalHeader>
-          <ModalBody>
-          <Form onSubmit= {this.onSubmit}>
-            <FormGroup>
-              <textarea name="query" id="ask-text" placeholder="Type your query here" onChange= {this.onChange} required>
-              </textarea>
-            </FormGroup>
-            <div id="button-grp">
-             <button type="submit" className="text-white orange" id="btn1">Ask</button>
-             <button type="reset" className="text-white orange" id="btn2">Clear</button>
-            </div>
-          </Form>
-          </ModalBody>
-        </Modal>
+        {queryList}        
       </div>
     )
   }

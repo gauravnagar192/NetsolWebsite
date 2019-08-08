@@ -39,6 +39,8 @@ class Contact extends Component {
       'message' : message
     })
      .then(res => {
+       var success =  document.getElementById('fdsuccess');
+       success.style.display = 'block';
        console.log(res.data);
      })
      .catch(err => {
@@ -65,6 +67,7 @@ class Contact extends Component {
          <div id="fdbk">
          <div id="fdbk-h">FEEDBACK</div>
          <form onSubmit={this.onSubmit}>
+          <div id="fdsuccess">Thank you for your feedback</div>
           <label htmlFor="" id="fn">NAME :</label>
           <input type="text" name='name' id="f-name" placeholder="your name" onChange={this.onChange} required/>
           <label htmlFor="" id="fe">EMAIL :</label>

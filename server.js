@@ -189,7 +189,9 @@ app.put('/answer', (req, res) => {
 
 app.get('/answers/:id', (req, res) => {
   issue.findOne({ "_id" : req.params.id })
-  .then(Issue => res.json(Issue))
+  .then(Issue => {
+    res.json(Issue)    
+  })
   .catch(err => console.log("ISSUE NOT FOUND"))
 })
 
