@@ -23,7 +23,6 @@ class Booking extends Component {
     axios.get("/booking/"+rupee)
      .then(res => {
        var offer = res.data[0];
-       console.log(offer);
        this.setState({
          RS : offer.RS,
          LS : offer.LS,
@@ -49,7 +48,6 @@ class Booking extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    console.log(this.state);
 
     var price   = this.state.RS;
     var name    = this.state.name;
@@ -66,6 +64,8 @@ class Booking extends Component {
       'address' : address
     })
      .then(res => {
+      var success =  document.getElementById('bksuccess');
+      success.style.display = 'block';
        console.log(res.data);
      })
      .catch(err => {
@@ -78,6 +78,7 @@ class Booking extends Component {
       <div id="Booking">
         <h2>Booking</h2>
           <form onSubmit={this.onSubmit}>
+           <div id="bksuccess">Booking Successfully Done</div>
            <div id="personal">
             <input type="text" placeholder="your name" id="name" name="name" onChange= {this.onChange} required/>
             <input type="tel" placeholder="your phone" id="phone" name="phone" onChange= {this.onChange} required/>

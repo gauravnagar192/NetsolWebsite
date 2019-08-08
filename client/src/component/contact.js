@@ -26,9 +26,6 @@ class Contact extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    console.log(this);
-
-
     var name    = this.state.name;
     var email   = this.state.email;
     var message    = this.state.message;
@@ -41,7 +38,6 @@ class Contact extends Component {
      .then(res => {
        var success =  document.getElementById('fdsuccess');
        success.style.display = 'block';
-       console.log(res.data);
      })
      .catch(err => {
        console.log('ERROR WHILE SENDING FEEDBACK');

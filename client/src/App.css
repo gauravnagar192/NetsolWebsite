@@ -225,21 +225,29 @@
   }
   #btn1 , #btn2 {
     text-align: center;
-    background: #FF6D00;
+    background: #E42C64;
     border: none;
     padding: 1vw 1vh;
+  }
+  #btn1:focus , #btn2:focus {
+    outline: #E42C64;
   }
   #ask-text {
     display: block;
     width: 100%;
     resize: none;
-    height: 14vh;
+    height: 40vw;
     background: #FFFFFF;
     border: 2px solid #0097E6;
     color: #0097E6;
+  }  
+  #ask-text:focus {
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   }
   #ask-text::placeholder {
     color: #0097E6;
+    opacity: 0.5;
   }
   .Issue {
     margin: 2vh;
@@ -249,7 +257,7 @@
   }
   .question {
     font-size: 2.5vh;
-    margin-bottom: 2vh;
+    margin-bottom: 8vw;
     color: #0097E6;
     font-family: 'Poppins' , sans-serif;
     font-weight: bolder;
@@ -259,23 +267,49 @@
     border-radius: 4px;
     background: #E42C64;
     font-family: 'Poppins' , sans-serif;
-    padding: 1vh 2vh;
-    font-size: 2vh;
+    padding: 1vw 8vw;
+    font-size: 4.5vw;
+    font-weight: bold;
     display: inline;
-    margin: 0px 10px;
     color: #FFFFFF;
   }
   .Issue > a:hover{
     text-decoration: none;
   }
+  .usans {
+    margin: 2vw 2vw;
+    font-size: 4vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  .user {
+    font-size: 7vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    padding: 5vw;
+    border-radius: 100%;
+  }
+  .answer {
+    margin: 4vw 0vw;
+  }
+  .answers {
+    padding: 8px;
+    margin: 0px 10px;
+    padding: 1vw;
+    color: #0097E6;
+    background: #F6F8F8;   
+    border-bottom: 1vw solid #FFFFFF;
+  }
   .view-ans {
-    font-size: 2vh;
+    font-size: 4.5vw;
     color: #E42C64;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
-    padding: 8px;
+    padding: 1vw 5vw;
     display: inline;
-    margin: 0px 10px;
   }
   #query > #heading {
     margin: 4vw;
@@ -283,8 +317,6 @@
     font-size: 2.5vh;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
-    letter-spacing: 2px;
-    word-spacing: 5px;
   }
   #qbtn {
     display: block;    
@@ -374,13 +406,6 @@
   #p6 , #p12 {
     display: inline;
   }
-  #plans > p {
-    text-align: center;
-    color : #F44336;
-    margin: 2vh;
-    font-weight: bold;
-    font-size: 3vh;
-  }
   header {
     text-align: center;
     color: #FFFFFF;
@@ -412,7 +437,7 @@
     font-size: 4vw;
     line-height: 8vw;
   }
-  #fdsuccess {
+  #fdsuccess , #bksuccess {
     background: rgba(38,174,96,.5);
     font-family: 'Poppins' , sans-serif;
     font-size: 3vw;
@@ -730,6 +755,7 @@
   #Booking > h2 {
     color: #0097E6;
     font-size: 5vh;
+    margin: 4vw 0vw;
   }
   #name , #phone , #city , #state {
     font-size: 2vh;
@@ -793,7 +819,7 @@
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
   }
-  #book ,#clear {
+  #book , #clear {
     display: block;
     background: #E42C64;
     outline: none;
@@ -807,15 +833,13 @@
     cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 8px #e67e22;
+    box-shadow: 0 8px #E42C64;
     border-radius: 5px;
     width: 100%;
   }
-  #book:hover , #clear:hover {background-color: #FF6D25}
-
   #book:active , #clear:active {
-  background-color: #FF6D33;
-  box-shadow: 0 5px #e67e22;
+  background-color: #E42C64;
+  box-shadow: 0 5px #E42C64; 
   transform: translateY(4px);
   }
   .home {
@@ -946,6 +970,7 @@
   #Booking > h2 {
     color: #0097E6;
     font-size: 3vw;
+    margin: 4vw 0vw;
   }
   #sbtn {
     display: grid;
@@ -964,20 +989,18 @@
     cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 8px #e67e22;
+    box-shadow: 0 8px #E42C64;
     border-radius: 5px;
   }
-  #book:hover , #clear:hover {background-color: #FF6D25}
-
   #book:active , #clear:active {
-  background-color: #FF6D33;
-  box-shadow: 0 5px #e67e22;
+  background-color: #E42C64;
+  box-shadow: 0 5px #E42C64;
   transform: translateY(4px);
   }
   #clear {
     grid-column-start: 3;
     grid-column-end: 4;
-    background: #FF6D00;
+    background: #E42C64;
     padding: 1vw;
     text-align: center;
     font-family: 'Poppins' , sans-serif;
@@ -988,7 +1011,7 @@
     cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 8px #e67e22;
+    box-shadow: 0 8px #E42C64;
     border-radius: 5px;
   }
   #Shead {
@@ -1313,6 +1336,7 @@
   }
   #ask-text::placeholder {
     color: #0097E6;
+    opacity: 0.5;
   }
   .Issue {
     margin: 2vw 4vw;
@@ -1321,8 +1345,8 @@
     background: #FFFFFF;
   }
   .question {
-    font-size: 1.5vw;
-    margin-bottom: 4vh;
+    font-size: 2vw;
+    margin-bottom: 4vw;
     color: #0097E6;
     font-family: 'Poppins' , sans-serif;
     font-weight: bolder;
@@ -1333,31 +1357,49 @@
     background: #E42C64;
     font-family: 'Poppins' , sans-serif;
     padding: 1vh 4vh;
-    font-size: 1.2vw;
+    font-size: 2vw;
+    font-weight: normal;
     display: inline;
     margin: 0px 10px;
     color: #FFFFFF;
   }
-  .Issue > a:hover{
-    text-decoration: none;
-  }
-  .answer {
-    margin: 1vw 0vw;
-  }
-  .answers {
-    padding: 8px;
-    margin: 2px 10px;
-    color: #0097E6;
-    background: #F6F8F8;
-    border-bottom: 0.1vw solid #FFFFFF;    
-  }
   .view-ans {
-    font-size: 1.2vw;
+    font-size: 2vw;
     color: #E42C64;
     font-family: 'Poppins' , sans-serif;
     padding: 8px;
     margin: 0px 10px;
     display: inline;
+  }
+  .Issue > a:hover{
+    text-decoration: none;
+  }
+  .usans {
+    margin: 1vw 0vw;
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  .user {
+    font-size: 4vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    padding: 2vw;
+    border-radius: 100%;
+  }
+  .answer {
+    margin: 2vw 0vw;
+  }
+  .answers {
+    padding: 8px;
+    margin: 0px 10px;
+    padding: 1vw;
+    color: #0097E6;
+    background: #F6F8F8;   
+    border-bottom: .4vw solid #FFFFFF;
   }
   #query {
     background: #F6F8F8;
@@ -1374,9 +1416,9 @@
     font-size: 2vw;
   }
   #qbtn {
-    border-radius: 5px;
+    border-radius: 1vw;
     background-color: #E42C64;
-    padding: 1vw;
+    padding: 1.5vw;
     text-align: center;
     color: #FFFFFF;
     font-size: 2vw;
@@ -1435,12 +1477,6 @@
     padding: 1vh 5vw;
     font-size: 1.2vw;
     border-radius: 20px;
-  }
-  #plans > p {
-    text-align: center;
-    color: #F44336;
-    font-weight: bold;
-    font-size: 3vw;
   }
   header {
     color: #FFFFFF;
@@ -1907,7 +1943,7 @@
     text-align: center;
     color: #0097E6;
   }
-  #fdsuccess {
+  #fdsuccess , #bksuccess {
     background: rgba(38,174,96,.5);
     font-family: 'Poppins' , sans-serif;
     font-size: 1vw;
@@ -2100,7 +2136,7 @@
     font-weight: bold;
     text-align: center;
   }
-  #fdsuccess {
+  #fdsuccess , #bksuccess{
     background: rgba(38,174,96,.5);
     font-family: 'Poppins' , sans-serif;
     font-size: 1.2vw;
