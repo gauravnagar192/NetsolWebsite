@@ -18,216 +18,6 @@
 .bg-blue {
   background-color: #0097E6 !important;
 }
-@media screen and (min-width: 426px) {
-  #Info2 {
-    margin: 8vw 0vw;
-  }
-  #mo , #e , #c {
-    display: block;
-    margin: 4vw;
-    font-family: 'Poppins' , sans-serif;
-    font-size: 2vw;
-  }
-  #mo > div , #e > div , #c > div {
-    color: #E42C64;
-    font-weight: bold;
-  }  
-  #mo > p , #e > p , #c > p {
-    display: block;
-    color: #0097E6;
-  }
-  .rw-item1 {
-    width: 100%;
-    height: 10vw;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .rw-item3 {
-    width: 100%;
-		height: 10vw;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-  #reply {
-    text-align: center;
-    font-size: 2vw;
-    color: #E42C64;
-  }
-  .errorMsg {
-    display: block;
-    color: rgb(231,76,60);
-    font-weight: bold;
-    font-family: 'Poppins' , sans-serif;
-    margin: 5px 0px;
-  }
-  .err {
-    font-size: 3.5vw;
-    font-family: 'Poppins' , sans-serif;
-    color: #0097E6;
-    text-align: center;
-    line-height: 20vw;
-    background: #FFFFFF;
-    margin: 4vw;
-    padding: 5vw 0vw;
-  }
-  #Booking {
-    margin: 4vw;
-  }
-  #Booking > h2 {
-    color: #0097E6;
-    font-size: 3vw;
-    margin: 4vw 0vw;
-  }
-  #sbtn {
-    display: grid;
-  }
-  #book {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background: #E42C64;
-    padding: 1vw;
-    text-align: center;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-    font-size: 2vw;
-    color: #FFFFFF;
-    margin: 2vw 0vw;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    box-shadow: 0 8px #E42C64;
-    border-radius: 5px;
-  }
-  #book:active , #clear:active {
-  background-color: #E42C64;
-  box-shadow: 0 5px #E42C64;
-  transform: translateY(4px);
-  }
-  #clear {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background: #E42C64;
-    padding: 1vw;
-    text-align: center;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-    font-size: 2vw;
-    color: #FFFFFF;
-    margin: 2vw 0vw;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    box-shadow: 0 8px #E42C64;
-    border-radius: 5px;
-  }
-  #Shead {
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-    font-size: 2vw;
-    text-align: center;
-    margin-bottom: 4vw;
-    word-spacing: 4px;
-    letter-spacing: 4px;
-  }
-  #price {
-    display: block;
-    font-size: 2vw;
-    text-align: center;
-    padding: 1vw 0vw;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
-  }
-  #Offer-sel {
-    width: 100%;
-    padding: 2vw;
-    background: rgba(0,151,230,0.7);
-    color: #FFFFFF;
-    margin: 2vw 0vw;
-    text-align: left;
-  }
-  #Sdt1 , #Sdt2 ,  #Sdt3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin: 1vw 0vw;
-    font-size: 1.5vw;
-    font-family: 'Poppins' , sans-serif;
-  }
-  #address {
-    resize: none;
-    margin: 2vw 0vw;
-    height: 10vw;
-    width: 100%;
-    font-size: 1.5vw;
-    border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
-    color: #0097E6;
-  }
-  #personal , #location {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 4vw;
-    margin-top: 2vw;
-  }
-  #name , #phone , #city , #state {
-    font-size: 1.5vw;
-    border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
-    color: #0097E6;
-  }
-  #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
-    border-bottom: 2px solid rgba(0,151,230,0.5);
-    outline: none;
-  }
-  #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
-  #address::placeholder {
-    font-size: 1.5vw;
-    color: rgba(0,151,230,0.5);
-  }
-  header {
-    color: #FFFFFF;
-    padding: 3vw;
-    text-align: center;
-    margin-bottom: 4vh;
-    font-family: 'Poppins' , sans-serif;
-    font-size: 5vw;
-    font-weight: bolder;
-  }
-  #mt {
-    font-size: 3vw;
-    font-family: 'Poppins' , sans-serif;
-    color: #0097E6;
-    font-weight: bold;
-    margin: 4vw;
-  }
-  #Info1 > p {
-    font-family: 'Poppins' , sans-serif;
-    margin: 10px 0px;
-    word-spacing: 4px;
-    font-size: 2vw;
-    line-height: 4vw;
-    letter-spacing: .5px;
-  }
-  #AbInfo {
-    padding: 0vw;
-    margin-top: 2vh;
-  }
-  #Info1 {
-    color: #0097E6;
-    padding: 0vw 4vw;
-    font-family: 'Poppins' , sans-serif;
-  }
-  .AbSub {
-    font-size: 3vw;
-    font-weight: bold;
-    margin-top: 4vw;
-  }  
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
-}
 @media screen and (max-width: 425px) {  
    
   .modal-content {
@@ -417,7 +207,7 @@
     border-radius: 2px;
     display: block;
     color: #0097E6;
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     margin: 1vh .3vh 0vh .2vh;
@@ -978,7 +768,7 @@
     margin: 4vw 0vw;
   }
   #name , #phone , #city , #state {
-    font-size: 2vh;
+    font-size: 4vw;
     border: none;
     border-bottom: 2px solid #0097E6;
     padding: 10px 0px;
@@ -988,28 +778,31 @@
     margin: 2vh 0vh;
   }
   #name:focus , #phone:focus , #city:focus , #state:focus {
-    border-bottom: 2px solid rgba(0,151,230,0.5);
+    border-bottom: .5vw solid rgba(0,151,230,0.5);
     outline: none;
   }
   #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
   #address::placeholder {
-    font-size: 2vh;
+    font-size: 4vw;
     color: rgba(0,151,230,0.5);
   }
   #address {
     resize: none;
     margin: 2vh 0vw;
-    height: 20vh;
+    height: 40vw;
     width: 100%;
-    font-size: 2vh;
+    font-size: 4vw;
     border: none;
     border-bottom: 2px solid #0097E6;
     padding: 10px 0px;
     color: #0097E6;
   }
+  #address:focus {
+    outline: none;
+  }  
   #Offer-sel {
     width: 100%;
-    padding: 2vh;
+    padding: 4vw;
     background: rgba(0,151,230,0.7);
     color: #FFFFFF;
     margin: 2vh 0vw;
@@ -1219,6 +1012,219 @@
 }
 @media screen and (min-width: 426px ) and (max-width: 768px) {
   
+  #reply {
+    text-align: center;
+    font-size: 2vw;
+    color: #E42C64;
+  }
+  .errorMsg {
+    display: block;
+    color: rgb(231,76,60);
+    font-weight: bold;
+    font-family: 'Poppins' , sans-serif;
+    margin: 5px 0px;
+  }
+  .err {
+    font-size: 3.5vw;
+    font-family: 'Poppins' , sans-serif;
+    color: #0097E6;
+    text-align: center;
+    line-height: 20vw;
+    background: #FFFFFF;
+    margin: 4vw;
+    padding: 5vw 0vw;
+  }
+  header {
+    color: #FFFFFF;
+    padding: 3vw;
+    text-align: center;
+    margin-bottom: 4vh;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 5vw;
+    font-weight: bolder;
+  }
+  #mt {
+    font-size: 3vw;
+    font-family: 'Poppins' , sans-serif;
+    color: #0097E6;
+    font-weight: bold;
+    margin: 4vw;
+  }
+  #Info1 > p {
+    font-family: 'Poppins' , sans-serif;
+    margin: 10px 0px;
+    word-spacing: 4px;
+    font-size: 2vw;
+    line-height: 4vw;
+    letter-spacing: .5px;
+  }
+  #AbInfo {
+    padding: 0vw;
+    margin-top: 2vh;
+  }
+  #Info1 {
+    color: #0097E6;
+    padding: 0vw 4vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  .AbSub {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 4vw;
+  }  
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  #Info2 {
+    margin: 8vw 0vw;
+  }
+  #mo , #e , #c {
+    display: block;
+    margin: 4vw;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 2vw;
+  }
+  #mo > div , #e > div , #c > div {
+    color: #E42C64;
+    font-weight: bold;
+  }  
+  #mo > p , #e > p , #c > p {
+    display: block;
+    color: #0097E6;
+  }
+  .rw-item1 {
+    width: 100%;
+    height: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .rw-item3 {
+    width: 100%;
+		height: 10vw;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #Booking {
+    margin: 4vw;
+  }
+  #Booking > h2 {
+    color: #0097E6;
+    font-size: 3vw;
+    margin: 4vw 0vw;
+  }
+  #sbtn {
+    display: grid;
+    margin: 125px 0;
+  }
+  #book {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: #E42C64;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 8px #E42C64;
+    border-radius: 5px;
+  }
+  #book:active , #clear:active {
+  background-color: #E42C64;
+  box-shadow: 0 5px #E42C64;
+  transform: translateY(4px);
+  }
+  #clear {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: #E42C64;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 8px #E42C64;
+    border-radius: 5px;
+  }
+  #Shead {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 4vw;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+  }
+  #price {
+    display: block;
+    font-size: 3vw;
+    text-align: center;
+    padding: 1vw 0vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #Offer-sel {
+    width: 100%;
+    padding: 2vw;
+    background: rgba(0,151,230,0.7);
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    text-align: left;
+  }
+  #Sdt1 , #Sdt2 ,  #Sdt3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 1vw 0vw;
+    font-size: 3vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  #address {
+    resize: none;
+    margin: 2vw 0vw;
+    height: 10vw;
+    width: 100%;
+    font-size: 3vw;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    padding: 10px 0px;
+    color: #0097E6;
+  }
+  #personal , #location {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4vw;
+    margin-top: 2vw;
+  }
+  #name , #phone , #city , #state {
+    font-size: 3vw;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    padding: 10px 0px;
+    color: #0097E6;
+  }
+  #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
+    border-bottom: 2px solid rgba(0,151,230,0.5);
+    outline: none;
+  }
+  #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
+  #address::placeholder {
+    font-size: 3vw;
+    color: rgba(0,151,230,0.5);
+  }
+  .modal-content {
+    margin: auto;
+    width: 400px !important;
+  }
   #close {
     text-align: right;
     float: right;
@@ -1237,28 +1243,27 @@
     margin: 4vw .3vw 1vw .2vw;
     background: #E42C64;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     width: 100%;
     border: none;
     color: #FFFFFF;
     letter-spacing: 4px;
-    border-radius: 5px;
+    border-radius: 1vw;
   }  
   .close {
-  font-size: 3vw !important;
+  font-size: 5vw !important;
   color: #FFFFFF !important;
   opacity: 1 !important;
   }
   .c-input {
     display: block;
-    border-radius: 2px;
     width: 100%;
     margin: 0vw .3vw 3vw .2vw;
-    padding: 1vh 0vh;
+    padding: 2vw 0vh;
     border: none;
-    border-bottom: 2px solid rgba(0,151,230,.5);
+    border-bottom: .5vw solid rgba(0,151,230,.5);
     color: #0097E6;
     font-size: 2vw;
     resize: none;
@@ -1268,21 +1273,21 @@
   }
   .c-input:focus {
     border: none;
-    border-bottom: 2px solid rgba(0,151,230,.5);
+    border-bottom: .5vw solid rgba(0,151,230,.5);
     outline: none;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.25);
     margin-top: 1vh;
     padding: 1vw; 
   }
   #cimg {
-    padding: 1.2vw;
+    padding: 1.5vw;
     display: block;
     text-align: center;
     margin: 2vw 0vw 0vw .2vw;
     border-radius: 5px;
     color: #0097E6;
-    border: 2px solid #0097E6;
-    font-size: 1.2vw;
+    border: .2vw solid #0097E6;
+    font-size: 2vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
@@ -1294,7 +1299,7 @@
     border-radius: 2px;
     display: block;
     color: #0097E6;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     margin: 2vw 0vw 0vw .2vw;
@@ -2056,6 +2061,214 @@
 }
 @media screen and (min-width: 769px) {
   
+  #reply {
+    text-align: center;
+    font-size: 2vw;
+    color: #E42C64;
+  }
+  .errorMsg {
+    display: block;
+    color: rgb(231,76,60);
+    font-weight: bold;
+    font-family: 'Poppins' , sans-serif;
+    margin: 5px 0px;
+  }
+  .err {
+    font-size: 3.5vw;
+    font-family: 'Poppins' , sans-serif;
+    color: #0097E6;
+    text-align: center;
+    line-height: 20vw;
+    background: #FFFFFF;
+    margin: 4vw;
+    padding: 5vw 0vw;
+  }
+  header {
+    color: #FFFFFF;
+    padding: 3vw;
+    text-align: center;
+    margin-bottom: 4vh;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 5vw;
+    font-weight: bolder;
+  }
+  #mt {
+    font-size: 3vw;
+    font-family: 'Poppins' , sans-serif;
+    color: #0097E6;
+    font-weight: bold;
+    margin: 4vw;
+  }
+  #Info1 > p {
+    font-family: 'Poppins' , sans-serif;
+    margin: 10px 0px;
+    word-spacing: 4px;
+    font-size: 2vw;
+    line-height: 4vw;
+    letter-spacing: .5px;
+  }
+  #AbInfo {
+    padding: 0vw;
+    margin-top: 2vh;
+  }
+  #Info1 {
+    color: #0097E6;
+    padding: 0vw 4vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  .AbSub {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 4vw;
+  }  
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  #Info2 {
+    margin: 8vw 0vw;
+  }
+  #mo , #e , #c {
+    display: block;
+    margin: 4vw;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 2vw;
+  }
+  #mo > div , #e > div , #c > div {
+    color: #E42C64;
+    font-weight: bold;
+  }  
+  #mo > p , #e > p , #c > p {
+    display: block;
+    color: #0097E6;
+  }
+  .rw-item1 {
+    width: 100%;
+    height: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .rw-item3 {
+    width: 100%;
+		height: 10vw;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #Booking {
+    margin: 4vw;
+  }
+  #Booking > h2 {
+    color: #0097E6;
+    font-size: 3vw;
+    margin: 4vw 0vw;
+  }
+  #sbtn {
+    display: grid;
+  }
+  #book {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: #E42C64;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 8px #E42C64;
+    border-radius: 5px;
+  }
+  #book:active , #clear:active {
+  background-color: #E42C64;
+  box-shadow: 0 5px #E42C64;
+  transform: translateY(4px);
+  }
+  #clear {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: #E42C64;
+    padding: 1vw;
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 8px #E42C64;
+    border-radius: 5px;
+  }
+  #Shead {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 4vw;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+  }
+  #price {
+    display: block;
+    font-size: 2vw;
+    text-align: center;
+    padding: 1vw 0vw;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
+  }
+  #Offer-sel {
+    width: 100%;
+    padding: 2vw;
+    background: rgba(0,151,230,0.7);
+    color: #FFFFFF;
+    margin: 2vw 0vw;
+    text-align: left;
+  }
+  #Sdt1 , #Sdt2 ,  #Sdt3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 1vw 0vw;
+    font-size: 1.5vw;
+    font-family: 'Poppins' , sans-serif;
+  }
+  #address {
+    resize: none;
+    margin: 2vw 0vw;
+    height: 10vw;
+    width: 100%;
+    font-size: 1.5vw;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    padding: 10px 0px;
+    color: #0097E6;
+  }
+  #personal , #location {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4vw;
+    margin-top: 2vw;
+  }
+  #name , #phone , #city , #state {
+    font-size: 1.5vw;
+    border: none;
+    border-bottom: 2px solid #0097E6;
+    padding: 10px 0px;
+    color: #0097E6;
+  }
+  #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
+    border-bottom: 2px solid rgba(0,151,230,0.5);
+    outline: none;
+  }
+  #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
+  #address::placeholder {
+    font-size: 1.5vw;
+    color: rgba(0,151,230,0.5);
+  }
   #close {
     text-align: right;
     float: right;
