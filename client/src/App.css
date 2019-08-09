@@ -765,35 +765,26 @@
     font-size: 3vw;
     margin: 4vw 0vw 0vw 4vw;
   }
-  .check {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px;
-  }
-  .check-text {
-    color: #0097E6;
-    width: 30vw;
-    border: 2px solid #0097E6;
-    padding: 1.5vh;
-    font-size: 1.5vw;
-  }
-  .check-text::placeholder {
-    color: #0097E6;
-    opacity: 0.5;
-  }
-  .check-btn {
-    width: 15vw;
-    color: #FFFFFF;
-    text-align: center;
-    border: none;
-  }
   body {
     margin: 0px;
     padding: 0px;
   }
 }
-@media screen and (max-width: 425px) {
-  
+@media screen and (max-width: 425px) {  
+    
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: .4vw 0.4vw 4vw rgba(0,0,0,0.5);
+  }
+  #na {    
+    color : #0097E6;
+    font-size : 5vw;
+    font-family : 'Poppins' , sans-serif;
+    font-weight : bold;
+    margin-top : 8vw;
+  }
   .err {
     font-size: 3.5vh;
     font-family: 'Poppins' , sans-serif;
@@ -1424,11 +1415,11 @@
     margin-bottom: 5vw;
   }
   .check {
-    margin: 10px 0px;
+    margin: 8vw 4vw;
   }
   .check-text {
     display: block;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     color: #0097E6;
@@ -1441,7 +1432,7 @@
   }
   .check-btn {
     display: block;
-    width: 80%;
+    width: 100%;
     padding: 5px;
     margin-top: 10px;
     margin-left: auto;
@@ -1490,7 +1481,7 @@
     text-decoration: none;
   }
   .Toggle > i {
-    font-size: 5vw;
+    font-size: 8vw;
     font-weight: lighter;
     text-align: right;
     color: #0097E6;
@@ -1623,10 +1614,10 @@
   .Toggle > div {
     text-align: left;
     display: inline;
-    padding-left: 30vw; 
+    padding-left: 20vw; 
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 8vw;
     letter-spacing: 2px;
     color: #0097E6;
   }
@@ -1773,7 +1764,40 @@
   }
 }
 @media screen and (min-width: 426px ) and (max-width: 768px) {
-
+  
+  .check {
+    display: flex;
+    justify-content: center;
+    margin: 20px 4vw;
+  }
+  .check-text {
+    color: #0097E6;
+    width: 70%;
+    border: 2px solid #0097E6;
+    padding: 1.5vh;
+    font-size: 3vw;
+  }
+  .check-text::placeholder {
+    color: #0097E6;
+    opacity: 0.5;
+    font-size: 3vw;
+  }
+  .check-text:focus {
+    outline: #0097E6;
+  }
+  .check-btn {
+    width: 30%;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+  }
+  #na {    
+    color : #0097E6;
+    font-size : 3vw;
+    font-family : 'Poppins' , sans-serif;
+    font-weight : bold;
+    margin-top : 4vw;
+  }
   .home {
     display: grid;
     padding: 4vw;
@@ -1810,7 +1834,7 @@
     text-decoration: none;
   }
   #booknow:active {
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.4);
   }  
   #broadband {
     width: 35vw;
@@ -2049,6 +2073,40 @@
 }
 @media screen and (min-width: 769px) {
   
+  .check {
+    display: flex;
+    justify-content: center;
+    margin: 20px 4vw;
+  }
+  .check-text {
+    color: #0097E6;
+    width: 70%;
+    border: 2px solid #0097E6;
+    padding: 1.5vh;
+    font-size: 2vw;
+  }
+  .check-text::placeholder {
+    color: #0097E6;
+    opacity: 0.5;
+    font-size: 2vw;
+  }
+  .check-text:focus {
+    outline: #0097E6;
+  }
+  .check-btn {
+    width: 30%;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    font-size: 2vw;
+  }
+  #na {    
+    color : #0097E6;
+    font-size : 2.5vw;
+    font-family : 'Poppins' , sans-serif;
+    font-weight : bold;
+    margin : 4vw;
+  }
   .home {
     display: grid;
     padding: 4vw;
@@ -2085,7 +2143,7 @@
     text-decoration: none;
   }
   #booknow:active {
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.4);
   }  
   #broadband {
     width: 35vw;

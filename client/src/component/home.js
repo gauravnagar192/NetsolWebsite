@@ -193,13 +193,6 @@ class Home extends Component {
   }
 
   render(){
-    var sty = {
-      color : '#0097E6',
-      fontSize : '3vh',
-      fontFamily : '"Poppins" , sans-serif',
-      fontWeight : 'bold',
-      marginTop : '4vw'
-    };
     window.onload = () => {
       var modal = document.getElementById('modal');
       var btn = document.getElementById('get-now');
@@ -258,7 +251,7 @@ class Home extends Component {
         <img src={broadband} alt="Broadband" id="broadband"/>
        </div>
        </div>
-      <center style={sty}>NETSOL AVAILABILITY</center>
+      <center id="na">NETSOL AVAILABILITY</center>
        <div className="check">
        <input type="text" id="check-text" placeholder="City" className="check-text"/>
        <input type="button" id="check-btn" value="Check" className="blue check-btn"/>
