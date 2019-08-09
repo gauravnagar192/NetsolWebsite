@@ -40,7 +40,7 @@ class Home extends Component {
          var ur1 = document.createElement('div');
          ur1.classList.add('user1');
          var review1 = document.createTextNode(first[i].message);
-         var user1 = document.createTextNode(first[i].name);
+         var user1 = document.createTextNode("-"+first[i].name);
          ur1.appendChild(user1);
          ft.appendChild(review1);
          ft.appendChild(ur1);
@@ -56,7 +56,7 @@ class Home extends Component {
          var ur2 = document.createElement('div');
          ur2.classList.add('user2');
          var review2 = document.createTextNode(second[i].message);
-         var user2 = document.createTextNode(second[i].name);
+         var user2 = document.createTextNode("-"+second[i].name);
          ur2.appendChild(user2);
          sn.appendChild(review2);
          sn.appendChild(ur2);
