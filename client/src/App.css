@@ -662,18 +662,6 @@
     font-family: 'Poppins', sans-serif;
     font-size: 2vw;
   }
-  #get-now {
-    width: 20vw;
-    background: #E42C64;
-    text-decoration: none;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 2vh 2vw;
-    margin-top: 5vh;
-    display: block;
-    cursor: pointer; 
-    border-radius: 5px;
-  }
   #send-dt {
     width: 30vw;
     border: .2vw solid #E42C64;
@@ -716,54 +704,6 @@
     font-size: 3vw;
     font-weight: bold;
     letter-spacing: 2px;
-  }
-  #ex-of {
-    margin-top: 5vw;
-    padding: 4vw;
-    background-image: linear-gradient(#0097E6,#24C6DC);
-    color: #FFFFFF;
-    font-size: 2.5vw;
-    letter-spacing: 2px;
-    font-family: 'Poppins', sans-serif;
-  }
-  #ex-of-h {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 3vw;
-    font-weight: bold;
-  }
-  .grid-container {
-    display: grid;
-    margin: 0px 4vw;
-    padding: 0px;
-  }
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 0px 0px 20px 0px;
-  }
-  .item1 {
-    font-family: 'Poppins' , sans-serif;
-    font-size: 2vw;
-    font-weight: 800;
-    color: #0097E6;
-    line-height: 4vw;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: left;
-  }
-  .item2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-  #antenna {
-    padding: 0px 10px;
-    width: 20vw;
-    height: 25vw;
-  }
-  .heading2 {
-    color: #0097E6;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 3vw;
-    margin: 4vw 0vw 0vw 4vw;
   }
   body {
     margin: 0px;
@@ -1391,7 +1331,7 @@
     text-align: center;
     font-size: 5vw;
     color: #FFFFFF;
-    padding: 3vw;
+    padding: 4vw;
     margin: 10vw 1vw;
     margin-bottom: 0vw;
     display: block;
@@ -1404,15 +1344,18 @@
     padding: 4vw;
     background-image: linear-gradient(#0097E6,#24C6DC);
     color: #FFFFFF;
-    font-size: 4vw;
+    font-size: 6vw;
     letter-spacing: 1.5px;
     font-family: 'Poppins', sans-serif;
   }
   #ex-of-h {
     letter-spacing: 1px;
     font-family: 'Varela Round', sans-serif;
-    font-size: 5vw;
+    font-size: 7vw;
     margin-bottom: 5vw;
+  }
+  #ex-of > div {
+    width: 100%;
   }
   .check {
     margin: 8vw 4vw;
@@ -1447,25 +1390,16 @@
     color: #0097E6;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 7vw;
-    margin: 11vw 0vw 2vw 4vw;
-  }
-  .grid-container {
-    padding-left: 4vw;
-  }
-  .grid-container > div {
-    display: block;
+    font-size: 8vw;
+    margin: 0vw 4vw;
   }
   .item1 {
     color: #0097E6;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
-    font-size: 5vw;
-    line-height: 10vw;
-    padding-right: 4vw;
-  }
-  #antenna {
-    display: none;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0vw 4vw;
   }
   :local(.btn) {
     font-family: 'Poppins' , sans-serif;
@@ -1507,6 +1441,7 @@
   }
   #Nav {
     background: #FFFFFF;
+    z-index: 1;
   }
   .Nav-link:hover {
     text-decoration: none;
@@ -1727,10 +1662,10 @@
     font-weight: bold;
   }
   #icon-grid {
-    margin: 14vw 8vw;
+    margin: 14vw 4vw;
   }
   .IconCard {
-    box-shadow: 5px 5px 25px rgba(0,0,0,0.25);
+    box-shadow: 1vw 1vw 4vw rgba(0,0,0,0.5);
     background: #FFFFFF;
     border-radius: 5px;
     height: 50vh;
@@ -1765,10 +1700,53 @@
 }
 @media screen and (min-width: 426px ) and (max-width: 768px) {
   
+  #get-now {
+    width: 40% !important;
+    background: #E42C64;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2vw;
+    margin-top: 4vw;
+    display: block;
+    cursor: pointer; 
+    border-radius: 5px;
+  }
+  #ex-of {
+    padding: 4vw;
+    background-image: linear-gradient(#0097E6,#24C6DC);
+    color: #FFFFFF;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #ex-of-h {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  #ex-of > div {
+    width: 70%;
+  }
+  .heading2 {
+    color: #0097E6;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5vw;
+    margin: 0vw 4vw;
+  }
+  .item1 {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+    color: #0097E6;
+    line-height: 5vw;
+    text-align: left;
+    padding: 0vw 4vw;
+  }
   .check {
     display: flex;
     justify-content: center;
-    margin: 20px 4vw;
+    margin: 4vw;
   }
   .check-text {
     color: #0097E6;
@@ -1796,7 +1774,7 @@
     font-size : 3vw;
     font-family : 'Poppins' , sans-serif;
     font-weight : bold;
-    margin-top : 4vw;
+    margin : 4vw;
   }
   .home {
     display: grid;
@@ -1858,6 +1836,7 @@
   }
   #Nav {
     text-align: left;
+    z-index: 1;
   }
   .Nav-item {
     display: inline-block;
@@ -1928,14 +1907,20 @@
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
   }
-  #icon-grid , #team-grid{
+  #team-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 10px 4vw;
     grid-gap: 20px;
   }
+  #icon-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 8vw 4vw;
+    grid-gap: 4vw;
+  }
   .IconCard {
-    box-shadow: 5px 5px 25px rgba(0,0,0,0.25);
+    box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.25);
     background: #FFFFFF;
     border-radius: 5px;
     padding: 2vw 0vw;
@@ -2073,10 +2058,53 @@
 }
 @media screen and (min-width: 769px) {
   
+  #get-now {
+    width: 30% !important;
+    background: #E42C64;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1vw 2vw;
+    margin-top: 2vw;
+    display: block;
+    cursor: pointer; 
+    border-radius: 5px;
+  }
+  #ex-of {
+    padding: 4vw;
+    background-image: linear-gradient(#0097E6,#24C6DC);
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+  }
+  #ex-of-h {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  #ex-of > div {
+    width: 50%;
+  }
+  .heading2 {
+    color: #0097E6;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4vw;
+    margin: 0vw 4vw;
+  }
+  .item1 {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #0097E6;
+    line-height: 4vw;
+    text-align: left;
+    padding: 0vw 4vw;
+  }
   .check {
     display: flex;
     justify-content: center;
-    margin: 20px 4vw;
+    margin: 4vw;
   }
   .check-text {
     color: #0097E6;
@@ -2167,6 +2195,7 @@
   }
   #Nav {
     text-align: left;
+    z-index: 1;
   }
   .Nav-item {
     display: inline-block;
@@ -2237,14 +2266,20 @@
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
   }
-  #icon-grid , #team-grid {
+  #team-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 4vw;
     grid-gap: 4vw;
   }
+  #icon-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 6vw 4vw;
+    grid-gap: 4vw;
+  }
   .IconCard {
-    box-shadow: 5px 5px 25px rgba(0,0,0,0.25);
+    box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.25);
     background: #FFFFFF;
     border-radius: 5px;
     padding: 2vw;

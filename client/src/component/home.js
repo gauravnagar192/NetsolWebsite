@@ -258,7 +258,6 @@ class Home extends Component {
        </div>
       <div id="reply"></div>
       <div className="heading2">Most Reliable Network</div>
-       <div className="grid-container">
         <div className="item1">Welcome to our website. Netsol is the one of the most reliable broadband
         connection network in India. We respect our user’s expectations and work
         hard for fulfilling their expectations from netsol broadband. Anytime if you
@@ -266,9 +265,6 @@ class Home extends Component {
         your issues as soon as possible from us. Don’t forget to give us your
         valuable feedback here. We are waiting for it so We can make our service
         better for you.</div>
-        <div className="item2">
-        </div>
-       </div>
        <div id="icon-grid">
        <IconCard source={img} title="Images" content="Search & explore many images on the internet"/>
        <IconCard source={video} title="Videos" content="Play & watch many new video on the internet"/>
@@ -281,8 +277,7 @@ class Home extends Component {
         <h2 id="ex-of-h">
          Exclusive Offer on plan of 1199rs and 1999rs
         </h2>
-        <div>bring netsol broadband in 30% off</div>
-        <div>installation cost at your home</div>
+        <div>bring netsol broadband in 30% off installation cost at your home</div>
         <div id="get-now">Get Now</div>
        </div>
        <div id="cr" className="">
