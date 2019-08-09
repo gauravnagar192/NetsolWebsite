@@ -11,19 +11,19 @@ class Navbar extends Component{
         </div>
         <ul id="Navbar">
           <li className="Nav-item">
-            <Link to="/" className="Nav-link">Home</Link>
+            <Link to="/" className="Nav-link">HOME</Link>
           </li>
           <li className="Nav-item">
-            <Link to="/about" className="Nav-link">About</Link>
+            <Link to="/about" className="Nav-link">ABOUT</Link>
           </li>
           <li className="Nav-item">
-            <Link to="/contact" className="Nav-link">Contact</Link>
+            <Link to="/contact" className="Nav-link">CONTACT</Link>
           </li>
           <li className="Nav-item">
-            <Link to="/plans" className="Nav-link">Plans</Link>
+            <Link to="/plans" className="Nav-link">PLANS</Link>
           </li>
           <li className="Nav-item">
-            <Link to="/queries" className="Nav-link">Queries</Link>
+            <Link to="/queries" className="Nav-link">QUERY</Link>
           </li>
         </ul>
       </div>
