@@ -25,7 +25,6 @@ class Answer extends Component {
 
   onSubmit(e) {
     e.preventDefault();
-    console.log(this.state);
     var ans = this.state.answer;
     var id = this.state._id;
 
@@ -34,7 +33,10 @@ class Answer extends Component {
       'answer': ans
     })
     .then(res => {
-      console.log(res);
+      let path = '/queries';
+      console.log(this.props);
+      //Redirecting     
+      this.props.history.push(path);      
     })
     .catch(err => {
       console.log("ANSWER NOT SENT");
@@ -57,6 +59,7 @@ class Answer extends Component {
        console.log('ERROR');
      })
   }
+
   render(){
     return(
     <div id="answer">
