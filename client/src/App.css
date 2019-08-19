@@ -57,52 +57,60 @@
     font-family: 'Poppins' , sans-serif;
   }
   .Container {
-    padding: 0vw 4vw;
+    padding: 0vw 4vw 10vw 4vw;
   }
   #ans-btn {
     background: #E42C64;
     text-align: center;
-    padding: 2vh 0vh;
-    font-size: 2.5vh;
+    padding: 4vw 0vh;
+    font-size: 5vw;
     color: #FFFFFF;
-    margin: 4vh 0vw;
+    margin: 6vw 0vw;
     border: none;
-    border-radius: 4px;
+    border-radius: 1vw;
     width: 100%;
   }
   #ans {
     color: #0097E6;
-    font-size: 2.5vh;
+    font-size: 5vw;
     letter-spacing: 2px;
-    word-spacing: 4px;
-    border: 2px solid #0097E6;
-    border-radius: 4px;
+    border: none;
     width: 100%;
-    height: 50vh;
+    height: 80vw;
     resize: none;
+    font-weight: bold;
+    padding: 1vw;
+  }
+  #ans:focus {
+    outline : none;
+  }
+  #ans::placeholder {
+    color: #0097E6;
+    opacity: .5;
+  }
+  #answer {
+    background: #F6F8F8;
   }
   #date {
     color: #E42C64;
-    font-size: 2vh;
-    margin: 4vh 0vw;
+    font-size: 4vw;
+    margin: 6vw 0vw;
     letter-spacing: 2px;
-    word-spacing: 4px;
   }
   #ques {
     color: #0097E6;
-    font-size: 2.5vh;
-    margin: 4vh 0vw;
+    font-size: 5vw;
+    margin: 6vw 0vw;
     letter-spacing: 2px;
-    word-spacing: 4px;
   }
   #AnsHead {
     text-align: center;
-    padding: 1vh;
+    padding: 3vw;
     color: #FFFFFF;
     background: #E42C64;
     font-family: 'Varela Round' , sans-serif;
     font-weight: lighter;
-    font-size: 2.5vh;
+    font-size: 5vw;
   }
   #exdt {
     display: none;
@@ -1404,19 +1412,29 @@
     color: #0097E6;
     font-size: 2vw;
     letter-spacing: 2px;
-    word-spacing: 4px;
-    border: 2px solid #0097E6;
-    border-radius: 4px;
+    border: none;
+    border-radius: .5vw;
     width: 100%;
     height: 20vw;
     resize: none;
+    font-weight: bold;
+    padding: 1vw;
+  }
+  #ans:focus {
+    outline : none;
+  }
+  #ans::placeholder {
+    color: #0097E6;
+    opacity: .5;
+  }
+  #answer {
+    background: #F6F8F8;
   }
   #date {
     color: #E42C64;
     font-size: 2vw;
     margin: 4vw 0vw;
     letter-spacing: 2px;
-    word-spacing: 4px;
   }
   #ques {
     color: #0097E6;
@@ -1426,7 +1444,7 @@
   }
   #AnsHead {
     text-align: center;
-    padding: 1vh;
+    padding: 1vw;
     color: #FFFFFF;
     background: #E42C64;
     font-family: 'Varela Round', sans-serif;
@@ -2454,12 +2472,22 @@
     color: #0097E6;
     font-size: 2vw;
     letter-spacing: 2px;
-    word-spacing: 4px;
-    border: 2px solid #0097E6;
-    border-radius: 4px;
+    border: none;
+    border-radius: .5vw;
     width: 100%;
     height: 20vw;
     resize: none;
+    padding: 1vw;
+  }
+  #ans:focus {
+    outline : none;
+  }
+  #ans::placeholder {
+    color: #0097E6;
+    opacity: .5;
+  }
+  #answer {
+    background: #F6F8F8;
   }
   #date {
     color: #E42C64;
@@ -2477,7 +2505,7 @@
   }
   #AnsHead {
     text-align: center;
-    padding: 1vh;
+    padding: 1vw;
     color: #FFFFFF;
     background: #E42C64;
     font-family: 'Varela Round', sans-serif;

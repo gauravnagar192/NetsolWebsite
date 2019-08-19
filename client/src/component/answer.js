@@ -68,7 +68,7 @@ class Answer extends Component {
     <div id="ques">Q. {this.state.query}</div>
     <div id="date">Posted on {this.state.Date.slice(0,10)}</div>
     <form onSubmit={this.onSubmit}>
-    <textarea name="answer" id="ans" onChange={this.onChange}></textarea>
+    <textarea name="answer" placeholder="write your answer" id="ans" onChange={this.onChange}></textarea>
     <button type="submit" id="ans-btn">Answer</button>
     </form>
     </div>
