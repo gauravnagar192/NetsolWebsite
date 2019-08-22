@@ -472,29 +472,27 @@
     margin-bottom: 0vw;
   }
   #f-name:focus , #f-email:focus , #f-msg:focus {
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #0097E6;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    padding: 2vw;
-    margin: 2vw 0vw;
+    outline: none;;
+    box-shadow: 0px 0px .5vw rgba(0,0,0,0.5);
   }
   #f-name , #f-email , #f-msg {
     width: 100%;
     display: block;
     border: none;
     font-family: 'Poppins' , sans-serif;
-    border-bottom: 2px solid rgba(0,151,230,0.5);
+    border-bottom: .4vw solid #0097E6;
     margin-bottom: 5vw;
     color: #0097E6;
     font-weight: lighter;
+    padding: .5vw;
+    margin-top: 2vw;
   }
   #f-name::placeholder , #f-email::placeholder , #f-msg::placeholder {
     color: rgba(0,151,230,.5);
   } 
   #f-msg {
     resize: none;
-    height: 14vh;
+    height: 40vw;
   }
   #f-submit {
     border-top-left-radius: 5px;
@@ -538,13 +536,13 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     text-align: center;
-    padding: 5px 0px;
+    padding: 2vw 0px;
     background: #E42C64;
     color: #FFFFFF;
     margin: 2vh 0vh;
-    font-size: 3vh;
+    font-size: 5vw;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bolder;
+    font-weight: normal;
   }
   #contact-us {
     border-top-left-radius: 5px;
@@ -561,6 +559,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 0px 10px 10px 10px;
+    margin: 10vw 0vw;
     display: block;
     background: #FFFFFF;
     color: #0097E6;
@@ -752,8 +751,8 @@
     text-decoration: none;
     color: #FFFFFF;
     font-size: 5vw;
-    font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
+    font-family: 'Acme' , sans-serif;
+    font-weight: normal;
   }
   #Nav {
     background: #FFFFFF;
@@ -771,37 +770,37 @@
   }
   #Booking > h2 {
     color: #0097E6;
-    font-size: 5vh;
+    font-size: 8vw;
     margin: 4vw 0vw;
   }
   #name , #phone , #city , #state {
-    font-size: 4vw;
+    font-size: 5vw;
     border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
+    border-bottom: .2vw solid #0097E6;
+    padding: 2vw 0px;
     color: #0097E6;
     display: block;
     width: 100%;
-    margin: 2vh 0vh;
+    margin: 4vw 0vh;
   }
-  #name:focus , #phone:focus , #city:focus , #state:focus {
-    border-bottom: .5vw solid rgba(0,151,230,0.5);
-    outline: none;
+  #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
+    outline: none;;
+    box-shadow: 0px 0px .5vw rgba(0,0,0,0.5);
   }
   #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
   #address::placeholder {
-    font-size: 4vw;
+    font-size: 5vw;
     color: rgba(0,151,230,0.5);
   }
   #address {
     resize: none;
-    margin: 2vh 0vw;
+    margin: 4vw 0vw;
     height: 40vw;
     width: 100%;
-    font-size: 4vw;
+    font-size: 5vw;
     border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
+    border-bottom: .2vw solid #0097E6;
+    padding: 2vw 0px;
     color: #0097E6;
   }
   #address:focus {
@@ -832,10 +831,10 @@
   }
   #price {
     display: block;
-    font-size: 2vh;
+    font-size: 5vw;
     text-align: center;
-    margin-top: 5vh;
-    padding: 1vh 0vw;
+    margin-top: 10vw;
+    padding: 2vw 0vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
   }
@@ -843,24 +842,16 @@
     display: block;
     background: #E42C64;
     outline: none;
-    padding: 1vh;
+    padding: 4vw;
     text-align: center;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 5vw;
     color: #FFFFFF;
-    margin: 4vh 0vw;
-    cursor: pointer;
-    outline: none;
+    margin: 5vw 0vw;
     border: none;
-    box-shadow: 0 8px #E42C64;
-    border-radius: 5px;
+    border-radius: 1vw;
     width: 100%;
-  }
-  #book:active , #clear:active {
-  background-color: #E42C64;
-  box-shadow: 0 5px #E42C64; 
-  transform: translateY(4px);
   }
   .home {
     padding: 4vw;
@@ -1119,7 +1110,7 @@
   }
   #Booking > h2 {
     color: #0097E6;
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 4vw 0vw;
   }
   #sbtn {
@@ -1130,40 +1121,31 @@
     grid-column-start: 1;
     grid-column-end: 2;
     background: #E42C64;
-    padding: 1vw;
+    padding: 2vw;
     text-align: center;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     font-size: 2vw;
     color: #FFFFFF;
     margin: 2vw 0vw;
-    cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 8px #E42C64;
-    border-radius: 5px;
-  }
-  #book:active , #clear:active {
-  background-color: #E42C64;
-  box-shadow: 0 5px #E42C64;
-  transform: translateY(4px);
+    border-radius: .5vw;
   }
   #clear {
     grid-column-start: 3;
     grid-column-end: 4;
     background: #E42C64;
-    padding: 1vw;
+    padding: 2vw;
     text-align: center;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     font-size: 2vw;
     color: #FFFFFF;
     margin: 2vw 0vw;
-    cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 8px #E42C64;
-    border-radius: 5px;
+    border-radius: .5vw;
   }
   #Shead {
     font-family: 'Poppins' , sans-serif;
@@ -1178,6 +1160,7 @@
     display: block;
     font-size: 3vw;
     text-align: center;
+    margin-top: 4vw;
     padding: 1vw 0vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
@@ -1200,12 +1183,12 @@
   #address {
     resize: none;
     margin: 2vw 0vw;
-    height: 10vw;
+    height: 20vw;
     width: 100%;
-    font-size: 3vw;
+    font-size: 2vw;
     border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
+    border-bottom: .1vw solid #0097E6;
+    padding: .5vw 0px;
     color: #0097E6;
   }
   #personal , #location {
@@ -1215,19 +1198,19 @@
     margin-top: 2vw;
   }
   #name , #phone , #city , #state {
-    font-size: 3vw;
+    font-size: 2vw;
     border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
+    border-bottom: .1vw solid #0097E6;
+    padding: .5vw 0px;
     color: #0097E6;
   }
   #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
-    border-bottom: 2px solid rgba(0,151,230,0.5);
-    outline: none;
+    outline: none;;
+    box-shadow: 0px 0px .2vw rgba(0,0,0,0.5);
   }
   #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
   #address::placeholder {
-    font-size: 3vw;
+    font-size: 2vw;
     color: rgba(0,151,230,0.5);
   }
   .modal-content {
@@ -1991,16 +1974,16 @@
     width: 100%;
     display: block;
     border: none;
-    border-bottom: 2px solid rgba(0,151,230,0.5);
+    border-bottom: .2vw solid rgba(0,151,230,0.5);
     margin-bottom: 2.5vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #0097E6;
+    padding: .5vw;
+    margin-top: .5vw;
   }
   #f-name:focus , #f-email:focus , #f-msg:focus {
     outline: none;
-    margin: 1vw 0vw;
-    padding: 1vw;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px .2vw rgba(0,0,0,0.5);
   } 
   #f-name::placeholder , #f-email::placeholder , #f-msg::placeholder {
     color: rgba(0,151,230,.5);
@@ -2008,7 +1991,7 @@
   }
   #f-msg {
     resize: none;
-    height: 14vh;
+    height: 15vw;
   }
   #f-submit {
     letter-spacing: 4px;
@@ -2202,16 +2185,9 @@
     font-size: 2vw;
     color: #FFFFFF;
     margin: 2vw 0vw;
-    cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 8px #E42C64;
-    border-radius: 5px;
-  }
-  #book:active , #clear:active {
-  background-color: #E42C64;
-  box-shadow: 0 5px #E42C64;
-  transform: translateY(4px);
+    border-radius: .5vw;
   }
   #clear {
     grid-column-start: 3;
@@ -2224,11 +2200,9 @@
     font-size: 2vw;
     color: #FFFFFF;
     margin: 2vw 0vw;
-    cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 8px #E42C64;
-    border-radius: 5px;
+    border-radius: .5vw;
   }
   #Shead {
     font-family: 'Poppins' , sans-serif;
@@ -2243,6 +2217,7 @@
     display: block;
     font-size: 2vw;
     text-align: center;
+    margin-top: 4vw;
     padding: 1vw 0vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
@@ -2265,12 +2240,12 @@
   #address {
     resize: none;
     margin: 2vw 0vw;
-    height: 10vw;
+    height: 15vw;
     width: 100%;
     font-size: 1.5vw;
     border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
+    border-bottom: .1vw solid #0097E6;
+    padding: .5vw 0px;
     color: #0097E6;
   }
   #personal , #location {
@@ -2282,13 +2257,13 @@
   #name , #phone , #city , #state {
     font-size: 1.5vw;
     border: none;
-    border-bottom: 2px solid #0097E6;
-    padding: 10px 0px;
+    border-bottom: .1vw solid #0097E6;
+    padding: .5vw 0px;
     color: #0097E6;
   }
   #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
-    border-bottom: 2px solid rgba(0,151,230,0.5);
-    outline: none;
+    outline: none;;
+    box-shadow: 0px 0px .2vw rgba(0,0,0,0.5);
   }
   #name::placeholder , #phone::placeholder , #city::placeholder , #state::placeholder ,
   #address::placeholder {
@@ -3054,16 +3029,15 @@
     width: 100%;
     display: block;
     border: none;
-    border-bottom: 2px solid rgba(0,151,230,0.5);
+    border-bottom: .1vw solid rgba(0,151,230,0.5);
     margin-bottom: 2.5vw;
-    padding: 0.5vw 0vw;
+    margin-top: 1vw;
+    padding: .2vw;
     color: #0097E6;
   }
   #f-name:focus , #f-email:focus , #f-msg:focus {
     outline: none;
-    margin: 1vw 0vw;
-    padding: 1vw;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px .2vw rgba(0,0,0,0.5);
   } 
   #f-name::placeholder , #f-email::placeholder , #f-msg::placeholder {
     color: rgba(0,151,230,.5);
@@ -3071,7 +3045,7 @@
   }
   #f-msg {
     resize: none;
-    height: 14vh;
+    height: 10vw;
   }
   #f-submit {
     letter-spacing: 4px;
