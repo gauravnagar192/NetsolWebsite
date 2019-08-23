@@ -1,5 +1,2 @@
 // Do it Now
-2) show answers in modal
-3) Add custom alert for successfully completed form req
-// For Later
-4) add your own code for giving name to file in multer
+1) add your own code for giving name to file in multer
