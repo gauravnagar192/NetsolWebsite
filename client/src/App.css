@@ -18,8 +18,8 @@
 .bg-blue {
   background-color: #0097E6 !important;
 }
-@media screen and (max-width: 425px) {  
-   
+@media screen and (max-width: 425px) {
+
   .modal-content {
     margin: 3vw;
     width: auto !important;
@@ -30,7 +30,7 @@
     width: 100%;
     box-shadow: .4vw 0.4vw 4vw rgba(0,0,0,0.5);
   }
-  #na {    
+  #na {
     color : #0097E6;
     font-size : 5vw;
     font-family : 'Poppins' , sans-serif;
@@ -49,7 +49,7 @@
   }
   #reply {
     text-align: center;
-    font-size: 4vw;
+    font-size: 6vw;
     margin-bottom: 8vw;
     color: #E42C64;
   }
@@ -191,7 +191,7 @@
     border: none;
     border-bottom: 2px solid rgba(0,151,230,.5);
     outline: none;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);    
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
     margin-top: 2vw;
     padding: 2vw;
   }
@@ -261,7 +261,7 @@
     background: #FFFFFF;
     border: 2px solid #0097E6;
     color: #0097E6;
-  }  
+  }
   #ask-text:focus {
     outline: none;
     box-shadow: 0vw 0vw .5vw #0097E6;
@@ -320,7 +320,7 @@
     padding: 8px;
     padding: 1vw;
     color: #0097E6;
-    background: #F6F8F8;   
+    background: #F6F8F8;
     border-bottom: 1vw solid #FFFFFF;
   }
   .view-ans {
@@ -339,7 +339,7 @@
     font-weight: bold;
   }
   #qbtn {
-    display: block;    
+    display: block;
     margin: 4vw;
     border-radius: 5px;
     background: #E42C64;
@@ -362,7 +362,7 @@
   #nbp {
     font-family: 'Poppins' , sans-serif;
     font-size: 5vw;
-    padding: 1vw 0vw;    
+    padding: 1vw 0vw;
     margin: 4vw;
     border-bottom: 2px solid #3498DB;
     color: #3498DB;
@@ -490,7 +490,7 @@
   }
   #f-name::placeholder , #f-email::placeholder , #f-msg::placeholder {
     color: rgba(0,151,230,.5);
-  } 
+  }
   #f-msg {
     resize: none;
     height: 40vw;
@@ -591,7 +591,7 @@
     color: #FFFFFF;
     background: #E42C64;
     font-size: 8vw;
-  }  
+  }
   .rw-item1 , .rw-item3 {
     font-size: 5vw;
     width: 100%;
@@ -618,7 +618,7 @@
     margin-bottom: 0vw;
     display: block;
     cursor: pointer;
-    border-radius: 5px;    
+    border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
   }
@@ -749,7 +749,7 @@
   #Navbar {
     margin: 0;
     padding: 0;
-    background-color: #3498DB;    
+    background-color: #3498DB;
   }
   .Nav-link {
     text-decoration: none;
@@ -809,7 +809,7 @@
   }
   #address:focus {
     outline: none;
-  }  
+  }
   #Offer-sel {
     width: 100%;
     padding: 4vw;
@@ -863,7 +863,7 @@
   .Toggle > div {
     text-align: left;
     display: inline;
-    padding-left: 20vw; 
+    padding-left: 20vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
     font-size: 8vw;
@@ -917,7 +917,7 @@
   #mo > div , #e > div , #c > div {
     color: #E42C64;
     font-weight: bold;
-  }  
+  }
   #mo > p , #e > p , #c > p {
     display: block;
     color: #0097E6;
@@ -1013,7 +1013,7 @@
   }
 }
 @media screen and (min-width: 426px ) and (max-width: 768px) {
-  
+
   #reply {
     text-align: center;
     font-size: 3vw;
@@ -1074,7 +1074,7 @@
     font-size: 3vw;
     font-weight: bold;
     margin-top: 4vw;
-  }  
+  }
   body {
     margin: 0px;
     padding: 0px;
@@ -1091,7 +1091,7 @@
   #mo > div , #e > div , #c > div {
     color: #E42C64;
     font-weight: bold;
-  }  
+  }
   #mo > p , #e > p , #c > p {
     display: block;
     color: #0097E6;
@@ -1248,7 +1248,7 @@
     color: #FFFFFF;
     letter-spacing: 4px;
     border-radius: 1vw;
-  }  
+  }
   .close {
   font-size: 5vw !important;
   color: #FFFFFF !important;
@@ -1274,7 +1274,7 @@
     outline: none;
     box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.25);
     margin-top: 1vh;
-    padding: 1vw; 
+    padding: 1vw;
   }
   #cimg {
     padding: 1.5vw;
@@ -1552,7 +1552,7 @@
     margin: 0px 1vw;
     padding: 1vw;
     color: #0097E6;
-    background: #F6F8F8;   
+    background: #F6F8F8;
     border-bottom: .4vw solid #FFFFFF;
   }
   #query {
@@ -1707,7 +1707,7 @@
     padding: 2vw;
     margin-top: 5vh;
     display: block;
-    cursor: pointer;    
+    cursor: pointer;
     border-radius: 5px;
   }
   #get-now {
@@ -1719,7 +1719,7 @@
     padding: 2vw;
     margin-top: 4vw;
     display: block;
-    cursor: pointer; 
+    cursor: pointer;
     border-radius: 5px;
   }
   #ex-of {
@@ -1778,7 +1778,7 @@
     text-align: center;
     border: none;
   }
-  #na {    
+  #na {
     color : #0097E6;
     font-size : 3vw;
     font-family : 'Poppins' , sans-serif;
@@ -1799,7 +1799,7 @@
     grid-column-end: 3;
     width: 0;
   }
-  #home3 {    
+  #home3 {
     grid-column-start: 3;
     grid-column-end: 4;
     padding: 4vw 2vw;
@@ -1822,7 +1822,7 @@
   }
   #booknow:active {
     box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.4);
-  }  
+  }
   #broadband {
     width: 35vw;
     height: 30vw;
@@ -1989,7 +1989,7 @@
   #f-name:focus , #f-email:focus , #f-msg:focus {
     outline: none;
     box-shadow: 0px 0px .2vw rgba(0,0,0,0.5);
-  } 
+  }
   #f-name::placeholder , #f-email::placeholder , #f-msg::placeholder {
     color: rgba(0,151,230,.5);
     font-size: 2vw;
@@ -2067,7 +2067,7 @@
   }
 }
 @media screen and (min-width: 769px) {
-  
+
   #reply {
     text-align: center;
     font-size: 3vw;
@@ -2128,7 +2128,7 @@
     font-size: 3vw;
     font-weight: bold;
     margin-top: 4vw;
-  }  
+  }
   body {
     margin: 0px;
     padding: 0px;
@@ -2145,7 +2145,7 @@
   #mo > div , #e > div , #c > div {
     color: #E42C64;
     font-weight: bold;
-  }  
+  }
   #mo > p , #e > p , #c > p {
     display: block;
     color: #0097E6;
@@ -2302,7 +2302,7 @@
     color: #FFFFFF;
     letter-spacing: 4px;
     border-radius: 5px;
-  }  
+  }
   .close {
   font-size: 3vw !important;
   color: #FFFFFF !important;
@@ -2329,7 +2329,7 @@
     outline: none;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
     margin-top: 1vh;
-    padding: 1vw; 
+    padding: 1vw;
   }
   #cimg {
     padding: 1.2vw;
@@ -2605,7 +2605,7 @@
     margin: 0px 10px;
     padding: 1vw;
     color: #0097E6;
-    background: #F6F8F8;   
+    background: #F6F8F8;
     border-bottom: .4vw solid #FFFFFF;
   }
   #query {
@@ -2763,7 +2763,7 @@
     padding: 1vw 2vw;
     margin-top: 5vh;
     display: block;
-    cursor: pointer;    
+    cursor: pointer;
     border-radius: 5px;
   }
   #get-now {
@@ -2775,7 +2775,7 @@
     padding: 1vw 2vw;
     margin-top: 2vw;
     display: block;
-    cursor: pointer; 
+    cursor: pointer;
     border-radius: 5px;
   }
   #ex-of {
@@ -2835,7 +2835,7 @@
     border: none;
     font-size: 2vw;
   }
-  #na {    
+  #na {
     color : #0097E6;
     font-size : 2.5vw;
     font-family : 'Poppins' , sans-serif;
@@ -2856,7 +2856,7 @@
     grid-column-end: 3;
     width: 0;
   }
-  #home3 {    
+  #home3 {
     grid-column-start: 3;
     grid-column-end: 4;
     padding: 4vw;
@@ -2879,7 +2879,7 @@
   }
   #booknow:active {
     box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.4);
-  }  
+  }
   #broadband {
     width: 35vw;
     height: 30vw;
@@ -3023,7 +3023,7 @@
     padding: 1vw;
     margin: 1vw 0vw;
     margin-top: -2vw;
-    color: #26ae60;    
+    color: #26ae60;
     display: none;
   }
   #fn , #fe , #fm {
@@ -3044,7 +3044,7 @@
   #f-name:focus , #f-email:focus , #f-msg:focus {
     outline: none;
     box-shadow: 0px 0px .2vw rgba(0,0,0,0.5);
-  } 
+  }
   #f-name::placeholder , #f-email::placeholder , #f-msg::placeholder {
     color: rgba(0,151,230,.5);
     font-size: 1.2vw;
