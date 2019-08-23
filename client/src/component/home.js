@@ -200,8 +200,8 @@ class Home extends Component {
       var cbtn = document.getElementById('check-btn');
       var ctxt = document.getElementById('check-text');
       cbtn.onclick = () => {
-        var city = ['jaipur','hyderabad','jodhpur','delhi',
-                   'chandigarh','mumbai','kota','agra'];
+        var city = ['jaipur','hyderabad','jodhpur','delhi','chandigarh','mumbai','kota','agra' , 
+                    'Jaipur','Hyderabad','Jodhpur','Delhi','Chandigarh','Mumbai','Kota','Agra'];
         var toggle = true;
         let c = document.getElementById('reply');
         c = String(c.innerText);

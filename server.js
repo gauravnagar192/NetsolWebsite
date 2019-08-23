@@ -19,6 +19,7 @@ const order = mongoose.model('order');
 const feedback = mongoose.model('feedback');
 const candidate = mongoose.model('candidate');
 const app = express();
+const key = require('./config/key');
 
 //const morgan = require('morgan');
 //for console log current requests
@@ -43,7 +44,7 @@ var upload = multer({ storage: storage })
 mongoose.Promise = global.Promise;
 
 //connecting to mongodb
-mongoose.connect('mongodb+srv://gaurav:mongodbgaurav@netsol-degpc.mongodb.net/wifi?retryWrites=true&w=majority', { useNewUrlParser: true })
+mongoose.connect(key.MongodbURI, { useNewUrlParser: true })
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err))
 

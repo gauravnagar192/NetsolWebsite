@@ -49,7 +49,8 @@
   }
   #reply {
     text-align: center;
-    font-size: 2vh;
+    font-size: 4vw;
+    margin-bottom: 8vw;
     color: #E42C64;
   }
   #answer {
@@ -689,6 +690,9 @@
     color: #0097E6;
     opacity: 0.5;
   }
+  .check-text:focus {
+    outline: #0097E6;
+  }
   .check-btn {
     display: block;
     width: 100%;
@@ -1012,7 +1016,8 @@
   
   #reply {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
+    margin-bottom: 4vw;
     color: #E42C64;
   }
   .errorMsg {
@@ -2065,7 +2070,8 @@
   
   #reply {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
+    margin-bottom: 8vw;
     color: #E42C64;
   }
   .errorMsg {
