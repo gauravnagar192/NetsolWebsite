@@ -42,7 +42,7 @@
     font-family: 'Poppins' , sans-serif;
     color: #0097E6;
     text-align: center;
-    line-height: 20vh;
+    line-height: 20vw;
     background: #FFFFFF;
     margin: 2vh;
     padding: 5vh 0vw;
@@ -63,7 +63,7 @@
   #ans-btn {
     background: #E42C64;
     text-align: center;
-    padding: 4vw 0vh;
+    padding: 4vw 0vw;
     font-size: 5vw;
     color: #FFFFFF;
     margin: 6vw 0vw;
@@ -133,7 +133,7 @@
     left: 0;
     position: fixed;
     width: 100%;
-    padding-top: 20%;
+    padding-top: 64%;
     padding-bottom: 50%;
     background: rgba(0,0,0,0.4);
   }
@@ -143,7 +143,7 @@
     color: #FFFFFF;
     background:#0097E6;
     text-align: center;
-    font-size: 2vh;
+    font-size: 5vw;
     padding: 2vh;
     font-weight: bold;
     font-family: 'Poppins' , sans-serif;
@@ -151,17 +151,17 @@
   #modal-content {
     background: #FFFFFF;
     width: 100%;
-    margin: 0vh 4vw;
+    margin: 0vw 4vw;
   }
   #cbtn {
     display: block;
-    padding: 2vh 0vh;
+    padding: 2vh 0vw;
     margin: 10vw .3vh 1vh .2vh;
     background: #E42C64;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 4vw;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     width: 100%;
     border: none;
     color: #FFFFFF;
@@ -177,7 +177,7 @@
     display: block;
     border-radius: 2px;
     width: 100%;
-    margin: 0vh .3vh 10vw .2vh;
+    margin: 0vw .3vh 10vw .2vh;
     padding: 5px 0px;
     border: none;
     border-bottom: 2px solid rgba(0,151,230,.5);
@@ -219,7 +219,7 @@
     font-size: 4vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bold;
-    margin: 1vh .3vh 0vh .2vh;
+    margin: 1vh .3vh 0vw .2vh;
   }
   .city {
     margin: 1vh;
@@ -380,22 +380,23 @@
   }
   #dt1 > div , #dt2 > div , #dt3 > div {
     display: block;
-    padding: 1vh 0vh;
+    padding: 1vh 0vw;
+    font-size: 5vw;
   }
   #dt {
     color: #FFFFFF;
-    margin: 0vh 4vw 4vh 4vw;
+    margin: 0vw 4vw 4vh 4vw;
     padding: 4vh 2vw;
     background: #3498DB;
   }
   #rs , #exrs {
     background: #E42C64;
     display: block;
-    line-height: 20vh;
+    line-height: 20vw;
     text-align: center;
     color: #FFFFFF;
     font-size: 5vh;
-    margin: 0vh 4vw;
+    margin: 0vw 4vw;
   }
   #gp {
     background: #0097E6;
@@ -496,10 +497,10 @@
     height: 40vw;
   }
   #f-submit {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
     margin-left: auto;
     margin-right: auto;
     background: #E42C64;
@@ -519,8 +520,6 @@
     background: #EAF0F1;
     padding: 1vw 4vw;
   }
-  #contact {
-  }
   #ct-h , #fdbk-h {
     padding: 5px 0px;
     text-align: center;
@@ -530,36 +529,36 @@
   .ct-info {
     padding: 5px 10px;
     font-family: 'Poppins' , sans-serif;
-    font-size: 4.6vw;
+    font-size: 4.3vw;
     margin-top: 5vw;
   }
   #ct-sl {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
     text-align: center;
     padding: 2vw 0px;
     background: #E42C64;
     color: #FFFFFF;
-    margin: 2vh 0vh;
+    margin: 4vw 0vw;
     font-size: 5vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: normal;
   }
   #contact-us {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
     margin: 10vw 0vw;
     display: block;
     color: #FFFFFF;
   }
   #fdbk {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 0px 10px 10px 10px;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    padding: 0px 2vw 2vw 2vw;
     margin: 10vw 0vw;
     display: block;
     background: #FFFFFF;
@@ -575,7 +574,7 @@
   }
   #rw-grid > div {
     letter-spacing: 1px;
-    margin: 2vw 0vh;
+    margin: 2vw 0vw;
   }
   .user1 , .user2 {
     display: block;
@@ -638,7 +637,7 @@
   }
   #cr-h {
     letter-spacing: 1px;
-    margin: 2vh 0vh;
+    margin: 2vh 0vw;
     font-family: 'Varela Round', sans-serif;
     font-size: 7vw;
   }
@@ -785,7 +784,7 @@
     color: #0097E6;
     display: block;
     width: 100%;
-    margin: 4vw 0vh;
+    margin: 4vw 0vw;
   }
   #name:focus , #phone:focus , #city:focus , #state:focus , #address:focus {
     outline: none;;
@@ -874,7 +873,7 @@
     font-size: 8vw;
     color: #FFFFFF;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     margin: 5vw 0vw;
     display: block;
   }
@@ -883,25 +882,26 @@
     color: #FFFFFF;
     font-family: 'Poppins' , sans-serif;
     line-height: 8vw;
+    font-weight: lighter;
   }
   #booknow {
     background-color: #FFFFFF;
     padding: 2vw;
     font-family: 'Poppins' , sans-serif;
-    margin: 6vw 0vh;
+    margin: 6vw 0vw;
     font-size: 5vw;
     font-weight: bold;
     color: #0097E6;
-    border-radius: 10px;
+    border-radius: 2vw;
     display: block;
     text-align: center;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+    box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.4);
   }
   #booknow:hover {
     text-decoration: none;
   }
   #booknow:active {
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    box-shadow: .5vw .5v 1vw rgba(0,0,0,0.4);
   }
   #broadband {
     width: 40vw;
@@ -981,7 +981,7 @@
   .IconCard {
     box-shadow: 1vw 1vw 4vw rgba(0,0,0,0.5);
     background: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 1vw;
     height: 50vh;
     margin-bottom: 10vw;
     padding: 1vw;
@@ -998,14 +998,14 @@
     display: block;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
-    font-size: 4vh;
+    font-size: 8vw;
     color: #0097E6;
     font-weight: bold;
-    margin: 1vh 0vh ;
+    margin: 1vh 0vw ;
   }
   .content {
     font-family: 'Poppins' , sans-serif;
-    font-size: 5vw;
+    font-size: 6vw;
     color: #0097E6;
     margin: 3vh;
     font-weight: bold;
@@ -1226,7 +1226,7 @@
     text-align: right;
     float: right;
     color: #FFFFFF;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 1vh 2vh;
     font-weight: bold;
     cursor: pointer;
@@ -1236,7 +1236,7 @@
   }
   #cbtn {
     display: block;
-    padding: 1.5vw 0vh;
+    padding: 1.5vw 0vw;
     margin: 4vw .3vw 1vw .2vw;
     background: #E42C64;
     text-align: center;
@@ -1247,7 +1247,7 @@
     border: none;
     color: #FFFFFF;
     letter-spacing: 4px;
-    border-radius: 1vw;
+    border-radius: .5vw;
   }
   .close {
   font-size: 5vw !important;
@@ -1258,9 +1258,9 @@
     display: block;
     width: 100%;
     margin: 0vw .3vw 3vw .2vw;
-    padding: 2vw 0vh;
+    padding: 2vw 0vw;
     border: none;
-    border-bottom: .5vw solid rgba(0,151,230,.5);
+    border-bottom: .2vw solid rgba(0,151,230,.5);
     color: #0097E6;
     font-size: 2vw;
     resize: none;
@@ -1281,7 +1281,7 @@
     display: block;
     text-align: center;
     margin: 2vw 0vw 0vw .2vw;
-    border-radius: 5px;
+    border-radius: .5vw;
     color: #0097E6;
     border: .2vw solid #0097E6;
     font-size: 2vw;
@@ -1388,7 +1388,7 @@
   #ans-btn {
     background: #E42C64;
     text-align: center;
-    padding: 2vh 0vh;
+    padding: 2vh 0vw;
     font-size: 2.5vw;
     color: #FFFFFF;
     margin: 2vw 0vw 400px 0vw;
@@ -1570,7 +1570,7 @@
     font-size: 4vw;
   }
   #qbtn {
-    border-radius: 1vw;
+    border-radius: .5vw;
     background-color: #E42C64;
     padding: 2vw;
     text-align: center;
@@ -1659,7 +1659,7 @@
     grid-column-end: 4;
   }
   #cr-h {
-    margin: 2vw 0vh;
+    margin: 2vw 0vw;
     font-family: 'Varela Round', sans-serif;
     font-size: 3vw;
     font-weight: bold;
@@ -1808,20 +1808,20 @@
     background-color: #FFFFFF;
     padding: 2vh 2vw;
     font-family: 'Poppins' , sans-serif;
-    margin: 4vw 0vh;
+    margin: 4vw 0vw;
     font-size: 3vw;
-    font-weight: bold;
     color: #0097E6;
-    border-radius: 2vw;
+    border-radius: 1vw;
     display: block;
     text-align: center;
-    box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.4);
+    box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.4);
+    width: 60%;
   }
   #booknow:hover {
     text-decoration: none;
   }
   #booknow:active {
-    box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.4);
+    box-shadow: 0vw 0vw 1vw rgba(0,0,0,0.4);
   }
   #broadband {
     width: 35vw;
@@ -1831,14 +1831,15 @@
     font-size: 5vw;
     color: #FFFFFF;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
   }
   #intro {
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #FFFFFF;
     font-family: 'Poppins' , sans-serif;
-    margin: 2vw 0vh;
+    margin: 2vw 0vw;
     line-height: 5vw;
+    font-weight: lighter;
   }
   .Toggle {
     display: none;
@@ -1949,7 +1950,7 @@
     font-size: 3vw;
     color: #0097E6;
     font-weight: bold;
-    margin: 1vh 0vh ;
+    margin: 1vh 0vw ;
   }
   .content {
     font-family: 'Poppins' , sans-serif;
@@ -2007,7 +2008,7 @@
     font-family: 'Poppins' , sans-serif;
     text-align: center;
     border: none;
-    padding: 2vw 0vh;
+    padding: 2vw 0vw;
     border-radius: 5px;
     display: block;
     margin-top: 8vw;
@@ -2043,7 +2044,7 @@
     text-align: center;
     background: #FFFFFF;
     color: #0097E6;
-    margin: 5vw 0vh;
+    margin: 5vw 0vw;
     font-size: 2vw;
     padding: 1vw 0vw;
     font-family: 'Poppins' , sans-serif;
@@ -2290,7 +2291,7 @@
   }
   #cbtn {
     display: block;
-    padding: 1.5vw 0vh;
+    padding: 1.5vw 0vw;
     margin: 4vw .3vw 1vw .2vw;
     background: #E42C64;
     text-align: center;
@@ -2313,7 +2314,7 @@
     border-radius: 2px;
     width: 100%;
     margin: 0vw .3vw 3vw .2vw;
-    padding: 1vh 0vh;
+    padding: 1vh 0vw;
     border: none;
     border-bottom: 2px solid rgba(0,151,230,.5);
     color: #0097E6;
@@ -2441,7 +2442,7 @@
   #ans-btn {
     background: #E42C64;
     text-align: center;
-    padding: 2vh 0vh;
+    padding: 2vh 0vw;
     font-size: 2vw;
     color: #FFFFFF;
     margin: 2vw 0vw 200px 0vw;
@@ -2715,7 +2716,7 @@
     grid-column-end: 4;
   }
   #cr-h {
-    margin: 2vw 0vh;
+    margin: 2vw 0vw;
     font-family: 'Varela Round', sans-serif;
     font-size: 3vw;
     font-weight: bold;
@@ -2863,16 +2864,16 @@
   }
   #booknow {
     background-color: #FFFFFF;
-    padding: 2vh 2vw;
+    padding: 1vw;
     font-family: 'Poppins' , sans-serif;
-    margin: 4vw 0vh;
+    margin: 4vw 0vw;
     font-size: 3vw;
-    font-weight: bold;
     color: #0097E6;
-    border-radius: 2vw;
+    border-radius: 1vw;
     display: block;
     text-align: center;
-    box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.4);
+    box-shadow: .5vw .5vw 1vw rgba(0,0,0,0.4);
+    width: 60%;
   }
   #booknow:hover {
     text-decoration: none;
@@ -2885,17 +2886,18 @@
     height: 30vw;
   }
   #com {
-    font-size: 5vw;
+    font-size: 4vw;
     color: #FFFFFF;
     font-family: 'Poppins' , sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
   }
   #intro {
     font-size: 2vw;
     color: #FFFFFF;
     font-family: 'Poppins' , sans-serif;
-    margin: 2vw 0vh;
+    margin: 2vw 0vw;
     line-height: 4vw;
+    font-weight: lighter;
   }
   .Toggle {
     display: none;
@@ -2926,7 +2928,7 @@
     padding-left: 2vw;
   }
   .TeamCard {
-    box-shadow: 1vw 1vw 2vw rgba(0,0,0,0.5);
+    box-shadow: 1vw 1vw 1vw rgba(0,0,0,0.5);
   }
   .Cardhead {
     display: block;
@@ -3002,10 +3004,10 @@
     display: block;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
-    font-size: 4vh;
+    font-size: 2vw;
     font-weight: bold;
     color: #0097E6;
-    margin: 1vh 0vh;
+    margin: 1vh 0vw;
   }
   .content {
     font-family: 'Poppins' , sans-serif;
@@ -3097,7 +3099,7 @@
     text-align: center;
     background: #FFFFFF;
     color: #0097E6;
-    margin: 5vw 0vh;
+    margin: 5vw 0vw;
     font-size: 1.5vw;
     font-family: 'Poppins' , sans-serif;
     font-weight: bolder;
